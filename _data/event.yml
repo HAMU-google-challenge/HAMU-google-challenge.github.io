@@ -1,0 +1,105 @@
+# Tutte le informazioni operative comuni alle due lingue.
+# Lasciare preview: true fino al consolidamento dei contenuti ufficiali.
+preview: true
+edition: 2026
+updated: "2026-09-19"
+preliminary_date: "2026-11-13"
+registration_deadline: "2026-11-03"
+team_announcement: "2026-11-06"
+final_date: ""
+final_venue:
+  it: Università degli Studi dell’Aquila
+  en: University of L’Aquila
+# Le date riportate sopra vengono rese con i mesi definiti in i18n.yml.
+registration:
+  state: planned # planned | open | closed
+  url: ""
+  deadline_time: "" # HH:MM, Europe/Rome; inserire l'ora deliberata.
+  privacy_url: ""
+contact_email: ""
+branding:
+  # Percorsi locali (es. /assets/images/hamu-approved.svg), solo asset autorizzati.
+  hamu_logo: ""
+  google_education_lockup: ""
+venues:
+  - region: Abruzzo
+    location: ""
+  - region: Marche
+    location: ""
+  - region: Umbria
+    location: ""
+figures:
+  universities: 10
+  regions: 3
+  team_min: 5
+  team_max: 7
+  themes: 4
+  max_finalists: 36
+  finalists_per_venue: 12
+  work_hours: 4
+  pitch_minutes: 7
+documents:
+  - id: regulations-it
+    title:
+      it: Regolamento in italiano
+      en: Italian regulations
+    format: DOCX
+    language: IT
+    status: draft
+    path: /assets/documents/regolamento-it-bozza.docx
+  - id: regulations-en
+    title:
+      it: Regolamento in inglese
+      en: English regulations
+    format: DOCX
+    language: EN
+    status: draft
+    path: /assets/documents/regolamento-en-bozza.docx
+  - id: call
+    title:
+      it: Avviso di selezione
+      en: Call for applications
+    format: DOCX
+    language: IT
+    status: draft
+    path: /assets/documents/avviso-selezione-bozza.docx
+  - id: poster
+    title:
+      it: Locandina della Challenge
+      en: Challenge poster
+    format: PDF
+    language: IT
+    status: draft
+    path: /assets/documents/locandina-hamu-bozza.pdf
+criteria:
+  - name: {it: Innovatività, en: Innovation}
+    points: 30
+  - name: {it: Impatto sul territorio o sulla comunità, en: Impact on the local area or community}
+    points: 25
+  - name: {it: Fattibilità tecnica, en: Technical feasibility}
+    points: 20
+  - name: {it: Qualità dell’uso dell’IA generativa, en: Quality of generative AI use}
+    points: 15
+  - name: {it: Chiarezza e qualità della presentazione, en: Presentation clarity and quality}
+    points: 10
+universities:
+  - name: Università degli Studi dell’Aquila
+    region: Abruzzo
+  - name: Università degli Studi di Teramo
+    region: Abruzzo
+  - name: Università degli Studi “Gabriele d’Annunzio” Chieti-Pescara
+    region: Abruzzo
+  - name: Gran Sasso Science Institute
+    region: Abruzzo
+  - name: Università di Macerata
+    region: Marche
+  - name: Università Politecnica delle Marche
+    region: Marche
+  - name: Università di Camerino
+    region: Marche
+  - name: Università degli Studi di Urbino Carlo Bo
+    region: Marche
+  - name: Università degli Studi di Perugia
+    region: Umbria
+  - name: Università per Stranieri di Perugia
+    region: Umbria

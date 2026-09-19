@@ -1,0 +1,78 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] %}
+{% assign e = site.data.event %}
+{% assign preliminary_month_index = e.preliminary_date | date: '%m' | minus: 1 %}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ t.hero.eyebrow }}</p>
+      <h1 id="hero-title">{{ t.hero.title }}<span>HAMU <em>{{ e.edition }}</em></span></h1>
+      <p class="hero-description">{{ t.hero.subtitle }}</p>
+      <div class="hero-actions"><a class="button button-dark" href="#iscrizioni">{{ t.hero.cta }}{% include arrow.html %}</a><a class="text-link" href="#programma">{{ t.hero.secondary }}</a></div>
+      <div class="hero-benefits"><span>{{ t.hero.free }}</span><span>{{ t.hero.individual }}</span></div>
+      <div class="collaboration">
+        {% if e.branding.google_education_lockup != '' %}<img src="{{ e.branding.google_education_lockup | relative_url }}" alt="{{ t.collaboration }} Google for Education">{% else %}<span>{{ t.collaboration }}</span><strong>Google for Education</strong>{% endif %}
+      </div>
+    </div>
+    <div class="event-panel">
+      <div class="event-panel-top"><span>{{ t.hero.date_label }}</span><span class="edition-tag">{{ e.edition }}</span></div>
+      <time class="event-date" datetime="{{ e.preliminary_date }}"><span class="event-day">{{ e.preliminary_date | date: '%d' }}</span><span class="event-month">{{ t.months[preliminary_month_index] }}</span></time>
+      <p class="event-venue">{{ t.hero.venue_label }}</p>
+      <div class="region-labels"><span>Abruzzo</span><span>Marche</span><span>Umbria</span></div>
+      <div class="event-panel-bottom"><span>{{ t.hero.final_label }}<strong>{{ e.final_venue[page.lang] }}</strong></span><span class="final-date">{% if e.final_date != '' %}{% include date.html value=e.final_date %}{% else %}{{ t.hero.final_tbc }}{% endif %}</span></div>
+    </div>
+  </div>
+</section>
+<div class="container stats-strip" aria-label="{{ t.nav.challenge }}">
+  <div><strong>{{ e.figures.universities }}</strong><span>{{ t.stats.universities }}</span></div>
+  <div><strong>{{ e.figures.regions }}</strong><span>{{ t.stats.regions }}</span></div>
+  <div><strong>{{ e.figures.team_min }}–{{ e.figures.team_max }}</strong><span>{{ t.stats.team }}</span></div>
+  <div><strong>{{ e.figures.themes }}</strong><span>{{ t.stats.themes }}</span></div>
+</div>
+<section id="challenge" class="section container" aria-labelledby="challenge-title">
+  <div class="section-intro two-column"><div><p class="eyebrow">{{ t.challenge.eyebrow }}</p><h2 id="challenge-title">{{ t.challenge.title }}<span class="accent-text">{{ t.challenge.title_accent }}</span></h2></div><p class="lead">{{ t.challenge.text }}</p></div>
+  <div class="steps-grid">{% for step in t.challenge.steps %}<article class="step"><span class="step-number">0{{ forloop.index }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article>{% endfor %}</div>
+</section>
+<section id="programma" class="section programme-section" aria-labelledby="programme-title">
+  <div class="container"><div class="section-intro"><p class="eyebrow">{{ t.programme.eyebrow }}</p><h2 id="programme-title">{{ t.programme.title }}</h2><p class="lead">{{ t.programme.intro }}</p></div>
+    <ol class="timeline">
+      <li><div class="timeline-date"><time datetime="{{ e.registration_deadline }}">{% include date.html value=e.registration_deadline %}</time><span class="timeline-number" aria-hidden="true">01</span></div><div class="timeline-copy"><h3>{{ t.programme.deadline }}</h3><p>{% if e.registration.deadline_time != '' %}{{ e.registration.deadline_time }} · Europe/Rome{% else %}{{ t.programme.deadline_note }}{% endif %}</p></div></li>
+      <li><div class="timeline-date"><time datetime="{{ e.team_announcement }}">{% include date.html value=e.team_announcement %}</time><span class="timeline-number" aria-hidden="true">02</span></div><div class="timeline-copy"><h3>{{ t.programme.teams }}</h3><p>{{ t.programme.teams_note }}</p></div></li>
+      <li class="timeline-featured"><div class="timeline-date"><time datetime="{{ e.preliminary_date }}">{% include date.html value=e.preliminary_date %}</time><span class="timeline-number" aria-hidden="true">03</span></div><div class="timeline-copy"><h3>{{ t.programme.challenge }}</h3><p>{{ t.programme.challenge_note }}</p></div></li>
+      <li><div class="timeline-date"><span>{% if e.final_date != '' %}{% include date.html value=e.final_date %}{% else %}{{ t.programme.final_date }}{% endif %}</span><span class="timeline-number" aria-hidden="true">04</span></div><div class="timeline-copy"><h3>{{ t.programme.final }}</h3><p>{{ t.programme.final_note }}</p></div></li>
+    </ol>
+    <div class="format-strip"><div><strong>{{ e.figures.work_hours }}</strong><span>{{ t.programme.hours }}</span></div><div><strong>{{ e.figures.pitch_minutes }}</strong><span>{{ t.programme.minutes }}</span></div><p>{{ t.programme.questions }}</p></div>
+  </div>
+</section>
+<section id="iscrizioni" class="section container participation-grid" aria-labelledby="participation-title">
+  <div><p class="eyebrow">{{ t.participation.eyebrow }}</p><h2 id="participation-title">{{ t.participation.title }}<span class="accent-text">{{ t.participation.accent }}</span></h2><p>{{ t.participation.text }}</p><p>{{ t.participation.gssi }}</p><a class="text-link" href="#documenti">{{ t.participation.full_rules }}{% include arrow.html %}</a></div>
+  <aside class="registration-panel" aria-label="{{ t.participation.deadline }} {% include date.html value=e.registration_deadline %}">
+    <p class="eyebrow">{{ t.participation.deadline }}</p><p class="registration-date">{% include date.html value=e.registration_deadline %}</p>
+    {% if e.registration.deadline_time != '' %}<p>{{ e.registration.deadline_time }} · Europe/Rome</p>{% endif %}
+    {% if e.registration.state == 'open' and e.registration.url != '' and e.registration.privacy_url != '' %}
+      <h3>{{ t.participation.open }}</h3><p>{{ t.participation.open_note }}</p><a class="button button-dark registration-link" href="{{ e.registration.url | escape }}">{{ t.participation.open }}{% include arrow.html %}</a>
+    {% elsif e.registration.state == 'closed' %}
+      <h3>{{ t.participation.closed }}</h3><p>{{ t.participation.closed_note }}</p><a class="button button-outline" href="#programma">{{ t.nav.programme }}{% include arrow.html %}</a>
+    {% else %}
+      <h3>{{ t.participation.planned }}</h3><p>{{ t.participation.planned_note }}</p><a class="button button-outline" href="#documenti">{{ t.participation.documents }}{% include arrow.html %}</a>
+    {% endif %}
+    {% if e.registration.privacy_url != '' %}<a class="privacy-link" href="{% if e.registration.privacy_url contains '://' %}{{ e.registration.privacy_url | escape }}{% else %}{{ e.registration.privacy_url | relative_url }}{% endif %}">{{ t.participation.privacy }}</a>{% endif %}
+  </aside>
+</section>
+<section class="section evaluation-section" aria-labelledby="evaluation-title"><div class="container evaluation-grid">
+  <div><p class="eyebrow">{{ t.evaluation.eyebrow }}</p><h2 id="evaluation-title">{{ t.evaluation.title }}</h2><p>{{ t.evaluation.intro }}</p><div class="finalists"><strong>{{ e.figures.max_finalists }}</strong><span>{{ t.evaluation.final_teams }}</span></div><p class="small-copy">{{ t.evaluation.detail }}</p></div>
+  <ul class="criteria-list">{% for criterion in e.criteria %}<li><div><span>{{ criterion.name[page.lang] }}</span><strong>{{ criterion.points }}<small> {{ t.evaluation.points }}</small></strong></div><div class="criterion-bar" aria-hidden="true"><span style="width:{{ criterion.points | times: 100.0 | divided_by: 30.0 }}%"></span></div></li>{% endfor %}</ul>
+</div></section>
+<section id="atenei" class="section container" aria-labelledby="universities-title">
+  <div class="section-intro"><p class="eyebrow">{{ t.universities.eyebrow }}</p><h2 id="universities-title">{{ t.universities.title }}</h2><p class="lead">{{ t.universities.intro }}</p></div>
+  <div class="universities-grid">{% for venue in e.venues %}<article class="university-region"><h3>{{ venue.region }}</h3><ul>{% assign universities = e.universities | where: 'region', venue.region %}{% for university in universities %}<li>{{ university.name }}</li>{% endfor %}</ul><div class="venue-note"><span>{{ t.universities.venue }}</span><strong>{% if venue.location != '' %}{{ venue.location }}{% else %}{{ t.universities.venue_tbc }}{% endif %}</strong></div></article>{% endfor %}</div>
+  <p class="section-footnote">{{ t.universities.venue_note }}</p>
+</section>
+<section id="documenti" class="section documents-section" aria-labelledby="documents-title"><div class="container">
+  <div class="section-intro two-column"><div><p class="eyebrow">{{ t.documents.eyebrow }}</p><h2 id="documents-title">{{ t.documents.title }}</h2></div><div><p class="lead">{{ t.documents.intro }}</p>{% assign draft_documents = e.documents | where: 'status', 'draft' %}{% if draft_documents.size > 0 %}<p class="draft-note">{{ t.documents.draft_note }}</p>{% endif %}</div></div>
+  <div class="document-list">{% for document in e.documents %}<a class="document-link" href="{{ document.path | relative_url }}" download><span class="file-type">{{ document.format }}</span><span class="document-title">{{ document.title[page.lang] }}<span class="document-meta">{{ document.language }} <span aria-hidden="true">·</span> {% if document.status == 'draft' %}{{ t.documents.draft }}{% else %}{{ t.documents.approved }}{% endif %}</span></span><span class="document-download">{{ t.documents.download }}<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>{% endfor %}</div>
+  {% if e.registration.privacy_url == '' %}<p class="section-footnote">{{ t.documents.privacy_pending }}</p>{% else %}<p><a class="text-link" href="{% if e.registration.privacy_url contains '://' %}{{ e.registration.privacy_url | escape }}{% else %}{{ e.registration.privacy_url | relative_url }}{% endif %}">{{ t.participation.privacy }}{% include arrow.html %}</a></p>{% endif %}
+</div></section>
+<section id="faq" class="section container faq-grid" aria-labelledby="faq-title"><div><p class="eyebrow">{{ t.faq.eyebrow }}</p><h2 id="faq-title">{{ t.faq.title }}</h2></div><div class="faq-list">{% for item in t.faq.items %}<details><summary>{{ item.q }}<span class="faq-icon" aria-hidden="true">+</span></summary><div><p>{{ item.a }}</p></div></details>{% endfor %}</div></section>

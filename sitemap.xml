@@ -1,0 +1,10 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% unless site.data.event.preview %}{% if site.url != '' %}
+  <url><loc>{{ '/' | absolute_url | xml_escape }}</loc><lastmod>{{ site.data.event.updated }}</lastmod></url>
+  <url><loc>{{ '/en/' | absolute_url | xml_escape }}</loc><lastmod>{{ site.data.event.updated }}</lastmod></url>
+{% endif %}{% endunless %}
+</urlset>

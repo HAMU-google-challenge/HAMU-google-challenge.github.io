@@ -1,0 +1,27 @@
+title: Google Challenge HAMU 2026
+description: Una sfida universitaria con l’intelligenza artificiale generativa per gli Atenei di Abruzzo, Marche e Umbria.
+url: ""
+baseurl: ""
+lang: it
+timezone: Europe/Rome
+encoding: utf-8
+markdown: kramdown
+permalink: pretty
+strict_front_matter: true
+liquid:
+  error_mode: strict
+plugins: []
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CHANGELOG.md
+  - LICENSE-THEME.txt
+  - scripts
+  - vendor
+  - .bundle
+  - .github
+  - .gitignore
+  - .jekyll-cache
+  - .sass-cache
+  - node_modules

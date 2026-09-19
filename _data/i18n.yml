@@ -1,0 +1,252 @@
+it:
+  code: it
+  locale: it_IT
+  description: La Challenge degli Atenei HAMU di Abruzzo, Marche e Umbria. Formazione, IA generativa e progetti in team. Fase preliminare il 13 novembre 2026.
+  months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]
+  skip: Vai al contenuto
+  nav_label: Navigazione principale
+  menu: Menu
+  close_menu: Chiudi menu
+  language_label: Scegli la lingua
+  preview: Anteprima informativa
+  preview_note: Programma e documenti in corso di definizione.
+  nav:
+    challenge: La Challenge
+    programme: Programma
+    universities: Atenei
+    documents: Documenti
+    faq: FAQ
+  collaboration: In collaborazione con
+  hero:
+    eyebrow: ABRUZZO · MARCHE · UMBRIA
+    title: Google Challenge
+    subtitle: Unisci competenze. Sperimenta con l’IA. Dai forma a un progetto insieme a studenti di dieci Atenei.
+    cta: Scopri come partecipare
+    secondary: Esplora il programma
+    free: Partecipazione gratuita
+    individual: Candidatura individuale
+    date_label: Fase preliminare
+    venue_label: In tre sedi regionali
+    final_label: Finale
+    final_tbc: Data da comunicare
+  stats:
+    universities: Atenei coinvolti
+    regions: regioni
+    team: studenti per team
+    themes: temi progettuali
+  challenge:
+    eyebrow: LA CHALLENGE
+    title: Competenze diverse.
+    title_accent: Un progetto comune.
+    text: Un’esperienza formativa e progettuale per usare l’intelligenza artificiale generativa in modo consapevole, responsabile e creativo. Il punto di partenza è un tema; il risultato, una proposta capace di produrre benefici per il territorio o la comunità.
+    steps:
+      - title: Impara e sperimenta
+        text: La formazione introduce un uso critico dell’IA generativa e strumenti come Gemini e NotebookLM. Le istruzioni operative indicheranno gli strumenti consentiti per la prova.
+      - title: Lavora con il tuo team
+        text: Il Comitato Organizzatore forma i gruppi valorizzando, ove possibile, la varietà delle competenze e della provenienza accademica. Ogni team sceglie uno dei temi proposti.
+      - title: Presenta la vostra idea
+        text: Elaborate una proposta originale, spiegate l’uso dell’IA e presentate il progetto alla Commissione. I team selezionati accedono alla finale dell’Aquila.
+  programme:
+    eyebrow: IL PERCORSO
+    title: Segna le date.
+    intro: Dalla candidatura alla finale, ecco le tappe della Challenge.
+    deadline: Chiusura candidature
+    deadline_note: Ora di scadenza da comunicare.
+    teams: Team, temi e sedi
+    teams_note: Entro questa data riceverai la composizione del tuo team, i temi e la sede assegnata.
+    challenge: Formazione e Challenge
+    challenge_note: Attività formative e fase preliminare nelle tre sedi regionali. Programma orario da comunicare.
+    final: Finale all’Aquila
+    final_date: Entro novembre 2026
+    final_note: I team ammessi si incontrano all’Università degli Studi dell’Aquila. Giorno, luogo e orari saranno comunicati.
+    hours: ore massime di lavoro
+    minutes: minuti massimi di presentazione
+    questions: La presentazione può essere seguita da domande della Commissione.
+  participation:
+    eyebrow: COME PARTECIPARE
+    title: Porta le tue competenze.
+    accent: Il team lo formiamo noi.
+    text: La candidatura è individuale ed è rivolta agli studenti regolarmente iscritti a laurea, laurea magistrale o laurea magistrale a ciclo unico presso un Ateneo aderente, in regola con il pagamento delle tasse alla scadenza.
+    gssi: Per il Gran Sasso Science Institute è possibile l’ammissione dei dottorandi del primo e secondo anno. L’iscrizione deve permanere fino alla conclusione della finale.
+    full_rules: Consulta i requisiti completi nel regolamento
+    deadline: Candidature entro il
+    planned: Iscrizioni in preparazione
+    planned_note: Il modulo di candidatura e l’informativa privacy saranno disponibili qui. Nel frattempo puoi consultare i documenti della Challenge.
+    open: Iscriviti alla Challenge
+    open_note: Prima di inviare la candidatura, leggi il regolamento e l’informativa sul trattamento dei dati personali.
+    closed: Iscrizioni chiuse
+    closed_note: Segui gli aggiornamenti del programma e le comunicazioni del Comitato Organizzatore.
+    privacy: Informativa sul trattamento dei dati personali
+    documents: Consulta i documenti
+  evaluation:
+    eyebrow: LA VALUTAZIONE
+    title: Dall’idea all’impatto.
+    intro: Una griglia comune per tutte le sedi, con un massimo di 100 punti. La valutazione della finale è autonoma rispetto a quella preliminare.
+    points: punti
+    final_teams: team al massimo in finale
+    detail: Fino a tre team per tema in ciascuna sede, con le riassegnazioni previste dal regolamento. Un team vincitore per ogni tema.
+  universities:
+    eyebrow: GLI ATENEI HAMU
+    title: Tre regioni, dieci Atenei.
+    intro: Una rete universitaria tra Abruzzo, Marche e Umbria. Le prove si svolgono in tre sedi regionali assegnate dal Comitato Organizzatore.
+    venue: Sede della fase preliminare
+    venue_tbc: Sede in definizione
+    venue_note: La sede assegnata può essere diversa dal tuo Ateneo e sarà comunicata nei termini previsti.
+  documents:
+    eyebrow: PRIMA DI PARTECIPARE
+    title: I documenti della Challenge.
+    intro: Requisiti, regole e informazioni per preparare la tua candidatura.
+    draft_note: Sono disponibili le bozze per consultazione. Le versioni definitive saranno pubblicate dopo il consolidamento del regolamento e dell’avviso.
+    draft: Bozza
+    approved: Definitivo
+    download: Scarica
+    privacy_pending: Informativa privacy in preparazione. Sarà disponibile prima dell’apertura delle candidature.
+  faq:
+    eyebrow: HAI UN DUBBIO
+    title: Domande frequenti.
+    items:
+      - q: Devo avere già un team?
+        a: No. La candidatura è individuale. Il Comitato Organizzatore forma i team e ne comunica la composizione almeno una settimana prima della fase preliminare.
+      - q: La Challenge si svolge nella mia università?
+        a: Non necessariamente. La sede è assegnata dal Comitato e può essere diversa dal tuo Ateneo. Le tre sedi regionali saranno comunicate almeno sette giorni prima della prova.
+      - q: Quali strumenti di intelligenza artificiale posso usare?
+        a: Solo quelli indicati dall’organizzazione. Altre applicazioni, fonti o strumenti sono consentiti esclusivamente se previsti nelle istruzioni operative. Devi dichiarare come usi l’IA, verificare i contenuti generati e rispettare i diritti di terzi e le indicazioni sui dati personali.
+      - q: Sono previsti rimborsi o premi in denaro?
+        a: Il regolamento non prevede rimborsi spese o supporto economico da parte degli Atenei HAMU, né premi o altri benefici economici. Ai team vincitori possono essere assegnati attestati, menzioni o riconoscimenti privi di valore economico.
+      - q: Posso partecipare se sono un dottorando?
+        a: Il regolamento prevede la possibile ammissione dei dottorandi del primo e secondo anno del Gran Sasso Science Institute. Per gli altri Atenei sono previsti i corsi di laurea, laurea magistrale e laurea magistrale a ciclo unico.
+      - q: Dove saranno pubblicati i risultati?
+        a: Gli esiti saranno pubblicati sui siti istituzionali degli Atenei interessati; la pubblicazione avrà valore di comunicazione ufficiale. Il regolamento disciplina anche i termini e le modalità delle osservazioni e del riesame.
+  footer:
+    description: Una Challenge interuniversitaria di formazione e progettazione con l’intelligenza artificiale generativa.
+    contact: Contatta l’organizzazione
+    contact_pending: I contatti organizzativi saranno comunicati insieme alle informazioni definitive.
+    updated: Aggiornato al
+    top: Torna all’inizio
+    rights: I marchi citati appartengono ai rispettivi titolari.
+en:
+  code: en
+  locale: en_GB
+  description: The HAMU universities’ generative AI challenge across Abruzzo, Marche and Umbria. Learn, collaborate and develop a project. Preliminary stage on 13 November 2026.
+  months: [January, February, March, April, May, June, July, August, September, October, November, December]
+  skip: Skip to content
+  nav_label: Main navigation
+  menu: Menu
+  close_menu: Close menu
+  language_label: Choose language
+  preview: Information preview
+  preview_note: Programme and documents are being finalised.
+  nav:
+    challenge: The Challenge
+    programme: Programme
+    universities: Universities
+    documents: Documents
+    faq: FAQ
+  collaboration: In collaboration with
+  hero:
+    eyebrow: ABRUZZO · MARCHE · UMBRIA
+    title: Google Challenge
+    subtitle: Bring your skills. Experiment with AI. Shape a project together with students from ten universities.
+    cta: Find out how to take part
+    secondary: Explore the programme
+    free: Free participation
+    individual: Individual applications
+    date_label: Preliminary stage
+    venue_label: At three regional venues
+    final_label: Final stage
+    final_tbc: Date to be announced
+  stats:
+    universities: universities
+    regions: regions
+    team: students per team
+    themes: project themes
+  challenge:
+    eyebrow: THE CHALLENGE
+    title: Different skills.
+    title_accent: One shared project.
+    text: An educational, project-based experience in the informed, responsible and creative use of generative AI. Start with a theme and develop a proposal that could deliver tangible benefits for the local area or community.
+    steps:
+      - title: Learn and experiment
+        text: Training introduces a critical approach to generative AI and tools such as Gemini and NotebookLM. The operational instructions will specify which tools may be used during the challenge.
+      - title: Work with your team
+        text: The Organising Committee forms groups, taking account where possible of diversity in skills and academic backgrounds. Each team chooses one of the proposed themes.
+      - title: Present your idea
+        text: Develop an original proposal, explain how you used AI and present your project to the judging panel. Selected teams progress to the final in L’Aquila.
+  programme:
+    eyebrow: THE JOURNEY
+    title: Save the dates.
+    intro: From your application to the final, here are the stages of the Challenge.
+    deadline: Application deadline
+    deadline_note: Closing time to be announced.
+    teams: Teams, themes and venues
+    teams_note: By this date, you will receive your team composition, the themes and your assigned venue.
+    challenge: Training and Challenge
+    challenge_note: Training activities and the preliminary stage at three regional venues. The detailed schedule will be announced.
+    final: Final in L’Aquila
+    final_date: By the end of November 2026
+    final_note: Admitted teams meet at the University of L’Aquila. The day, exact location and schedule will be communicated.
+    hours: hours maximum to develop your proposal
+    minutes: minutes maximum to present
+    questions: The judging panel may ask questions after the presentation.
+  participation:
+    eyebrow: HOW TO TAKE PART
+    title: Bring your skills.
+    accent: We’ll put the team together.
+    text: Apply individually. The Challenge is open to students duly enrolled in a bachelor’s, master’s or single-cycle master’s degree at a participating university, with tuition fees up to date at the application deadline.
+    gssi: The Gran Sasso Science Institute may also admit first- and second-year PhD students. You must remain enrolled until the end of the final stage.
+    full_rules: Read the full eligibility requirements
+    deadline: Apply by
+    planned: Applications opening soon
+    planned_note: The application form and privacy notice will be available here. In the meantime, you can read the Challenge documents.
+    open: Apply to the Challenge
+    open_note: Before submitting your application, read the Regulations and the personal data processing notice.
+    closed: Applications closed
+    closed_note: Follow programme updates and communications from the Organising Committee.
+    privacy: Personal data processing notice
+    documents: View the documents
+  evaluation:
+    eyebrow: ASSESSMENT
+    title: From ideas to impact.
+    intro: A shared assessment grid across all venues, with a maximum of 100 points. Final-stage assessment is independent of the preliminary stage.
+    points: points
+    final_teams: teams at most in the final
+    detail: Up to three teams per theme at each venue, with place reallocation as set out in the Regulations. One winning team for each theme.
+  universities:
+    eyebrow: HAMU UNIVERSITIES
+    title: Three regions, ten universities.
+    intro: A university network across Abruzzo, Marche and Umbria. The preliminary stage takes place at three regional venues assigned by the Organising Committee.
+    venue: Preliminary-stage venue
+    venue_tbc: Venue to be confirmed
+    venue_note: Your assigned venue may differ from your home university and will be announced within the stated timeframe.
+  documents:
+    eyebrow: BEFORE YOU APPLY
+    title: Challenge documents.
+    intro: Eligibility, rules and information to help you prepare your application.
+    draft_note: Draft documents are available for consultation. Final versions will be published once the Regulations and call for applications are consolidated.
+    draft: Draft
+    approved: Final
+    download: Download
+    privacy_pending: The privacy notice is being prepared and will be available before applications open.
+  faq:
+    eyebrow: NEED TO KNOW
+    title: Frequently asked questions.
+    items:
+      - q: Do I need to have a team already?
+        a: No. Applications are individual. The Organising Committee forms teams and announces their composition at least one week before the preliminary stage.
+      - q: Will I take part at my own university?
+        a: Not necessarily. The Committee assigns your venue, which may differ from your home university. The three regional venues will be announced at least seven days before the challenge.
+      - q: Which artificial intelligence tools can I use?
+        a: Only those specified by the organisers. Additional applications, sources or tools are permitted only if expressly allowed by the operational instructions. You must declare your use of AI, verify generated content and respect third-party rights and personal data instructions.
+      - q: Are expenses reimbursed or cash prizes offered?
+        a: The Regulations do not provide for reimbursement of expenses or financial support from HAMU universities, cash prizes or other financial benefits. Winning teams may receive certificates, mentions or other recognition with no monetary value.
+      - q: Can I take part as a PhD student?
+        a: The Regulations allow for the possible admission of first- and second-year PhD students at the Gran Sasso Science Institute. At other universities, eligibility covers bachelor’s, master’s and single-cycle master’s degree programmes.
+      - q: Where will the results be published?
+        a: Results will be published on the institutional websites of the universities concerned. Publication will constitute official notification. The Regulations also set out the deadlines and procedures for comments and requests for review.
+  footer:
+    description: An inter-university educational and project-based challenge using generative artificial intelligence.
+    contact: Contact the organisers
+    contact_pending: Organisational contacts will be announced together with the final information.
+    updated: Updated on
+    top: Back to top
+    rights: All referenced trademarks belong to their respective owners.

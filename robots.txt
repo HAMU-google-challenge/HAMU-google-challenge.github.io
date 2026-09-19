@@ -1,0 +1,8 @@
+---
+layout: null
+---
+User-agent: *
+{% if site.data.event.preview %}Disallow: /
+{% else %}Allow: /
+{% if site.url != '' %}Sitemap: {{ '/sitemap.xml' | absolute_url }}{% endif %}
+{% endif %}
