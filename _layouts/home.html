@@ -35,6 +35,16 @@ layout: default
   <div class="section-intro two-column"><div><p class="eyebrow">{{ t.challenge.eyebrow }}</p><h2 id="challenge-title">{{ t.challenge.title }}<span class="accent-text">{{ t.challenge.title_accent }}</span></h2></div><p class="lead">{{ t.challenge.text }}</p></div>
   <div class="steps-grid">{% for step in t.challenge.steps %}<article class="step"><span class="step-number">0{{ forloop.index }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article>{% endfor %}</div>
 </section>
+<section id="formazione" class="section training-section" aria-labelledby="training-title">
+  <div class="container">
+    <div class="section-intro two-column"><div><p class="eyebrow">{{ t.training.eyebrow }}</p><h2 id="training-title">{{ t.training.title }}</h2></div><p class="lead">{{ t.training.intro }}</p></div>
+    <div class="masterclass-heading"><h3>{{ t.training.name }}</h3><ul class="training-facts"><li>{{ t.training.duration }}</li><li>{{ t.training.schedule }}</li><li>{{ t.training.format }}</li></ul></div>
+    <div class="training-topics">{% for topic in t.training.topics %}<article><span class="topic-index" aria-hidden="true">0{{ forloop.index }}</span><h3>{{ topic.title }}</h3><p>{{ topic.text }}</p></article>{% endfor %}</div>
+    <p class="training-method">{{ t.training.method }}</p>
+    <aside class="certificate-note" aria-labelledby="certificate-title"><div><p class="eyebrow">{{ t.training.certificate_label }}</p><h3 id="certificate-title">{{ t.training.certificate_title }}</h3></div><div><p>{{ t.training.certificate_text }}</p><p class="small-copy">{{ t.training.credits_note }}</p></div></aside>
+    <p class="section-footnote">{{ t.training.schedule_note }}</p>
+  </div>
+</section>
 <section id="programma" class="section programme-section" aria-labelledby="programme-title">
   <div class="container"><div class="section-intro"><p class="eyebrow">{{ t.programme.eyebrow }}</p><h2 id="programme-title">{{ t.programme.title }}</h2><p class="lead">{{ t.programme.intro }}</p></div>
     <ol class="timeline">
@@ -67,12 +77,24 @@ layout: default
 </div></section>
 <section id="atenei" class="section container" aria-labelledby="universities-title">
   <div class="section-intro"><p class="eyebrow">{{ t.universities.eyebrow }}</p><h2 id="universities-title">{{ t.universities.title }}</h2><p class="lead">{{ t.universities.intro }}</p></div>
-  <div class="universities-grid">{% for venue in e.venues %}<article class="university-region"><h3>{{ venue.region }}</h3><ul>{% assign universities = e.universities | where: 'region', venue.region %}{% for university in universities %}<li>{{ university.name }}</li>{% endfor %}</ul><div class="venue-note"><span>{{ t.universities.venue }}</span><strong>{% if venue.location != '' %}{{ venue.location }}{% else %}{{ t.universities.venue_tbc }}{% endif %}</strong></div></article>{% endfor %}</div>
+  <div class="universities-grid">
+    {% for venue in e.venues %}
+    <article class="university-region" aria-labelledby="region-{{ venue.region | slugify }}">
+      <div class="region-heading"><h3 id="region-{{ venue.region | slugify }}">{{ venue.region }}</h3><div class="venue-note"><span>{{ t.universities.venue }}</span><strong>{% if venue.location != '' %}{{ venue.location }}{% else %}{{ t.universities.venue_tbc }}{% endif %}</strong></div></div>
+      <ul class="university-cards">
+        {% assign universities = e.universities | where: 'region', venue.region %}
+        {% for university in universities %}
+        <li><a class="university-card" href="{{ university.url | escape }}"><span class="university-logo"><img src="{{ university.logo | relative_url }}" width="{{ university.logo_width }}" height="{{ university.logo_height }}" alt="" loading="lazy" decoding="async"></span><span class="university-name">{{ university.name }}</span><span class="university-website">{{ t.universities.website }}{% include arrow.html %}</span></a></li>
+        {% endfor %}
+      </ul>
+    </article>
+    {% endfor %}
+  </div>
   <p class="section-footnote">{{ t.universities.venue_note }}</p>
 </section>
 <section id="documenti" class="section documents-section" aria-labelledby="documents-title"><div class="container">
-  <div class="section-intro two-column"><div><p class="eyebrow">{{ t.documents.eyebrow }}</p><h2 id="documents-title">{{ t.documents.title }}</h2></div><div><p class="lead">{{ t.documents.intro }}</p>{% assign draft_documents = e.documents | where: 'status', 'draft' %}{% if draft_documents.size > 0 %}<p class="draft-note">{{ t.documents.draft_note }}</p>{% endif %}</div></div>
-  <div class="document-list">{% for document in e.documents %}<a class="document-link" href="{{ document.path | relative_url }}" download><span class="file-type">{{ document.format }}</span><span class="document-title">{{ document.title[page.lang] }}<span class="document-meta">{{ document.language }} <span aria-hidden="true">·</span> {% if document.status == 'draft' %}{{ t.documents.draft }}{% else %}{{ t.documents.approved }}{% endif %}</span></span><span class="document-download">{{ t.documents.download }}<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>{% endfor %}</div>
+  <div class="section-intro two-column"><div><p class="eyebrow">{{ t.documents.eyebrow }}</p><h2 id="documents-title">{{ t.documents.title }}</h2></div><div><p class="lead">{{ t.documents.intro }}</p>{% assign review_documents = e.documents | where: 'status', 'review' %}{% if review_documents.size > 0 %}<p class="draft-note">{{ t.documents.review_note }}</p>{% endif %}{% assign draft_documents = e.documents | where: 'status', 'draft' %}{% if draft_documents.size > 0 %}<p class="draft-note">{{ t.documents.draft_note }}</p>{% endif %}</div></div>
+  <div class="document-list">{% for document in e.documents %}<a class="document-link" href="{{ document.path | relative_url }}" download><span class="file-type">{{ document.format }}</span><span class="document-title">{{ document.title[page.lang] }}<span class="document-meta">{{ document.language }} <span aria-hidden="true">·</span> {% if document.status == 'approved' %}{{ t.documents.approved }}{% elsif document.status == 'review' %}{{ t.documents.review }}{% else %}{{ t.documents.draft }}{% endif %}</span></span><span class="document-download">{{ t.documents.download }}<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>{% endfor %}</div>
   {% if e.registration.privacy_url == '' %}<p class="section-footnote">{{ t.documents.privacy_pending }}</p>{% else %}<p><a class="text-link" href="{% if e.registration.privacy_url contains '://' %}{{ e.registration.privacy_url | escape }}{% else %}{{ e.registration.privacy_url | relative_url }}{% endif %}">{{ t.participation.privacy }}{% include arrow.html %}</a></p>{% endif %}
 </div></section>
 <section id="faq" class="section container faq-grid" aria-labelledby="faq-title"><div><p class="eyebrow">{{ t.faq.eyebrow }}</p><h2 id="faq-title">{{ t.faq.title }}</h2></div><div class="faq-list">{% for item in t.faq.items %}<details><summary>{{ item.q }}<span class="faq-icon" aria-hidden="true">+</span></summary><div><p>{{ item.a }}</p></div></details>{% endfor %}</div></section>

@@ -42,6 +42,7 @@
       <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-menu-toggle data-open-label="{{ t.menu }}" data-close-label="{{ t.close_menu }}" hidden><span>{{ t.menu }}</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
       <nav class="site-nav" id="main-nav" aria-label="{{ t.nav_label }}">
         <a href="{{ home_url | relative_url }}#challenge">{{ t.nav.challenge }}</a>
+        <a href="{{ home_url | relative_url }}#formazione">{{ t.nav.training }}</a>
         <a href="{{ home_url | relative_url }}#programma">{{ t.nav.programme }}</a>
         <a href="{{ home_url | relative_url }}#atenei">{{ t.nav.universities }}</a>
         <a href="{{ home_url | relative_url }}#documenti">{{ t.nav.documents }}</a>

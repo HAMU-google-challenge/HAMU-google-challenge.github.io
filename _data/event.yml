@@ -2,7 +2,7 @@
 # Lasciare preview: true fino al consolidamento dei contenuti ufficiali.
 preview: true
 edition: 2026
-updated: "2026-09-19"
+updated: "2026-09-21"
 preliminary_date: "2026-11-13"
 registration_deadline: "2026-11-03"
 team_announcement: "2026-11-06"
@@ -24,10 +24,26 @@ branding:
 venues:
   - region: Abruzzo
     location: ""
+    # Disponibilità candidate comunicate dall'utente, non ancora assegnazioni.
+    candidates:
+      - university: Università degli Studi “Gabriele d’Annunzio” Chieti-Pescara
+        training: Un'aula da 340 posti, eventualmente due aule vicine da 340 posti ciascuna.
+        challenge: "Aule da 340, 160, 140 e 45 postazioni, con prese elettriche e Wi-Fi (Eduroam); arredi con banchi, non tavoli. Disponibilità candidate dall’Agenda, assegnazione da confermare."
   - region: Marche
     location: ""
+    candidates:
+      - university: Università Politecnica delle Marche
+        training: Aula Magna da 700 posti oppure Aula Magna di Facoltà da 350 posti.
+        challenge: Aule polifunzionali con prese elettriche; capienza numerica da confermare.
+      - university: Università di Camerino
+        training: Auditorium da 600 posti, non attrezzato.
+        challenge: "900 posti complessivi: Informatica A 200+70; Informatica B 150; Sant'Agostino 120; CHIP 60+60+60; Giurisprudenza 90+90."
   - region: Umbria
     location: ""
+    candidates:
+      - university: Università degli Studi di Perugia
+        training: Polo di Ingegneria, massimo 300 persone, streaming possibile, fermata ferroviaria dedicata.
+        challenge: Da 300 a 400 posti.
 figures:
   universities: 10
   regions: 3
@@ -39,18 +55,26 @@ figures:
   work_hours: 4
   pitch_minutes: 7
 documents:
+  - id: regulations-pdf
+    title:
+      it: Regolamento italiano in PDF
+      en: Italian regulations in PDF
+    format: PDF
+    language: IT
+    status: review
+    path: /assets/documents/regolamento-it-pdf-ricevuto-21-09-2026.pdf
   - id: regulations-it
     title:
-      it: Regolamento in italiano
-      en: Italian regulations
+      it: Regolamento italiano modificabile
+      en: Editable Italian regulations
     format: DOCX
     language: IT
     status: draft
     path: /assets/documents/regolamento-it-bozza.docx
   - id: regulations-en
     title:
-      it: Regolamento in inglese
-      en: English regulations
+      it: Traduzione inglese del regolamento
+      en: English translation of the regulations
     format: DOCX
     language: EN
     status: draft
@@ -85,21 +109,61 @@ criteria:
 universities:
   - name: Università degli Studi dell’Aquila
     region: Abruzzo
+    url: https://www.univaq.it/
+    logo: /assets/images/universities/univaq.png
+    logo_width: 3508
+    logo_height: 2480
   - name: Università degli Studi di Teramo
     region: Abruzzo
+    url: https://www.unite.it/
+    logo: /assets/images/universities/unite.png
+    logo_width: 1000
+    logo_height: 476
   - name: Università degli Studi “Gabriele d’Annunzio” Chieti-Pescara
     region: Abruzzo
+    url: https://www.unich.it/
+    logo: /assets/images/universities/unich.png
+    logo_width: 283
+    logo_height: 283
   - name: Gran Sasso Science Institute
     region: Abruzzo
+    url: https://www.gssi.it/
+    logo: /assets/images/universities/gssi.png
+    logo_width: 280
+    logo_height: 103
   - name: Università di Macerata
     region: Marche
+    url: https://www.unimc.it/
+    logo: /assets/images/universities/unimc.png
+    logo_width: 407
+    logo_height: 73
   - name: Università Politecnica delle Marche
     region: Marche
+    url: https://www.univpm.it/
+    logo: /assets/images/universities/univpm.png
+    logo_width: 800
+    logo_height: 261
   - name: Università di Camerino
     region: Marche
+    url: https://www.unicam.it/
+    logo: /assets/images/universities/unicam.webp
+    logo_width: 255
+    logo_height: 315
   - name: Università degli Studi di Urbino Carlo Bo
     region: Marche
+    url: https://www.uniurb.it/
+    logo: /assets/images/universities/uniurb.png
+    logo_width: 303
+    logo_height: 162
   - name: Università degli Studi di Perugia
     region: Umbria
+    url: https://www.unipg.it/
+    logo: /assets/images/universities/unipg.png
+    logo_width: 1481
+    logo_height: 733
   - name: Università per Stranieri di Perugia
     region: Umbria
+    url: https://www.unistrapg.it/
+    logo: /assets/images/universities/unistrapg.webp
+    logo_width: 440
+    logo_height: 200

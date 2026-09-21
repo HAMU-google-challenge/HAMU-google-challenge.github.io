@@ -15,6 +15,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - VERIFICHE.md
+  - LOGHI.md
+  - FONTI.md
   - CHANGELOG.md
   - LICENSE-THEME.txt
   - scripts

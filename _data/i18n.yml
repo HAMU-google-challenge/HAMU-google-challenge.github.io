@@ -12,6 +12,7 @@ it:
   preview_note: Programma e documenti in corso di definizione.
   nav:
     challenge: La Challenge
+    training: Formazione
     programme: Programma
     universities: Atenei
     documents: Documenti
@@ -46,6 +47,27 @@ it:
         text: Il Comitato Organizzatore forma i gruppi valorizzando, ove possibile, la varietà delle competenze e della provenienza accademica. Ogni team sceglie uno dei temi proposti.
       - title: Presenta la vostra idea
         text: Elaborate una proposta originale, spiegate l’uso dell’IA e presentate il progetto alla Commissione. I team selezionati accedono alla finale dell’Aquila.
+  training:
+    eyebrow: LA MATTINA · FORMAZIONE
+    title: Prima comprendi. Poi progetta.
+    name: Gemini Academy for Student
+    intro: Una masterclass di Google for Education per orientarti nell’IA generativa e usarla con consapevolezza nello studio, nella ricerca e nella Challenge.
+    duration: Circa 2,5–3 ore
+    schedule: "Orario indicativo: 09:30–12:30"
+    format: In presenza nelle sedi regionali
+    method: La sessione include momenti interattivi, come la costruzione di un prompt insieme al docente. È una masterclass dimostrativa; il lavoro pratico in team si svolge durante la Challenge del pomeriggio.
+    topics:
+      - title: Usare l’IA responsabilmente
+        text: Integrità accademica, trasparenza e uso etico dell’IA, con una riflessione sul quadro europeo e sull’AI Act.
+      - title: Fare le domande giuste
+        text: Tecniche di prompting, valutazione critica delle risposte e integrazione dell’IA nei processi di studio e ricerca.
+      - title: Lavorare con le fonti
+        text: Gemini e NotebookLM per analizzare le fonti, sintetizzare i concetti e strutturare le idee da sviluppare nella sfida.
+    certificate_label: IL TUO PERCORSO
+    certificate_title: Un attestato di partecipazione.
+    certificate_text: È previsto un Certificate of Attendance Google for Education per tutte le studentesse e tutti gli studenti partecipanti, da inserire nel curriculum.
+    credits_note: L’eventuale riconoscimento di CFU dipende dal tuo corso di studio e non è automatico.
+    schedule_note: La mattina è dedicata alla formazione; dopo la pausa pranzo si passa alla Challenge. Gli orari definitivi saranno comunicati dall’organizzazione.
   programme:
     eyebrow: IL PERCORSO
     title: Segna le date.
@@ -55,10 +77,10 @@ it:
     teams: Team, temi e sedi
     teams_note: Entro questa data riceverai la composizione del tuo team, i temi e la sede assegnata.
     challenge: Formazione e Challenge
-    challenge_note: Attività formative e fase preliminare nelle tre sedi regionali. Programma orario da comunicare.
+    challenge_note: Masterclass Gemini Academy al mattino e fase preliminare nel pomeriggio, nelle tre sedi regionali. Orari definitivi da comunicare.
     final: Finale all’Aquila
-    final_date: Entro novembre 2026
-    final_note: I team ammessi si incontrano all’Università degli Studi dell’Aquila. Giorno, luogo e orari saranno comunicati.
+    final_date: Settimana del 23 novembre
+    final_note: Finestra prevista per la finale all’Università degli Studi dell’Aquila. Giorno, luogo e orari saranno confermati dall’organizzazione.
     hours: ore massime di lavoro
     minutes: minuti massimi di presentazione
     questions: La presentazione può essere seguita da domande della Commissione.
@@ -92,11 +114,14 @@ it:
     venue: Sede della fase preliminare
     venue_tbc: Sede in definizione
     venue_note: La sede assegnata può essere diversa dal tuo Ateneo e sarà comunicata nei termini previsti.
+    website: Sito dell’Ateneo
   documents:
     eyebrow: PRIMA DI PARTECIPARE
     title: I documenti della Challenge.
     intro: Requisiti, regole e informazioni per preparare la tua candidatura.
-    draft_note: Sono disponibili le bozze per consultazione. Le versioni definitive saranno pubblicate dopo il consolidamento del regolamento e dell’avviso.
+    draft_note: Le copie modificabili, la traduzione inglese, l’avviso e la locandina sono disponibili in bozza. Le versioni definitive saranno pubblicate dopo la loro validazione.
+    review_note: Il regolamento italiano in PDF è sottoposto all’approvazione degli Atenei. Gli aspetti relativi ai dati personali e alle riprese sono in verifica presso il DPO.
+    review: In approvazione
     draft: Bozza
     approved: Definitivo
     download: Scarica
@@ -105,6 +130,10 @@ it:
     eyebrow: HAI UN DUBBIO
     title: Domande frequenti.
     items:
+      - q: In quale lingua si svolge la formazione?
+        a: Le slide e i materiali ufficiali della Gemini Academy sono in inglese. La masterclass può svolgersi in italiano o in inglese, in base alla composizione dei partecipanti; la lingua sarà comunicata con il programma definitivo. L’uso dell’inglese per progetti e pitch è incoraggiato.
+      - q: Come mi preparo all’accesso agli strumenti?
+        a: Verifica con il tuo Ateneo la disponibilità dell’account istituzionale e l’abilitazione dei servizi previsti. Le istruzioni operative chiariranno l’accesso alle piattaforme e gli strumenti ammessi durante la prova. Per chi non ha ancora ricevuto le credenziali istituzionali, le modalità sono in corso di definizione.
       - q: Devo avere già un team?
         a: No. La candidatura è individuale. Il Comitato Organizzatore forma i team e ne comunica la composizione almeno una settimana prima della fase preliminare.
       - q: La Challenge si svolge nella mia università?
@@ -116,7 +145,11 @@ it:
       - q: Posso partecipare se sono un dottorando?
         a: Il regolamento prevede la possibile ammissione dei dottorandi del primo e secondo anno del Gran Sasso Science Institute. Per gli altri Atenei sono previsti i corsi di laurea, laurea magistrale e laurea magistrale a ciclo unico.
       - q: Dove saranno pubblicati i risultati?
-        a: Gli esiti saranno pubblicati sui siti istituzionali degli Atenei interessati; la pubblicazione avrà valore di comunicazione ufficiale. Il regolamento disciplina anche i termini e le modalità delle osservazioni e del riesame.
+        a: Gli esiti saranno pubblicati sui siti istituzionali degli Atenei interessati, con valore di comunicazione ufficiale. Le osservazioni devono essere presentate entro 24 ore e possono riguardare solo errori materiali manifesti, incongruenze aritmetiche o violazioni evidenti dei criteri. L’articolo 12 non ammette contestazioni sul merito valutativo o comparativo; l’articolo 18 mantiene ferme le tutele amministrative e giurisdizionali previste dall’ordinamento.
+      - q: A chi appartengono i progetti?
+        a: La partecipazione non trasferisce i diritti sui progetti agli Atenei o a Google. Il regolamento prevede una licenza gratuita, non esclusiva e non cedibile agli Atenei per cinque anni, per gli usi istituzionali e di comunicazione indicati nell’articolo 13, con attribuzione agli autori. Sono esclusi sfruttamento commerciale, sublicenze e trasferimento dei diritti a Google o ad altri soggetti. Le presentazioni possono essere pubbliche e la divulgazione può incidere sulla possibilità di ottenere brevetti o altri titoli di proprietà industriale.
+      - q: Il consenso alle riprese è obbligatorio per partecipare?
+        a: Il regolamento prevede una specifica informativa per fotografie e riprese audio e video. Quando l’uso dell’immagine richiede il consenso, questo è acquisito con una dichiarazione separata, specifica e revocabile. Il mancato consenso non pregiudica la partecipazione né la valutazione del progetto. L’informativa sarà resa disponibile dopo la verifica degli aspetti privacy.
   footer:
     description: Una Challenge interuniversitaria di formazione e progettazione con l’intelligenza artificiale generativa.
     contact: Contatta l’organizzazione
@@ -138,6 +171,7 @@ en:
   preview_note: Programme and documents are being finalised.
   nav:
     challenge: The Challenge
+    training: Training
     programme: Programme
     universities: Universities
     documents: Documents
@@ -172,6 +206,27 @@ en:
         text: The Organising Committee forms groups, taking account where possible of diversity in skills and academic backgrounds. Each team chooses one of the proposed themes.
       - title: Present your idea
         text: Develop an original proposal, explain how you used AI and present your project to the judging panel. Selected teams progress to the final in L’Aquila.
+  training:
+    eyebrow: MORNING · TRAINING
+    title: Understand first. Then create.
+    name: Gemini Academy for Student
+    intro: A Google for Education masterclass to help you navigate generative AI and use it thoughtfully in your studies, research and the Challenge.
+    duration: Around 2.5–3 hours
+    schedule: "Indicative time: 09:30–12:30"
+    format: In person at the regional venues
+    method: The session includes interactive moments, such as developing a prompt together with the instructor. It is a demonstration-based masterclass; hands-on teamwork takes place during the afternoon Challenge.
+    topics:
+      - title: Use AI responsibly
+        text: Academic integrity, transparency and ethical AI use, with a discussion of the European framework and the AI Act.
+      - title: Ask better questions
+        text: Prompting techniques, critical evaluation of responses and integrating AI into study and research processes.
+      - title: Work with sources
+        text: Gemini and NotebookLM for analysing sources, synthesising concepts and structuring the ideas you will develop in the challenge.
+    certificate_label: YOUR LEARNING JOURNEY
+    certificate_title: A certificate of attendance.
+    certificate_text: A Google for Education Certificate of Attendance is planned for all participating students, to include in their CV.
+    credits_note: Any recognition of academic credits (CFU) is subject to your degree programme’s decision and is not automatic.
+    schedule_note: Training takes place in the morning, followed by a lunch break and the Challenge. The organisers will announce the final timetable.
   programme:
     eyebrow: THE JOURNEY
     title: Save the dates.
@@ -181,10 +236,10 @@ en:
     teams: Teams, themes and venues
     teams_note: By this date, you will receive your team composition, the themes and your assigned venue.
     challenge: Training and Challenge
-    challenge_note: Training activities and the preliminary stage at three regional venues. The detailed schedule will be announced.
+    challenge_note: Gemini Academy masterclass in the morning and preliminary stage in the afternoon, at three regional venues. The final timetable will be announced.
     final: Final in L’Aquila
-    final_date: By the end of November 2026
-    final_note: Admitted teams meet at the University of L’Aquila. The day, exact location and schedule will be communicated.
+    final_date: Week of 23 November
+    final_note: Planned window for the final at the University of L’Aquila. The organisers will confirm the day, exact location and timetable.
     hours: hours maximum to develop your proposal
     minutes: minutes maximum to present
     questions: The judging panel may ask questions after the presentation.
@@ -218,11 +273,14 @@ en:
     venue: Preliminary-stage venue
     venue_tbc: Venue to be confirmed
     venue_note: Your assigned venue may differ from your home university and will be announced within the stated timeframe.
+    website: University website
   documents:
     eyebrow: BEFORE YOU APPLY
     title: Challenge documents.
     intro: Eligibility, rules and information to help you prepare your application.
-    draft_note: Draft documents are available for consultation. Final versions will be published once the Regulations and call for applications are consolidated.
+    draft_note: Editable copies, the English translation, the call for applications and the poster are available as drafts. Final versions will be published after validation.
+    review_note: The Italian regulations PDF is awaiting approval by the universities. Personal data and recording provisions are being reviewed by the Data Protection Officer.
+    review: Awaiting approval
     draft: Draft
     approved: Final
     download: Download
@@ -231,6 +289,10 @@ en:
     eyebrow: NEED TO KNOW
     title: Frequently asked questions.
     items:
+      - q: What language will the training be delivered in?
+        a: Official Gemini Academy slides and materials are in English. The masterclass may be delivered in Italian or English, depending on the participants; the language will be announced with the final programme. Using English for projects and pitches is encouraged.
+      - q: How should I prepare to access the tools?
+        a: Check with your university that your institutional account is available and that the relevant services are enabled. The operational instructions will explain platform access and which tools may be used during the challenge. Arrangements for students who have not yet received institutional credentials are still being defined.
       - q: Do I need to have a team already?
         a: No. Applications are individual. The Organising Committee forms teams and announces their composition at least one week before the preliminary stage.
       - q: Will I take part at my own university?
@@ -242,7 +304,11 @@ en:
       - q: Can I take part as a PhD student?
         a: The Regulations allow for the possible admission of first- and second-year PhD students at the Gran Sasso Science Institute. At other universities, eligibility covers bachelor’s, master’s and single-cycle master’s degree programmes.
       - q: Where will the results be published?
-        a: Results will be published on the institutional websites of the universities concerned. Publication will constitute official notification. The Regulations also set out the deadlines and procedures for comments and requests for review.
+        a: Results will be published on the institutional websites of the universities concerned, constituting official notification. Comments must be submitted within 24 hours and may concern only manifest clerical errors, arithmetic inconsistencies or evident breaches of the criteria. Article 12 excludes challenges to the merits of the assessment or comparison; Article 18 preserves the administrative and judicial remedies provided by law.
+      - q: Who owns the projects?
+        a: Participation does not transfer project rights to the universities or Google. The Regulations grant the universities a free, non-exclusive and non-transferable licence for five years, for the institutional and communication purposes specified in Article 13, with attribution to the authors. Commercial exploitation, sublicensing and transfer of rights to Google or others are excluded. Presentations may be public, and disclosure may affect the ability to obtain patents or other industrial property protection.
+      - q: Must I consent to recordings in order to take part?
+        a: The Regulations provide for a specific notice covering photographs and audio and video recordings. Where consent is required for use of a person’s image, it is obtained through a separate, specific and revocable declaration. Refusal does not affect participation or assessment of the project. The notice will be made available following the privacy review.
   footer:
     description: An inter-university educational and project-based challenge using generative artificial intelligence.
     contact: Contact the organisers

@@ -102,6 +102,21 @@ p { margin-bottom: 1.2rem; }
 .step-number { display: block; color: var(--teal); font-size: .85rem; font-weight: 600; margin-bottom: 2.2rem; }
 .step h3 { margin-bottom: 1rem; }
 .step p { font-size: .95rem; color: var(--ink-soft); margin-bottom: 0; }
+.training-section { padding-top: 0; }
+.masterclass-heading { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; border-top: 2px solid var(--teal); padding-block: 1.6rem; }
+.masterclass-heading > h3 { font-size: 1.45rem; margin: 0; max-width: 19rem; }
+.training-facts { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .5rem 1.3rem; max-width: 36rem; color: var(--ink-soft); font-size: .82rem; }
+.training-topics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.training-topics article { padding: 1.8rem; background: var(--wash); border-radius: 6px; }
+.topic-index { display: block; color: var(--teal); font-size: .8rem; font-weight: 600; margin-bottom: 1.5rem; }
+.training-topics h3 { font-size: 1.22rem; line-height: 1.3; }
+.training-topics p { font-size: .94rem; color: var(--ink-soft); margin: 0; }
+.training-method { font-size: .95rem; color: var(--ink-soft); margin: 1.6rem 0 2rem; max-width: 62rem; }
+.certificate-note { display: grid; grid-template-columns: 1fr 1.5fr; gap: 2rem; border: 1px solid var(--line); border-left: 4px solid var(--teal); border-radius: 4px; padding: 1.8rem 2rem; align-items: center; }
+.certificate-note .eyebrow { font-size: .7rem; margin-bottom: .7rem; }
+.certificate-note h3 { margin: 0; font-size: 1.5rem; }
+.certificate-note p { margin-bottom: .7rem; font-size: .95rem; }
+.certificate-note .small-copy { margin: 0; font-size: .82rem; color: var(--ink-soft); }
 .programme-section { background: var(--wash); }
 .timeline { list-style: none; padding: 0; margin: 0; }
 .timeline li { display: grid; grid-template-columns: 1fr 1.65fr; gap: 3rem; padding: 1.75rem 1.9rem; border-top: 1px solid #cbd9e0; }
@@ -142,15 +157,20 @@ p { margin-bottom: 1.2rem; }
 .criteria-list small { font-size: .72rem; font-weight: 400; color: #c6d8e2; }
 .criterion-bar { background: #305268; height: 4px; width: 100%; }
 .criterion-bar span { display: block; height: 100%; background: var(--lime); }
-.universities-grid { display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid var(--line); }
-.university-region { display: flex; flex-direction: column; padding: 2rem; border-right: 1px solid var(--line); }
-.university-region:last-child { border-right: 0; }
-.university-region h3 { font-size: 1.7rem; font-weight: 500; margin-bottom: 1.75rem; }
-.university-region h3::before { content: ""; display: block; height: 3px; width: 2rem; background: var(--teal); margin-bottom: 1.1rem; }
-.university-region ul { padding: 0; margin: 0 0 2rem; list-style: none; }
-.university-region li { font-size: .92rem; line-height: 1.6; margin-bottom: 1rem; }
-.university-region li:last-child { margin-bottom: 0; }
-.venue-note { margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.universities-grid { display: grid; gap: 2.8rem; }
+.university-region { min-width: 0; }
+.region-heading { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-bottom: 1.25rem; }
+.region-heading h3 { font-size: 1.65rem; font-weight: 500; margin: 0; padding-left: 1rem; border-left: 3px solid var(--teal); }
+.university-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; padding: 0; margin: 0; list-style: none; }
+.university-cards li { min-width: 0; }
+.university-card { display: flex; flex-direction: column; height: 100%; padding: 1.4rem; background: white; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; transition: border-color .18s, box-shadow .18s; }
+.university-card:hover { border-color: var(--teal); box-shadow: 0 5px 18px -12px #092f4770; }
+.university-logo { height: 7rem; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.3rem; }
+.university-logo img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.university-name { display: block; font-size: .9rem; font-weight: 550; line-height: 1.5; }
+.university-website { display: flex; align-items: center; justify-content: space-between; gap: .5rem; font-size: .72rem; color: var(--teal); padding-top: 1.1rem; margin-top: auto; }
+.university-website svg { width: 1rem; height: 1rem; }
+.venue-note { text-align: right; }
 .venue-note span { font-size: .72rem; display: block; color: var(--ink-soft); }
 .venue-note strong { font-size: .86rem; font-weight: 550; }
 .section-footnote { font-size: .86rem; color: var(--ink-soft); margin: 1.5rem 0 0; }
@@ -217,7 +237,9 @@ p { margin-bottom: 1.2rem; }
   .event-day { font-size: 9rem; }
   .two-column, .participation-grid, .evaluation-grid, .faq-grid { gap: 3rem; }
   .steps-grid { gap: 2rem; }
-  .university-region { padding: 1.4rem; }
+  .university-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .masterclass-heading { align-items: flex-start; }
+  .training-facts { flex-direction: column; gap: .3rem; }
   .stats-strip > div { gap: .65rem; }
   .stats-strip strong { font-size: 2.15rem; }
   .section { padding-block: 4.5rem; }
@@ -246,7 +268,7 @@ p { margin-bottom: 1.2rem; }
   .collaboration { margin-top: 1.6rem; }
   .event-panel { max-width: 36rem; width: 100%; }
   .event-panel-top { padding-top: 1.3rem; }
-  .event-date { display: flex; flex-direction: row; gap: 1.2rem; align-items: baseline; }
+  .event-date { display: flex; flex-direction: row; flex-wrap: wrap; gap: 0 1.2rem; align-items: baseline; }
   .event-day { font-size: 7.8rem; line-height: 1; }
   .event-month { padding: 0; font-size: 1.5rem; }
   .event-venue { margin-top: 1.3rem; }
@@ -279,11 +301,20 @@ p { margin-bottom: 1.2rem; }
   .registration-date { font-size: 1.8rem; }
   .criteria-list { gap: 1.2rem; }
   .criteria-list li > div:first-child { font-size: .88rem; gap: 1rem; }
-  .universities-grid { grid-template-columns: 1fr; }
-  .university-region { padding: 1.6rem; border-right: 0; border-bottom: 1px solid var(--line); }
-  .university-region:last-child { border-bottom: 0; }
-  .university-region h3 { margin-bottom: 1.5rem; }
-  .university-region ul { margin-bottom: 1.5rem; }
+  .training-section { padding-top: 0; }
+  .masterclass-heading { flex-direction: column; gap: 1rem; }
+  .masterclass-heading > h3 { max-width: none; }
+  .training-topics { grid-template-columns: 1fr; }
+  .training-topics article { padding: 1.5rem; }
+  .topic-index { margin-bottom: 1rem; }
+  .certificate-note { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem; }
+  .university-cards { gap: .75rem; }
+  .university-card { padding: 1rem; }
+  .university-logo { height: 6rem; }
+  .university-name { font-size: .83rem; }
+  .region-heading { align-items: flex-start; }
+  .region-heading h3 { font-size: 1.4rem; }
+  .venue-note { max-width: 11rem; }
   .document-link { gap: 1rem; padding-block: 1.3rem; }
   .document-title { font-size: 1rem; }
   .document-download { font-size: 0; gap: 0; }
@@ -296,6 +327,11 @@ p { margin-bottom: 1.2rem; }
   .footer-contact { align-items: flex-start; }
   .footer-contact p { text-align: left; }
   .footer-bottom { flex-direction: column; gap: .5rem; font-size: .7rem; }
+}
+@media (max-width: 24rem) {
+  .university-cards { grid-template-columns: 1fr; }
+  .region-heading { flex-direction: column; gap: .8rem; }
+  .venue-note { text-align: left; max-width: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -310,5 +346,5 @@ p { margin-bottom: 1.2rem; }
   .evaluation-section p:not(.eyebrow), .timeline-featured .timeline-copy p { color: #333; }
   .event-day, .eyebrow, .accent-text { color: #000; }
   h2, h3 { break-after: avoid; }
-  .document-link { break-inside: avoid; }
+  .document-link, .university-card, .training-topics article { break-inside: avoid; }
 }
