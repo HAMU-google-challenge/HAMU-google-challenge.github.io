@@ -2,9 +2,9 @@
 
 Sito Jekyll bilingue, in italiano e inglese, predisposto per GitHub Pages. Tema originale per un evento universitario: blu profondo, verde petrolio, accenti lime, calendario in evidenza, masterclass Gemini Academy, loghi dei dieci Atenei, documenti scaricabili e FAQ. Nessun tema remoto, font esterno, servizio di analytics o plugin Jekyll aggiuntivo.
 
-I contenuti sono aggiornati anche al file «Agenda e Note.md» fornito dall’utente, in particolare al resoconto del 14 settembre. La riunione del 24 settembre è ancora un’agenda futura: non è trattata come approvazione già avvenuta. Le provenienze e le scelte editoriali sono in `FONTI.md`; l’inventario dei loghi è in `LOGHI.md`.
+Aggiornamento del 1 ottobre 2026: i contenuti incorporano le decisioni del 24 settembre contenute nel nuovo «Agenda e Note.pdf». I tempi di formazione dei team sono ora da confermare per la divergenza tra il nuovo PDF e le note; Chieti-Pescara è confermata come Ateneo ospitante; la Politecnica delle Marche resta la sede preferita da confermare in base alle iscrizioni. È collegato il nuovo modulo, con stato in preparazione. Le provenienze e le scelte editoriali sono in `FONTI.md`; l’inventario dei loghi è in `LOGHI.md`.
 
-I contenuti sono allineati al PDF «Regolamento Finale Google Challenge HAMU 2.pdf» ricevuto il 21 settembre 2026. Il PDF italiano, incluso senza modifiche, è indicato come «In approvazione» perché la mail di accompagnamento richiede ancora il consenso degli Atenei e segnala la verifica del DPO. Copie modificabili, traduzione inglese, avviso e locandina restano bozze. La realizzazione tecnica del sito non costituisce approvazione del regolamento o del branding.
+Il riferimento regolamentare è il PDF «HAMU - Regolamento Unificato.docx.pdf» ricevuto il 1 ottobre 2026 (14 pagine). Il download punta alla nuova copia, conservata senza modifiche. L’articolo 3.3 porta il termine massimo della finale alla fine dell’anno e l’articolo 3.6 esplicita l’esclusione anche a posteriori per mancanza dei requisiti; il titolo dell’articolo 12 nel sommario è corretto. Le copie Word IT/EN e l’avviso recepiscono le due modifiche dell’articolo 3. Gli articoli 5.1 e 7.2 prevedono ancora team comunicati in anticipo, mentre l’articolo 6.3 collega a quel momento la comunicazione dei temi: devono essere coordinati con la decisione del 24 settembre. Un avviso visibile accanto ai download esplicita la differenza (`documents_need_alignment: true`). Il sito non assegna una nuova scadenza ai temi. Il PDF italiano, incluso senza modifiche, è indicato come «In approvazione» in attesa della conferma delle approvazioni e delle informative: il nuovo invio non contiene un aggiornamento sullo stato già segnalato dalla mail precedente. Copie modificabili, traduzione inglese, avviso e locandina restano bozze. La realizzazione tecnica del sito non costituisce approvazione del regolamento o del branding.
 
 ## Pubblicazione su GitHub Pages
 
@@ -44,25 +44,29 @@ I documenti usano `status: review` per il PDF in approvazione, `draft` per le bo
 
 `registration.state` ammette tre valori:
 
-- `planned`: candidature in preparazione, con rimando ai documenti.
+- `planned`: candidature in preparazione. Con un URL mostra il modulo come consultabile, con i completamenti ancora necessari; senza URL rimanda ai documenti.
 - `open`: mostra il pulsante di candidatura solo se sono presenti sia `registration.url` sia `registration.privacy_url`.
 - `closed`: mostra la chiusura delle candidature e un rimando al programma.
 
-`registration.url` deve essere l’URL completo HTTPS del modulo approvato. `privacy_url` può essere un URL HTTPS o un percorso locale, per esempio `/assets/documents/informativa-privacy.pdf`. La chiusura è editoriale: allo scadere del termine imposta `state: closed` e chiudi anche il modulo presso il servizio che lo ospita.
+`registration.url` contiene l’URL completo HTTPS del modulo indicato dall’organizzazione; lo stato distingue la consultazione dalla candidatura aperta. `privacy_url` può essere un URL HTTPS o un percorso locale, per esempio `/assets/documents/informativa-privacy.pdf`. La chiusura è editoriale: allo scadere del termine imposta `state: closed` e chiudi anche il modulo presso il servizio che lo ospita.
 
-L’Agenda contiene un link a una bozza del modulo: è registrato in `FONTI.md`, escluso dal sito compilato. Non è stato attivato come modulo definitivo.
+Le decisioni del 24 settembre indicano il nuovo [modulo Google Forms](https://forms.gle/MFsfjNUiUNsmnSiy8), che sostituisce la bozza precedente. Verificato nuovamente in sola lettura il 1 ottobre: è raggiungibile e mostra il pulsante di invio, ma il riferimento al regolamento contiene ancora `@@@@@`; compare una dichiarazione sull’uso dei dati, senza un testo completo o un link all’informativa. Sul sito rimane `state: planned`, con un collegamento esplicitamente indicato come modulo in preparazione. Questo stato non impedisce tecnicamente gli invii sul servizio Google Forms, che va gestito dal proprietario. Nessun modulo è stato compilato o inviato.
 
 Il sito non raccoglie candidature e non contiene un backend. Il modulo esterno gestisce l’invio dei dati.
 
 ### Dati ancora da completare
 
-Restano da consolidare, secondo i materiali disponibili: regolamento e avviso definitivi, ora della scadenza, modulo e informativa privacy, sedi regionali, giorno della finale, recapito organizzativo e toolkit Google for Education. Questi campi sono già predisposti; il sito presenta messaggi espliciti dove manca un dato.
+Restano da consolidare, secondo i materiali disponibili: regolamento e avviso aggiornati e definitivi, tempi di comunicazione dei temi, ora della scadenza, completamento del modulo e informativa privacy, altre sedi e indirizzi delle aule, giorno della finale, recapito organizzativo e toolkit Google for Education. Questi campi sono già predisposti; il sito presenta messaggi espliciti dove manca un dato.
 
-Le disponibilità di Politecnica delle Marche, Perugia, Camerino e Chieti-Pescara sono registrate sotto `venues[].candidates`, con capienze e dotazioni comunicate dall’utente. Sono opzioni organizzative: le pagine mostrano solo `venues[].location`, ancora vuoto. Dopo l’assegnazione del Comitato, compila quest’ultimo campo con sede e indirizzo confermati. Se il repository è pubblico, anche questi dati nei sorgenti sono consultabili, pur non comparendo nelle pagine compilate.
+Le disponibilità di Politecnica delle Marche, Perugia, Camerino e Chieti-Pescara sono registrate sotto `venues[].candidates`, con capienze e dotazioni comunicate dall’utente. Le pagine mostrano `location`, `status` e le note bilingui: `confirmed` per Chieti-Pescara, `preferred` per la Politecnica, `pending` per l’Umbria. L’Ateneo confermato non implica che aula, campus o indirizzo siano già stati comunicati. Aggiorna stato e note solo in base alle decisioni successive; i dati candidate non compaiono nelle pagine. Se il repository è pubblico, anche questi dati nei sorgenti sono consultabili, pur non comparendo nelle pagine compilate.
 
-Le date inserite sono il 3 novembre 2026 per le candidature, il 6 novembre per team/temi/sedi e il 13 novembre per la preliminare. Per la finale è indicata L’Aquila nella settimana del 23 novembre come finestra prevista, con giorno da confermare. La masterclass è indicata con durata di circa 2,5–3 ore e orario indicativo 09:30–12:30; attestato previsto per tutti, CFU non automatici e lingua da comunicare. I testi relativi al programma e alle FAQ vanno aggiornati in entrambe le lingue quando cambiano le decisioni organizzative.
+Le date inserite sono il 3 novembre 2026 per le candidature, il 6 novembre per la comunicazione della sede assegnata e il 13 novembre per la preliminare. Per la finale è indicata L’Aquila nella settimana del 23 novembre come finestra prevista, con giorno da confermare; il nuovo regolamento consente lo svolgimento entro fine 2026. La masterclass è indicata con durata di circa 2,5–3 ore e orario indicativo 09:30–12:30; attestato previsto per tutti, CFU non automatici e lingua da comunicare. I testi relativi al programma e alle FAQ vanno aggiornati in entrambe le lingue quando cambiano le decisioni organizzative.
 
 I campi `branding.hamu_logo` e `branding.google_education_lockup` accettano percorsi locali. Finché sono vuoti, vengono utilizzate scritte tipografiche: non sono inclusi loghi Google ricostruiti.
+
+## Aggiornamenti dalle riunioni
+
+A ogni nuova versione delle note, aggiungi la fonte e la data della decisione in `FONTI.md`, distinguendo le decisioni dagli argomenti in agenda. Aggiorna i dati comuni e i testi in entrambe le lingue, incluse FAQ e calendario. Se una decisione contraddice un documento scaricabile, rendi visibile la differenza e registra il punto da allineare; rimuovi `documents_need_alignment` solo dopo avere sostituito tutti i materiali interessati. Aggiorna la data editoriale, compila, controlla i collegamenti e rigenera l’anteprima. Non è configurato alcun aggiornamento automatico del sito dal PDF.
 
 ## Avvio locale
 

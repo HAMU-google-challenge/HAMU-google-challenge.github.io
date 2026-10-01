@@ -44,7 +44,7 @@ it:
       - title: Impara e sperimenta
         text: La formazione introduce un uso critico dell’IA generativa e strumenti come Gemini e NotebookLM. Le istruzioni operative indicheranno gli strumenti consentiti per la prova.
       - title: Lavora con il tuo team
-        text: Il Comitato Organizzatore forma i gruppi valorizzando, ove possibile, la varietà delle competenze e della provenienza accademica. Ogni team sceglie uno dei temi proposti.
+        text: Il Comitato Organizzatore forma i gruppi. Ogni team sceglie uno dei temi proposti; modalità e tempi di formazione dei team saranno confermati dall’organizzazione.
       - title: Presenta la vostra idea
         text: Elaborate una proposta originale, spiegate l’uso dell’IA e presentate il progetto alla Commissione. I team selezionati accedono alla finale dell’Aquila.
   training:
@@ -74,13 +74,13 @@ it:
     intro: Dalla candidatura alla finale, ecco le tappe della Challenge.
     deadline: Chiusura candidature
     deadline_note: Ora di scadenza da comunicare.
-    teams: Team, temi e sedi
-    teams_note: Entro questa data riceverai la composizione del tuo team, i temi e la sede assegnata.
+    venue: Comunicazione della sede
+    venue_note: Entro questa data riceverai la sede assegnata. I tempi di formazione dei team e di comunicazione dei temi sono da confermare.
     challenge: Formazione e Challenge
     challenge_note: Masterclass Gemini Academy al mattino e fase preliminare nel pomeriggio, nelle tre sedi regionali. Orari definitivi da comunicare.
     final: Finale all’Aquila
     final_date: Settimana del 23 novembre
-    final_note: Finestra prevista per la finale all’Università degli Studi dell’Aquila. Giorno, luogo e orari saranno confermati dall’organizzazione.
+    final_note: Finestra indicativa prevista nelle note organizzative per la finale all’Università degli Studi dell’Aquila. Il nuovo regolamento consente lo svolgimento entro la fine del 2026; giorno, luogo e orari saranno confermati.
     hours: ore massime di lavoro
     minutes: minuti massimi di presentazione
     questions: La presentazione può essere seguita da domande della Commissione.
@@ -89,11 +89,13 @@ it:
     title: Porta le tue competenze.
     accent: Il team lo formiamo noi.
     text: La candidatura è individuale ed è rivolta agli studenti regolarmente iscritti a laurea, laurea magistrale o laurea magistrale a ciclo unico presso un Ateneo aderente, in regola con il pagamento delle tasse alla scadenza.
-    gssi: Per il Gran Sasso Science Institute è possibile l’ammissione dei dottorandi del primo e secondo anno. L’iscrizione deve permanere fino alla conclusione della finale.
+    gssi: Per il Gran Sasso Science Institute è possibile l’ammissione dei dottorandi del primo e secondo anno. L’iscrizione deve permanere fino alla conclusione della finale, da svolgersi entro la fine del 2026. Il Comitato Organizzatore può escludere, anche a posteriori, chi non rispetta i requisiti.
     full_rules: Consulta i requisiti completi nel regolamento
     deadline: Candidature entro il
     planned: Iscrizioni in preparazione
     planned_note: Il modulo di candidatura e l’informativa privacy saranno disponibili qui. Nel frattempo puoi consultare i documenti della Challenge.
+    form_pending_note: Il modulo è consultabile. Il riferimento al regolamento e l’informativa privacy devono ancora essere completati prima dell’apertura delle candidature.
+    form_preview: Consulta il modulo in preparazione
     open: Iscriviti alla Challenge
     open_note: Prima di inviare la candidatura, leggi il regolamento e l’informativa sul trattamento dei dati personali.
     closed: Iscrizioni chiuse
@@ -113,6 +115,8 @@ it:
     intro: Una rete universitaria tra Abruzzo, Marche e Umbria. Le prove si svolgono in tre sedi regionali assegnate dal Comitato Organizzatore.
     venue: Sede della fase preliminare
     venue_tbc: Sede in definizione
+    venue_confirmed: Ateneo ospitante confermato
+    venue_preferred: Sede preferita · da confermare
     venue_note: La sede assegnata può essere diversa dal tuo Ateneo e sarà comunicata nei termini previsti.
     website: Sito dell’Ateneo
   documents:
@@ -120,7 +124,8 @@ it:
     title: I documenti della Challenge.
     intro: Requisiti, regole e informazioni per preparare la tua candidatura.
     draft_note: Le copie modificabili, la traduzione inglese, l’avviso e la locandina sono disponibili in bozza. Le versioni definitive saranno pubblicate dopo la loro validazione.
-    review_note: Il regolamento italiano in PDF è sottoposto all’approvazione degli Atenei. Gli aspetti relativi ai dati personali e alle riprese sono in verifica presso il DPO.
+    review_note: È disponibile il regolamento unificato ricevuto il 1 ottobre 2026. La conferma delle approvazioni e delle informative sul trattamento dei dati e sulle riprese è ancora attesa.
+    alignment_note: I tempi di formazione dei team sono da confermare. Il regolamento ricevuto il 1 ottobre prevede la comunicazione almeno una settimana prima della prova, mentre le note del 24 settembre prevedono gruppi formati automaticamente all’arrivo. È necessario un chiarimento dell’organizzazione anche sui tempi di comunicazione dei temi.
     review: In approvazione
     draft: Bozza
     approved: Definitivo
@@ -135,9 +140,9 @@ it:
       - q: Come mi preparo all’accesso agli strumenti?
         a: Verifica con il tuo Ateneo la disponibilità dell’account istituzionale e l’abilitazione dei servizi previsti. Le istruzioni operative chiariranno l’accesso alle piattaforme e gli strumenti ammessi durante la prova. Per chi non ha ancora ricevuto le credenziali istituzionali, le modalità sono in corso di definizione.
       - q: Devo avere già un team?
-        a: No. La candidatura è individuale. Il Comitato Organizzatore forma i team e ne comunica la composizione almeno una settimana prima della fase preliminare.
+        a: "No. La candidatura è individuale e i team, da 5 a 7 partecipanti, sono formati dall’organizzazione. I tempi sono da confermare: il regolamento ricevuto il 1 ottobre prevede una comunicazione anticipata, mentre le note del 24 settembre prevedono una procedura automatica all’arrivo."
       - q: La Challenge si svolge nella mia università?
-        a: Non necessariamente. La sede è assegnata dal Comitato e può essere diversa dal tuo Ateneo. Le tre sedi regionali saranno comunicate almeno sette giorni prima della prova.
+        a: Non necessariamente. Il Comitato assegna la sede, che può essere diversa dal tuo Ateneo, almeno sette giorni prima della prova. È confermato l’Ateneo di Chieti-Pescara; nelle Marche la Politecnica è la sede preferita, da confermare in base alle iscrizioni. Aule e indirizzi saranno comunicati dall’organizzazione.
       - q: Quali strumenti di intelligenza artificiale posso usare?
         a: Solo quelli indicati dall’organizzazione. Altre applicazioni, fonti o strumenti sono consentiti esclusivamente se previsti nelle istruzioni operative. Devi dichiarare come usi l’IA, verificare i contenuti generati e rispettare i diritti di terzi e le indicazioni sui dati personali.
       - q: Sono previsti rimborsi o premi in denaro?
@@ -203,7 +208,7 @@ en:
       - title: Learn and experiment
         text: Training introduces a critical approach to generative AI and tools such as Gemini and NotebookLM. The operational instructions will specify which tools may be used during the challenge.
       - title: Work with your team
-        text: The Organising Committee forms groups, taking account where possible of diversity in skills and academic backgrounds. Each team chooses one of the proposed themes.
+        text: The Organising Committee forms the teams. Each team chooses one of the proposed themes; the organisers will confirm how and when teams are formed.
       - title: Present your idea
         text: Develop an original proposal, explain how you used AI and present your project to the judging panel. Selected teams progress to the final in L’Aquila.
   training:
@@ -233,13 +238,13 @@ en:
     intro: From your application to the final, here are the stages of the Challenge.
     deadline: Application deadline
     deadline_note: Closing time to be announced.
-    teams: Teams, themes and venues
-    teams_note: By this date, you will receive your team composition, the themes and your assigned venue.
+    venue: Venue announcement
+    venue_note: By this date, you will receive your assigned venue. The timing of team formation and theme announcements is to be confirmed.
     challenge: Training and Challenge
     challenge_note: Gemini Academy masterclass in the morning and preliminary stage in the afternoon, at three regional venues. The final timetable will be announced.
     final: Final in L’Aquila
     final_date: Week of 23 November
-    final_note: Planned window for the final at the University of L’Aquila. The organisers will confirm the day, exact location and timetable.
+    final_note: Indicative window in the organisers’ meeting notes for the final at the University of L’Aquila. The new Regulations allow the final to take place by the end of 2026; the day, exact location and timetable will be confirmed.
     hours: hours maximum to develop your proposal
     minutes: minutes maximum to present
     questions: The judging panel may ask questions after the presentation.
@@ -248,11 +253,13 @@ en:
     title: Bring your skills.
     accent: We’ll put the team together.
     text: Apply individually. The Challenge is open to students duly enrolled in a bachelor’s, master’s or single-cycle master’s degree at a participating university, with tuition fees up to date at the application deadline.
-    gssi: The Gran Sasso Science Institute may also admit first- and second-year PhD students. You must remain enrolled until the end of the final stage.
+    gssi: The Gran Sasso Science Institute may also admit first- and second-year PhD students. You must remain enrolled until the end of the final stage, to be held by the end of 2026. The Organising Committee may exclude anyone who does not meet the requirements, including retrospectively.
     full_rules: Read the full eligibility requirements
     deadline: Apply by
     planned: Applications opening soon
     planned_note: The application form and privacy notice will be available here. In the meantime, you can read the Challenge documents.
+    form_pending_note: The form is available to view. The reference to the Regulations and the privacy notice still need to be completed before applications open.
+    form_preview: View the form being prepared
     open: Apply to the Challenge
     open_note: Before submitting your application, read the Regulations and the personal data processing notice.
     closed: Applications closed
@@ -272,6 +279,8 @@ en:
     intro: A university network across Abruzzo, Marche and Umbria. The preliminary stage takes place at three regional venues assigned by the Organising Committee.
     venue: Preliminary-stage venue
     venue_tbc: Venue to be confirmed
+    venue_confirmed: Host university confirmed
+    venue_preferred: Preferred venue · to be confirmed
     venue_note: Your assigned venue may differ from your home university and will be announced within the stated timeframe.
     website: University website
   documents:
@@ -279,7 +288,8 @@ en:
     title: Challenge documents.
     intro: Eligibility, rules and information to help you prepare your application.
     draft_note: Editable copies, the English translation, the call for applications and the poster are available as drafts. Final versions will be published after validation.
-    review_note: The Italian regulations PDF is awaiting approval by the universities. Personal data and recording provisions are being reviewed by the Data Protection Officer.
+    review_note: The unified Regulations received on 1 October 2026 are available. Confirmation of approvals and the notices covering personal data and recordings is still awaited.
+    alignment_note: The timing of team formation is to be confirmed. The Regulations received on 1 October require team composition to be announced at least one week before the challenge, whereas the notes of 24 September provide for teams to be formed automatically on arrival. The organisers need to clarify this point and when themes will be announced.
     review: Awaiting approval
     draft: Draft
     approved: Final
@@ -294,9 +304,9 @@ en:
       - q: How should I prepare to access the tools?
         a: Check with your university that your institutional account is available and that the relevant services are enabled. The operational instructions will explain platform access and which tools may be used during the challenge. Arrangements for students who have not yet received institutional credentials are still being defined.
       - q: Do I need to have a team already?
-        a: No. Applications are individual. The Organising Committee forms teams and announces their composition at least one week before the preliminary stage.
+        a: "No. Applications are individual and the organisers form teams of 5 to 7 participants. The timing is to be confirmed: the Regulations received on 1 October provide for advance announcements, whereas the notes of 24 September specify an automatic procedure on arrival."
       - q: Will I take part at my own university?
-        a: Not necessarily. The Committee assigns your venue, which may differ from your home university. The three regional venues will be announced at least seven days before the challenge.
+        a: Not necessarily. The Committee assigns your venue, which may differ from your home university, at least seven days before the challenge. The University of Chieti-Pescara is confirmed; in Marche, Università Politecnica delle Marche is the preferred venue, subject to confirmation based on registrations. Rooms and addresses will be announced by the organisers.
       - q: Which artificial intelligence tools can I use?
         a: Only those specified by the organisers. Additional applications, sources or tools are permitted only if expressly allowed by the operational instructions. You must declare your use of AI, verify generated content and respect third-party rights and personal data instructions.
       - q: Are expenses reimbursed or cash prizes offered?

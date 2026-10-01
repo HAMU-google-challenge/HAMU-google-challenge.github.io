@@ -2,10 +2,11 @@
 # Lasciare preview: true fino al consolidamento dei contenuti ufficiali.
 preview: true
 edition: 2026
-updated: "2026-09-21"
+updated: "2026-10-01"
+documents_need_alignment: true # Tempi di formazione team: divergenza fra note del 24/09 e PDF ricevuto il 01/10.
 preliminary_date: "2026-11-13"
 registration_deadline: "2026-11-03"
-team_announcement: "2026-11-06"
+venue_announcement: "2026-11-06"
 final_date: ""
 final_venue:
   it: Università degli Studi dell’Aquila
@@ -13,7 +14,8 @@ final_venue:
 # Le date riportate sopra vengono rese con i mesi definiti in i18n.yml.
 registration:
   state: planned # planned | open | closed
-  url: ""
+  url: "https://forms.gle/MFsfjNUiUNsmnSiy8"
+  # Modulo indicato il 24/09; al 01/10 riferimento al regolamento e informativa da completare.
   deadline_time: "" # HH:MM, Europe/Rome; inserire l'ora deliberata.
   privacy_url: ""
 contact_email: ""
@@ -23,14 +25,22 @@ branding:
   google_education_lockup: ""
 venues:
   - region: Abruzzo
-    location: ""
-    # Disponibilità candidate comunicate dall'utente, non ancora assegnazioni.
+    location: Università degli Studi “Gabriele d’Annunzio” Chieti-Pescara
+    status: confirmed
+    note:
+      it: Ateneo ospitante confermato. Aula e indirizzo saranno comunicati.
+      en: Host university confirmed. The room and address will be announced.
+    # Disponibilità degli spazi: non equivalgono ad aule prenotate.
     candidates:
       - university: Università degli Studi “Gabriele d’Annunzio” Chieti-Pescara
         training: Un'aula da 340 posti, eventualmente due aule vicine da 340 posti ciascuna.
-        challenge: "Aule da 340, 160, 140 e 45 postazioni, con prese elettriche e Wi-Fi (Eduroam); arredi con banchi, non tavoli. Disponibilità candidate dall’Agenda, assegnazione da confermare."
+        challenge: "Aule da 340, 160, 140 e 45 postazioni, con prese elettriche e Wi-Fi (Eduroam); arredi con banchi, non tavoli. Ateneo confermato il 24 settembre; assegnazione delle aule da comunicare."
   - region: Marche
-    location: ""
+    location: Università Politecnica delle Marche
+    status: preferred
+    note:
+      it: Sede preferita, da confermare in base alle iscrizioni.
+      en: Preferred venue, to be confirmed based on registrations.
     candidates:
       - university: Università Politecnica delle Marche
         training: Aula Magna da 700 posti oppure Aula Magna di Facoltà da 350 posti.
@@ -40,10 +50,14 @@ venues:
         challenge: "900 posti complessivi: Informatica A 200+70; Informatica B 150; Sant'Agostino 120; CHIP 60+60+60; Giurisprudenza 90+90."
   - region: Umbria
     location: ""
+    status: pending
+    note:
+      it: La sede sarà comunicata dal Comitato Organizzatore.
+      en: The venue will be announced by the Organising Committee.
     candidates:
       - university: Università degli Studi di Perugia
         training: Polo di Ingegneria, massimo 300 persone, streaming possibile, fermata ferroviaria dedicata.
-        challenge: Da 300 a 400 posti.
+        challenge: Da 300 a 400 posti; ulteriore parcheggio nelle vicinanze segnalato nell’Agenda.
 figures:
   universities: 10
   regions: 3
@@ -62,7 +76,7 @@ documents:
     format: PDF
     language: IT
     status: review
-    path: /assets/documents/regolamento-it-pdf-ricevuto-21-09-2026.pdf
+    path: /assets/documents/regolamento-unificato-it-ricevuto-01-10-2026.pdf
   - id: regulations-it
     title:
       it: Regolamento italiano modificabile
