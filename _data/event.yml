@@ -14,8 +14,8 @@ final_venue:
 # Le date riportate sopra vengono rese con i mesi definiti in i18n.yml.
 registration:
   state: planned # planned | open | closed
-  url: "https://forms.gle/MFsfjNUiUNsmnSiy8"
-  # Modulo indicato il 24/09; al 01/10 riferimento al regolamento e informativa da completare.
+  url: "https://forms.gle/fAHHkY52ppsiemvu5"
+  # Link richiesto dall’utente il 01/10; verificato, il modulo non accetta ancora risposte.
   deadline_time: "" # HH:MM, Europe/Rome; inserire l'ora deliberata.
   privacy_url: ""
 contact_email: ""

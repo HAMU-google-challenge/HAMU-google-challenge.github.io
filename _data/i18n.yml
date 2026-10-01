@@ -94,8 +94,8 @@ it:
     deadline: Candidature entro il
     planned: Iscrizioni in preparazione
     planned_note: Il modulo di candidatura e l’informativa privacy saranno disponibili qui. Nel frattempo puoi consultare i documenti della Challenge.
-    form_pending_note: Il modulo è consultabile. Il riferimento al regolamento e l’informativa privacy devono ancora essere completati prima dell’apertura delle candidature.
-    form_preview: Consulta il modulo in preparazione
+    form_pending_note: Il modulo di iscrizione al momento non accetta risposte. Sarà possibile inviare la candidatura quando l’organizzazione lo attiverà.
+    form_preview: Vai al modulo di iscrizione
     open: Iscriviti alla Challenge
     open_note: Prima di inviare la candidatura, leggi il regolamento e l’informativa sul trattamento dei dati personali.
     closed: Iscrizioni chiuse
@@ -258,8 +258,8 @@ en:
     deadline: Apply by
     planned: Applications opening soon
     planned_note: The application form and privacy notice will be available here. In the meantime, you can read the Challenge documents.
-    form_pending_note: The form is available to view. The reference to the Regulations and the privacy notice still need to be completed before applications open.
-    form_preview: View the form being prepared
+    form_pending_note: The registration form is not currently accepting responses. You will be able to submit your application once the organisers activate it.
+    form_preview: Go to the registration form
     open: Apply to the Challenge
     open_note: Before submitting your application, read the Regulations and the personal data processing notice.
     closed: Applications closed
