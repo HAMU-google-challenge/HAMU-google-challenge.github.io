@@ -41,3 +41,6 @@ Le note tecniche sui tenant e le licenze dei singoli Atenei non sono riportate n
 La proposta di rinfresco, gadget, trasporti e visibilità dei vincitori rimane subordinata a decisioni e budget. Le ipotesi di luglio su tempi della prova e formato dei video sono superate dal regolamento più recente e non sono state riprese.
 
 Per i loghi degli Atenei, fonti e modalità di presentazione sono in `LOGHI.md`. I campi del marchio HAMU e del lockup Google for Education restano pronti per il toolkit. Le istruzioni di pubblicazione restano quelle di GitHub Pages, come richiesto dall’utente.
+
+
+La locandina è stata aggiornata su richiesta dell’utente: «Google» nel titolo passa a 76 punti, in lime; in fondo compare «Locandina generata con l’ausilio di OpenAI Codex.». PDF, PNG e SVG rigenerati; pagina renderizzata e ispezionata, link di iscrizione verificato, dieci loghi conservati.

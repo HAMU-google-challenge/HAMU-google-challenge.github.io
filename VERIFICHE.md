@@ -59,3 +59,6 @@ Il workflow GitHub Actions è incluso; non è stato eseguito un push o un deploy
 La verifica visiva del layout e delle interazioni nel browser resta da completare: il controllo di sicurezza aveva rifiutato l’apertura dell’URL `file://` dell’anteprima. Non sono stati utilizzati aggiramenti. I controlli della struttura HTML e degli asset non equivalgono a una verifica visiva o a un audit di accessibilità.
 
 L’anteprima esportata si apre dal proprio computer tramite `hamu-anteprima/index.html`, conservando tutte le sottocartelle. La verifica dei collegamenti locali non costituisce un monitoraggio della disponibilità dei siti esterni.
+
+
+La locandina è stata aggiornata su richiesta dell’utente: «Google» nel titolo passa a 76 punti, in lime; in fondo compare «Locandina generata con l’ausilio di OpenAI Codex.». PDF, PNG e SVG rigenerati; pagina renderizzata e ispezionata, link di iscrizione verificato, dieci loghi conservati.
