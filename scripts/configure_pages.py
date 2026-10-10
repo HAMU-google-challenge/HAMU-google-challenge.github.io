@@ -6,7 +6,7 @@ from urllib.parse import urlsplit
 
 origin = os.environ['PAGES_ORIGIN'].rstrip('/')
 base = os.environ.get('PAGES_BASE_PATH', '').rstrip('/')
-assert urlsplit(origin).scheme == 'https' and urlsplit(origin).netloc, 'Invalid Pages origin'
+assert urlsplit(origin).scheme in ('http', 'https') and urlsplit(origin).netloc, 'Invalid Pages origin'
 assert not base or base.startswith('/'), 'Invalid Pages base path'
 with Path('_config.yml').open('a') as config:
     config.write('\n# Resolved by GitHub Actions\n')
