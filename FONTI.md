@@ -63,3 +63,7 @@ Il 10 ottobre `https://hamu.univaq.it/` e `/en/` rispondono correttamente in HTT
 ## Coordinamento grafico del sito con la locandina
 
 Su richiesta dell’utente il sito riprende il sistema grafico della locandina del 10 ottobre: Rubik 1.100 Regular/Bold (gli stessi file TTF), colori `#092f47`, `#096e68`, `#dcf765`, `#f2f6f8`, motivi a rettangoli arrotondati intrecciati, messaggio e gerarchia del titolo, tre tappe del calendario. Le forme sono elementi SVG decorativi originali, senza significato interattivo. La licenza del font è disponibile in `assets/fonts/OFL.txt`, con le attribuzioni incorporate nei file originali e il testo OFL pubblicato dal progetto Rubik. Il collegamento di iscrizione e le informazioni operative restano quelli dell’ultimo aggiornamento.
+
+## Nuovi loghi forniti il 10 ottobre
+
+Gli allegati dell’utente sostituiscono i marchi di Università di Macerata, Università di Camerino e GSSI nel sito IT/EN e nelle locandine IT/EN. I tre file locali del sito sono copie integrali degli allegati; fonti e dimensioni sono aggiornate in `LOGHI.md`. Le locandine incorporano gli stessi marchi completi, adattati alla griglia senza deformazioni o ricolorazioni. Testi, date e collegamenti restano invariati.

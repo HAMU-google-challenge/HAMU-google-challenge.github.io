@@ -91,3 +91,10 @@ La locandina è stata aggiornata su richiesta dell’utente: «Google» nel tito
 - Due collegamenti al modulo corrente per lingua; tre tappe e testi corretti in IT/EN; font, date e PDF delle locandine coincidenti fra materiali e copie del sito. Controllo delle differenze e sintassi JavaScript superati.
 - Il controllo visivo automatico con Chromium non è stato eseguito: l’ambiente ha negato l’avvio del processo con errore MachPortRendezvous, Permission denied (1100), anche dopo l’abilitazione della rete. Non sono state prodotte schermate. Le verifiche della compilazione e dei collegamenti non certificano l’impaginazione visiva né le interazioni su desktop e telefono; è disponibile l’anteprima locale per la revisione manuale.
 - Nessun commit o push eseguito: pubblicazione manuale a cura dell’utente, come concordato.
+
+## Sostituzione loghi del 10 ottobre
+
+- UniMC (591 × 251 px), Università di Camerino (2678 × 1066 px) e GSSI (1939 × 871 px): file del sito identici agli allegati, dimensioni HTML aggiornate in IT/EN e dieci loghi totali. I due file con estensione superata sono rimossi dagli asset correnti; copie precedenti conservate nell’area di lavoro.
+- Locandine italiana e inglese rigenerate in PDF A3, SVG modificabile e PNG a 300 dpi; entrambe le anteprime complete ispezionate visivamente. I tre nuovi marchi sono presenti nei PDF alla risoluzione originale, con proporzioni conservate. I testi estratti coincidono con quelli precedenti e ciascun PDF mantiene due link al sito nella lingua corretta.
+- Compilazione Jekyll: tre pagine e 89 riferimenti locali verificati; anteprima portabile: tre pagine e 83 riferimenti. Due link al modulo corrente per lingua. PDF e nuovi loghi identici fra materiali, sorgenti, compilazione e anteprima.
+- I limiti già riportati sulla verifica visiva del sito nel browser restano invariati. Nessun commit, push o deployment eseguito.

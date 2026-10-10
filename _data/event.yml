@@ -151,14 +151,14 @@ universities:
     region: Abruzzo
     url: https://www.gssi.it/
     logo: /assets/images/universities/gssi.png
-    logo_width: 280
-    logo_height: 103
+    logo_width: 1939
+    logo_height: 871
   - name: Università di Macerata
     region: Marche
     url: https://www.unimc.it/
-    logo: /assets/images/universities/unimc.png
-    logo_width: 407
-    logo_height: 73
+    logo: /assets/images/universities/unimc.jpg
+    logo_width: 591
+    logo_height: 251
   - name: Università Politecnica delle Marche
     region: Marche
     url: https://www.univpm.it/
@@ -168,9 +168,9 @@ universities:
   - name: Università di Camerino
     region: Marche
     url: https://www.unicam.it/
-    logo: /assets/images/universities/unicam.webp
-    logo_width: 255
-    logo_height: 315
+    logo: /assets/images/universities/unicam.png
+    logo_width: 2678
+    logo_height: 1066
   - name: Università degli Studi di Urbino Carlo Bo
     region: Marche
     url: https://www.uniurb.it/
