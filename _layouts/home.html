@@ -10,7 +10,7 @@ layout: default
       <p class="eyebrow">{{ t.hero.eyebrow }}</p>
       <h1 id="hero-title">{{ t.hero.title }}<span>HAMU <em>{{ e.edition }}</em></span></h1>
       <p class="hero-description">{{ t.hero.subtitle }}</p>
-      <div class="hero-actions"><a class="button button-dark" href="#iscrizioni">{{ t.hero.cta }}{% include arrow.html %}</a><a class="text-link" href="#programma">{{ t.hero.secondary }}</a></div>
+      <div class="hero-actions"><a class="button button-dark" href="{% if e.registration.state == 'open' and e.registration.url != '' %}{{ e.registration.url | escape }}{% else %}#iscrizioni{% endif %}">{% if e.registration.state == 'open' and e.registration.url != '' %}{{ t.participation.open }}{% else %}{{ t.hero.cta }}{% endif %}{% include arrow.html %}</a><a class="text-link" href="#programma">{{ t.hero.secondary }}</a></div>
       <div class="hero-benefits"><span>{{ t.hero.free }}</span><span>{{ t.hero.individual }}</span></div>
       <div class="collaboration">
         {% if e.branding.google_education_lockup != '' %}<img src="{{ e.branding.google_education_lockup | relative_url }}" alt="{{ t.collaboration }} Google for Education">{% else %}<span>{{ t.collaboration }}</span><strong>Google for Education</strong>{% endif %}
@@ -61,8 +61,8 @@ layout: default
   <aside class="registration-panel" aria-label="{{ t.participation.deadline }} {% include date.html value=e.registration_deadline %}">
     <p class="eyebrow">{{ t.participation.deadline }}</p><p class="registration-date">{% include date.html value=e.registration_deadline %}</p>
     {% if e.registration.deadline_time != '' %}<p>{{ e.registration.deadline_time }} · Europe/Rome</p>{% endif %}
-    {% if e.registration.state == 'open' and e.registration.url != '' and e.registration.privacy_url != '' %}
-      <h3>{{ t.participation.open }}</h3><p>{{ t.participation.open_note }}</p><a class="button button-dark registration-link" href="{{ e.registration.url | escape }}">{{ t.participation.open }}{% include arrow.html %}</a>
+    {% if e.registration.state == 'open' and e.registration.url != '' %}
+      <h3>{{ t.participation.open_heading }}</h3><p>{{ t.participation.open_note }}</p><a class="button button-dark registration-link" href="{{ e.registration.url | escape }}">{{ t.participation.open }}{% include arrow.html %}</a>
     {% elsif e.registration.state == 'closed' %}
       <h3>{{ t.participation.closed }}</h3><p>{{ t.participation.closed_note }}</p><a class="button button-outline" href="#programma">{{ t.nav.programme }}{% include arrow.html %}</a>
     {% else %}

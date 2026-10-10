@@ -45,18 +45,18 @@ I documenti usano `status: review` per il PDF in approvazione, `draft` per le bo
 `registration.state` ammette tre valori:
 
 - `planned`: candidature in preparazione. Con un URL mostra il modulo come consultabile, con i completamenti ancora necessari; senza URL rimanda ai documenti.
-- `open`: mostra il pulsante di candidatura solo se sono presenti sia `registration.url` sia `registration.privacy_url`.
+- `open`: mostra il pulsante di candidatura nella testata e nella sezione iscrizioni quando è presente `registration.url`. Impostare questo stato quando l’organizzazione conferma l’apertura del modulo. Il collegamento all’informativa resta indipendente e viene mostrato appena fornito.
 - `closed`: mostra la chiusura delle candidature e un rimando al programma.
 
 `registration.url` contiene l’URL completo HTTPS del modulo indicato dall’organizzazione; lo stato distingue la consultazione dalla candidatura aperta. `privacy_url` può essere un URL HTTPS o un percorso locale, per esempio `/assets/documents/informativa-privacy.pdf`. La chiusura è editoriale: allo scadere del termine imposta `state: closed` e chiudi anche il modulo presso il servizio che lo ospita.
 
-Il link corrente al [modulo di iscrizione](https://forms.gle/fAHHkY52ppsiemvu5) è stato indicato espressamente dall’utente il 1 ottobre e sostituisce nei collegamenti pubblici quello delle note del 24 settembre. Verificato in sola lettura: il modulo apre una pagina che non accetta risposte. Il sito mantiene `state: planned`, mostra «Vai al modulo di iscrizione» e segnala che l’attivazione è ancora attesa, in italiano e inglese. Non è stato dedotto il contenuto dei campi o delle informative dalla pagina di chiusura. Nessun modulo è stato compilato o inviato.
+Il [modulo corrente](https://forms.gle/m8npVRMSNzRwhz2x6) è stato indicato dall’utente il 10 ottobre, insieme alla conferma che è aperto. La verifica in sola lettura ha restituito il modulo pubblico con campi compilabili e pulsante «Invia». Il sito usa `state: open` e mostra i pulsanti di iscrizione nelle pagine IT/EN. Nessun modulo è stato compilato o inviato. Nel modulo è ancora presente il segnaposto `@@@@@` per l’URL del regolamento; è segnalato all’organizzazione. `privacy_url` resta vuoto finché non viene fornito un collegamento specifico, senza nascondere l’apertura confermata dall’organizzazione.
 
 Il sito non raccoglie candidature e non contiene un backend. Il modulo esterno gestisce l’invio dei dati.
 
 ### Dati ancora da completare
 
-Restano da consolidare, secondo i materiali disponibili: regolamento e avviso aggiornati e definitivi, tempi di comunicazione dei temi, ora della scadenza, completamento del modulo e informativa privacy, altre sedi e indirizzi delle aule, giorno della finale, recapito organizzativo e toolkit Google for Education. Questi campi sono già predisposti; il sito presenta messaggi espliciti dove manca un dato.
+Restano da consolidare, secondo i materiali disponibili: regolamento e avviso aggiornati e definitivi, tempi di comunicazione dei temi, ora della scadenza, collegamento al regolamento nel modulo e informativa privacy, altre sedi e indirizzi delle aule, giorno della finale, recapito organizzativo e toolkit Google for Education. Questi campi sono già predisposti; il sito presenta messaggi espliciti dove manca un dato.
 
 Le disponibilità di Politecnica delle Marche, Perugia, Camerino e Chieti-Pescara sono registrate sotto `venues[].candidates`, con capienze e dotazioni comunicate dall’utente. Le pagine mostrano `location`, `status` e le note bilingui: `confirmed` per Chieti-Pescara, `preferred` per la Politecnica, `pending` per l’Umbria. L’Ateneo confermato non implica che aula, campus o indirizzo siano già stati comunicati. Aggiorna stato e note solo in base alle decisioni successive; i dati candidate non compaiono nelle pagine. Se il repository è pubblico, anche questi dati nei sorgenti sono consultabili, pur non comparendo nelle pagine compilate.
 
@@ -104,4 +104,9 @@ Apri `../hamu-anteprima/index.html`. L’esportazione rende relativi i collegame
 
 ## Verifiche della consegna
 
-I controlli eseguiti e i loro limiti sono riportati in `VERIFICHE.md`. Non includono un deployment sul repository remoto.
+I controlli eseguiti e i loro limiti sono riportati in `VERIFICHE.md`, distinti per aggiornamento.
+
+
+## Locandine aggiornate al 10 ottobre
+
+Sono disponibili PDF in italiano e in inglese, collegati nella sezione Documenti. Entrambe le locandine indicano tre sedi, le tre tappe del calendario e il sito universitario in HTTPS. Conservano i dieci loghi e il credit «AI tools». Le versioni per stampa, le anteprime e gli SVG modificabili sono inclusi nella consegna separata della locandina.

@@ -2,7 +2,7 @@
 # Lasciare preview: true fino al consolidamento dei contenuti ufficiali.
 preview: true
 edition: 2026
-updated: "2026-10-01"
+updated: "2026-10-10"
 documents_need_alignment: true # Tempi di formazione team: divergenza fra note del 24/09 e PDF ricevuto il 01/10.
 preliminary_date: "2026-11-13"
 registration_deadline: "2026-11-03"
@@ -13,9 +13,9 @@ final_venue:
   en: University of L’Aquila
 # Le date riportate sopra vengono rese con i mesi definiti in i18n.yml.
 registration:
-  state: planned # planned | open | closed
-  url: "https://forms.gle/fAHHkY52ppsiemvu5"
-  # Link richiesto dall’utente il 01/10; verificato, il modulo non accetta ancora risposte.
+  state: open # planned | open | closed
+  url: "https://forms.gle/m8npVRMSNzRwhz2x6"
+  # Link e apertura confermati dall’utente il 10/10; verificato il modulo pubblico con pulsante Invia.
   deadline_time: "" # HH:MM, Europe/Rome; inserire l'ora deliberata.
   privacy_url: ""
 contact_email: ""
@@ -103,12 +103,20 @@ documents:
     path: /assets/documents/avviso-selezione-bozza.docx
   - id: poster
     title:
-      it: Locandina della Challenge
-      en: Challenge poster
+      it: Locandina della Challenge in italiano
+      en: Challenge poster in Italian
     format: PDF
     language: IT
     status: draft
     path: /assets/documents/locandina-hamu-bozza.pdf
+  - id: poster-en
+    title:
+      it: Locandina della Challenge in inglese
+      en: Challenge poster in English
+    format: PDF
+    language: EN
+    status: draft
+    path: /assets/documents/locandina-hamu-en-bozza.pdf
 criteria:
   - name: {it: Innovatività, en: Innovation}
     points: 30

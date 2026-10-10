@@ -49,7 +49,7 @@ Le cinque configurazioni (radice, sottocartella, apertura senza privacy, apertur
 - PDF A3 verticale, una pagina da 297 × 420 mm; testi vettoriali con font Rubik incorporati. SVG modificabile con immagini e font incorporati; PNG da 3508 × 4961 pixel a 300 dpi e anteprima leggera.
 - Rendering del PDF ispezionato nella pagina completa e nel dettaglio dei loghi. Dieci loghi originali, proporzioni e colori conservati; la risoluzione effettiva dipende dai file già forniti, senza ricostruzioni dei marchi.
 - Date, gratuità, tre sedi regionali, masterclass e dimensioni dei team riscontrate nei dati correnti. Finale con data da comunicare; nessun tempo di formazione dei team presentato come confermato.
-- QR rimosso come richiesto e sostituito dal link scritto al modulo. Nel PDF e nell’SVG è verificata la destinazione cliccabile `https://forms.gle/fAHHkY52ppsiemvu5`. Il sito della Challenge resta nel piè di pagina. Nuovo rendering ispezionato; colori, dati e dieci loghi conservati.
+- La locandina rimanda a `https://hamu-google-challenge.github.io/`: tutti i collegamenti nel PDF e nell’SVG portano al sito, senza link diretti al modulo né QR. Il sito IT/EN mantiene il link `https://forms.gle/fAHHkY52ppsiemvu5`. Nuovo rendering ispezionato; colori, dati, dieci loghi e dicitura «AI tools» conservati.
 - Copia PDF aggiornata nei download; nuova compilazione alla radice e anteprima portabile controllate con 83 riferimenti locali per ciascuna. Verificata identità delle copie della locandina in materiali, sorgenti, compilazione e anteprima. Gli archivi di consegna sono stati rigenerati.
 
 ## Limiti della verifica
@@ -61,4 +61,23 @@ La verifica visiva del layout e delle interazioni nel browser resta da completar
 L’anteprima esportata si apre dal proprio computer tramite `hamu-anteprima/index.html`, conservando tutte le sottocartelle. La verifica dei collegamenti locali non costituisce un monitoraggio della disponibilità dei siti esterni.
 
 
-La locandina è stata aggiornata su richiesta dell’utente: «Google» nel titolo passa a 76 punti, in lime; in fondo compare «Locandina generata con l’ausilio di OpenAI Codex.». PDF, PNG e SVG rigenerati; pagina renderizzata e ispezionata, link di iscrizione verificato, dieci loghi conservati.
+La locandina è stata aggiornata su richiesta dell’utente: «Google» nel titolo passa a 76 punti, in lime; in fondo compare «Locandina generata con l’ausilio di AI tools.». PDF, PNG e SVG rigenerati; pagina renderizzata e ispezionata, percorso locandina → sito → modulo verificato, dieci loghi conservati.
+
+## Aggiornamento locandina del 6 ottobre
+
+- Date organizzate in tre riquadri: iscrizioni (scadenza 3 novembre 2026), fase iniziale (13 novembre 2026) e fase finale (data da confermare, Università dell'Aquila).
+- PDF A3, PNG per stampa a 300 dpi, anteprima e SVG rigenerati. Rendering completo ispezionato; dieci loghi originali e credit «AI tools» conservati.
+- La locandina continua a rimandare al sito GitHub, verificato disponibile. Il sottodominio universitario presenta ancora errori HTTP/TLS; l'analisi è stata effettuata in sola lettura e non costituisce un'attivazione del dominio.
+- Nuova compilazione Jekyll e anteprima portabile: tre pagine HTML e 83 riferimenti locali verificati in ciascuna. PDF identico nelle copie materiali, sorgenti, compilazione e anteprima; collegamento al modulo richiesto presente in entrambe le lingue.
+
+
+## Controlli prima della pubblicazione del 10 ottobre
+
+- Modulo nuovo `https://forms.gle/m8npVRMSNzRwhz2x6`: HTTP 200, titolo della Challenge, campi e pulsante «Invia» visibili. L’utente conferma l’apertura. Nessuna candidatura compilata o inviata. Rilevato e segnalato il segnaposto `@@@@@` per il regolamento; non è stato ricavato un URL di informativa specifica dalla dichiarazione sull’uso dei dati.
+- Iscrizioni aperte nel sito IT/EN; due collegamenti al nuovo modulo per lingua, nella testata e nella sezione dedicata. Il collegamento all’informativa è gestito separatamente. Nessun vecchio URL o avviso di modulo chiuso nelle pagine compilate.
+- Locandine IT/EN: frase promozionale aggiornata, «Tre sedi / Three venues», dieci loghi originali, tre tappe del calendario e credit «AI tools». La data della finale resta da confermare. Le due versioni sono scaricabili dal sito.
+- Due PDF A3 di una pagina, font incorporati, due link HTTPS ciascuno verso il sito nella lingua corrispondente. Nessun QR né link diretto al modulo. Versioni SVG e PNG a 300 dpi (3508 × 4961 pixel) rigenerate. Rendering completi in entrambe le lingue ispezionati; margini e testi nei tre riquadri delle date verificati.
+- `https://hamu.univaq.it/` e `/en/` restituiscono HTTP 200 con verifica TLS riuscita. Il repository remoto ha aggiunto `CNAME` dopo l’ultima copia locale: la pubblicazione dell’aggiornamento deve conservare questa configurazione.
+- Compilazione Jekyll e anteprima portabile: tre pagine HTML e 83 riferimenti locali verificati per ciascuna. Entrambi i PDF sono identici byte per byte nei materiali, nei sorgenti del sito, nella compilazione e nell’anteprima.
+
+- Tentativo di pubblicazione: il connettore GitHub ha restituito HTTP 403 «Resource not accessible by integration» al primo inserimento di un oggetto. Nessun commit, aggiornamento del ramo o deployment è stato effettuato. Il sito online conserva il vecchio modulo; i file di consegna sono pronti per la pubblicazione.
