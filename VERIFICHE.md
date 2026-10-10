@@ -81,3 +81,13 @@ La locandina è stata aggiornata su richiesta dell’utente: «Google» nel tito
 - Compilazione Jekyll e anteprima portabile: tre pagine HTML e 83 riferimenti locali verificati per ciascuna. Entrambi i PDF sono identici byte per byte nei materiali, nei sorgenti del sito, nella compilazione e nell’anteprima.
 
 - Tentativo di pubblicazione: il connettore GitHub ha restituito HTTP 403 «Resource not accessible by integration» al primo inserimento di un oggetto. Nessun commit, aggiornamento del ramo o deployment è stato effettuato. Il sito online conserva il vecchio modulo; i file di consegna sono pronti per la pubblicazione.
+
+
+## Coordinamento grafico con la locandina: 10 ottobre
+
+- Rubik Regular e Bold installati in `assets/fonts/`: identità byte per byte con i file usati per le locandine; licenza SIL OFL 1.1 e attribuzioni incluse. Due font precaricati nella versione web; dati del font incorporati nel CSS dell’anteprima offline.
+- Titolo con Google lime, HAMU bianco e anno lime sul blu scuro; stessa frase promozionale e tre forme intrecciate della locandina. Riquadro verde con tre tappe principali, schede e pulsanti arrotondati, blocco iscrizioni coerente. Layout adattato tramite media query per schermi stretti; loghi originali e contenuti operativi conservati.
+- Nuova compilazione Jekyll: tre pagine HTML e 89 riferimenti locali verificati; anteprima portabile: tre pagine e 83 riferimenti (i preload dei font sono rimossi perché il CSS li incorpora).
+- Due collegamenti al modulo corrente per lingua; tre tappe e testi corretti in IT/EN; font, date e PDF delle locandine coincidenti fra materiali e copie del sito. Controllo delle differenze e sintassi JavaScript superati.
+- Il controllo visivo automatico con Chromium non è stato eseguito: l’ambiente ha negato l’avvio del processo con errore MachPortRendezvous, Permission denied (1100), anche dopo l’abilitazione della rete. Non sono state prodotte schermate. Le verifiche della compilazione e dei collegamenti non certificano l’impaginazione visiva né le interazioni su desktop e telefono; è disponibile l’anteprima locale per la revisione manuale.
+- Nessun commit o push eseguito: pubblicazione manuale a cura dell’utente, come concordato.

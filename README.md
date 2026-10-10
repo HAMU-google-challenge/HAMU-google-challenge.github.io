@@ -110,3 +110,10 @@ I controlli eseguiti e i loro limiti sono riportati in `VERIFICHE.md`, distinti 
 ## Locandine aggiornate al 10 ottobre
 
 Sono disponibili PDF in italiano e in inglese, collegati nella sezione Documenti. Entrambe le locandine indicano tre sedi, le tre tappe del calendario e il sito universitario in HTTPS. Conservano i dieci loghi e il credit «AI tools». Le versioni per stampa, le anteprime e gli SVG modificabili sono inclusi nella consegna separata della locandina.
+
+
+## Stile coordinato con la locandina
+
+Il sito usa gli stessi file Rubik Regular e Bold della locandina, serviti localmente da `assets/fonts/` (licenza SIL OFL 1.1 inclusa). Non dipende da Google Fonts o altri servizi esterni per il carattere. I font vengono precaricati sul sito. L’esportazione dell’anteprima li incorpora nel CSS per permettere la consultazione offline.
+
+La testata riprende sfondo blu scuro, «Google» e anno in lime, HAMU bianco, le tre forme intrecciate e il messaggio delle locandine IT/EN. Le tre tappe principali compaiono subito dopo, in un riquadro verde con date lime; il programma completo mantiene anche la comunicazione delle sedi. Pulsanti, schede e blocco iscrizioni usano forme e pesi tipografici coerenti. Su schermi stretti le tappe si dispongono verticalmente.

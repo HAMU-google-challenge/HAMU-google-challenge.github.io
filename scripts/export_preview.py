@@ -3,6 +3,7 @@
 Use this for offline review only. GitHub Pages must build the original sources.
 """
 import argparse
+import base64
 import html
 from html.parser import HTMLParser
 from pathlib import Path
@@ -32,6 +33,10 @@ class RewriteLinks(HTMLParser):
         return relative + ('?' + parsed.query if parsed.query else '') + ('#' + parsed.fragment if parsed.fragment else '')
 
     def tag(self, tag, attrs, closed=False):
+        # The offline stylesheet embeds fonts, so file:// preloads are unnecessary.
+        attributes = dict(attrs)
+        if tag == 'link' and attributes.get('rel') == 'preload' and attributes.get('as') == 'font':
+            return
         rendered = []
         for name, value in attrs:
             if value is None:
@@ -62,6 +67,13 @@ if __name__ == '__main__':
     if source == target or target.is_relative_to(source):
         raise SystemExit('Choose an output outside the Jekyll build directory')
     shutil.copytree(source, target, dirs_exist_ok=True)
+    stylesheet = target / 'assets/css/main.css'
+    if stylesheet.exists():
+        css = stylesheet.read_text(encoding='utf-8')
+        for font in sorted((target / 'assets/fonts').glob('*.ttf')):
+            data = base64.b64encode(font.read_bytes()).decode('ascii')
+            css = css.replace(f'url("../fonts/{font.name}")', f'url("data:font/ttf;base64,{data}")')
+        stylesheet.write_text(css, encoding='utf-8')
     for path in target.rglob('*.html'):
         rewriter = RewriteLinks(path.parent.relative_to(target).as_posix(), args.baseurl)
         rewriter.feed(path.read_text(encoding='utf-8'))

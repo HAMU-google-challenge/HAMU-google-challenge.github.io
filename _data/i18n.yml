@@ -19,17 +19,25 @@ it:
     faq: FAQ
   collaboration: In collaborazione con
   hero:
-    eyebrow: ABRUZZO · MARCHE · UMBRIA
+    eyebrow: 10 ATENEI / 3 REGIONI / UN’UNICA SFIDA
     title: Google Challenge
-    subtitle: Unisci competenze. Sperimenta con l’IA. Dai forma a un progetto insieme a studenti di dieci Atenei.
+    tagline: Trasforma le tue idee con l’IA di Google.
+    subtitle: Sperimenta con Gemini e NotebookLM. Mettiti in gioco.
     cta: Scopri come partecipare
     secondary: Esplora il programma
     free: Partecipazione gratuita
     individual: Candidatura individuale
-    date_label: Fase preliminare
+    date_label: Venerdì · Fase iniziale
     venue_label: In tre sedi
     final_label: Finale
     final_tbc: Data da comunicare
+  milestones:
+    registration: Iscrizioni
+    deadline: Scadenza candidature
+    initial: Fase iniziale
+    training: Formazione e Challenge
+    final: Fase finale
+    final_tbc: Data da confermare
   stats:
     universities: Atenei coinvolti
     regions: regioni
@@ -184,17 +192,25 @@ en:
     faq: FAQ
   collaboration: In collaboration with
   hero:
-    eyebrow: ABRUZZO · MARCHE · UMBRIA
+    eyebrow: 10 UNIVERSITIES / 3 REGIONS / ONE CHALLENGE
     title: Google Challenge
-    subtitle: Bring your skills. Experiment with AI. Shape a project together with students from ten universities.
+    tagline: Turn your ideas into reality with Google AI.
+    subtitle: Explore Gemini and NotebookLM. Make your mark.
     cta: Find out how to take part
     secondary: Explore the programme
     free: Free participation
     individual: Individual applications
-    date_label: Preliminary stage
+    date_label: Friday · Initial stage
     venue_label: At three venues
     final_label: Final stage
     final_tbc: Date to be announced
+  milestones:
+    registration: Registration
+    deadline: Application deadline
+    initial: Initial stage
+    training: Training and Challenge
+    final: Final stage
+    final_tbc: Date to be confirmed
   stats:
     universities: universities
     regions: regions

@@ -58,3 +58,8 @@ La locandina presenta tre riquadri affiancati: scadenza iscrizioni il 3 novembre
 La nuova apertura della locandina è «10 Atenei, 3 Regioni, un’unica sfida» seguita da «Trasforma le tue idee con l’IA di Google» e dall’invito a sperimentare con Gemini e NotebookLM. La versione inglese usa «10 universities, 3 regions, one challenge» e «Turn your ideas into reality with Google AI». La dicitura è «Tre sedi» / «Three venues», senza associare necessariamente una sede a ciascuna regione. Il sito recepisce la stessa formulazione nei testi generali.
 
 Il 10 ottobre `https://hamu.univaq.it/` e `/en/` rispondono correttamente in HTTPS; le locandine ora rimandano a questi indirizzi, senza QR né collegamenti diretti al modulo. Questa verifica aggiorna la diagnosi storica del 6 ottobre. Restano invariati la scadenza del 3 novembre, la fase iniziale del 13 novembre e la finale con data da confermare. Nessun attestato viene presentato come garantito nel messaggio promozionale.
+
+
+## Coordinamento grafico del sito con la locandina
+
+Su richiesta dell’utente il sito riprende il sistema grafico della locandina del 10 ottobre: Rubik 1.100 Regular/Bold (gli stessi file TTF), colori `#092f47`, `#096e68`, `#dcf765`, `#f2f6f8`, motivi a rettangoli arrotondati intrecciati, messaggio e gerarchia del titolo, tre tappe del calendario. Le forme sono elementi SVG decorativi originali, senza significato interattivo. La licenza del font è disponibile in `assets/fonts/OFL.txt`, con le attribuzioni incorporate nei file originali e il testo OFL pubblicato dal progetto Rubik. Il collegamento di iscrizione e le informazioni operative restano quelli dell’ultimo aggiornamento.
