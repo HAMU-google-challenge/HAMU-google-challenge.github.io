@@ -6,7 +6,7 @@ Asset acquisiti il 21 settembre 2026 per il sito della Challenge, con sostituzio
 |---|---|---|
 | Università degli Studi dell’Aquila | `assets/images/universities/univaq.png` | [File originale](https://www.ing.univaq.it/images/UnivAQ_logoB.png) |
 | Università degli Studi di Teramo | `assets/images/universities/unite.png` | [File originale](https://www2.almalaurea.it/img/logofull/70118.png) |
-| Università degli Studi “Gabriele d’Annunzio” Chieti-Pescara | `assets/images/universities/unich.png` | [File originale](https://www.unich.it/sites/default/files/logouda_bordooro_bis.png) |
+| Università degli Studi “Gabriele d’Annunzio” Chieti-Pescara | `assets/images/universities/unich.png` | Allegato dell’utente del 12 ottobre: `logo_UdA.png`, 1689 × 708 px |
 | Gran Sasso Science Institute | `assets/images/universities/gssi.png` | Allegato dell’utente del 10 ottobre: `GSSI_esteso_RGB_Colori.png`, 1939 × 871 px |
 | Università di Macerata | `assets/images/universities/unimc.jpg` | Allegato dell’utente del 10 ottobre: `Logo_UNIMC_alta_pic.jpg`, 591 × 251 px |
 | Università Politecnica delle Marche | `assets/images/universities/univpm.png` | [File originale](https://www.univpm.it/Entra/Engine/RAServeFile.php/f/foto/logo_uff/logo_univpm_nero_trasparente.png) |
@@ -20,3 +20,5 @@ Per Teramo è stata utilizzata la copia pubblicata nella [scheda istituzionale A
 L’inserimento risponde alla richiesta dell’utente di rappresentare gli Atenei aderenti nella sezione HAMU. I marchi restano dei rispettivi titolari. Le indicazioni dell’Agenda sull’uso del branding Google sono registrate nelle note editoriali: il lockup Google for Education resta da acquisire dal toolkit, senza ricostruirlo.
 
 Le immagini hanno testo alternativo vuoto perché il nome completo dell’Ateneo è già contenuto nello stesso collegamento. Le dimensioni intrinseche sono registrate in `_data/event.yml`; il CSS adatta ogni logo all’area comune senza deformarlo.
+
+Il 12 ottobre il logo dell’Università d’Annunzio è stato sostituito con l’allegato corretto dell’utente, comprensivo della denominazione estesa. Il file del sito è identico all’originale; le locandine IT/EN incorporano lo stesso marchio senza ritagli, deformazioni o ricolorazioni.

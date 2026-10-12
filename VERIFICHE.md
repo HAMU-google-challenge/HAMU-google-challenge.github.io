@@ -98,3 +98,10 @@ La locandina è stata aggiornata su richiesta dell’utente: «Google» nel tito
 - Locandine italiana e inglese rigenerate in PDF A3, SVG modificabile e PNG a 300 dpi; entrambe le anteprime complete ispezionate visivamente. I tre nuovi marchi sono presenti nei PDF alla risoluzione originale, con proporzioni conservate. I testi estratti coincidono con quelli precedenti e ciascun PDF mantiene due link al sito nella lingua corretta.
 - Compilazione Jekyll: tre pagine e 89 riferimenti locali verificati; anteprima portabile: tre pagine e 83 riferimenti. Due link al modulo corrente per lingua. PDF e nuovi loghi identici fra materiali, sorgenti, compilazione e anteprima.
 - I limiti già riportati sulla verifica visiva del sito nel browser restano invariati. Nessun commit, push o deployment eseguito.
+
+## Logo dell’Università d’Annunzio: 12 ottobre
+
+- Sostituito `unich.png` con una copia integrale dell’allegato `logo_UdA.png`, 1689 × 708 px; aggiornate le dimensioni nelle pagine IT/EN. Identità del file verificata in sorgenti, compilazione e anteprima.
+- Rigenerate le locandine italiana e inglese in PDF A3, SVG modificabile e PNG a 300 dpi. Entrambe le anteprime complete ispezionate visivamente. Verificati dieci loghi, conservazione dei pixel dell’allegato nell’SVG e risoluzione originale nel PDF; nessuna modifica ai testi e ai collegamenti rispetto alla versione precedente.
+- Compilazione Jekyll: tre pagine e 89 riferimenti locali; anteprima: tre pagine e 83 riferimenti. Conservati due collegamenti al modulo corretto per lingua. Copie dei PDF allineate fra materiali, sorgenti, compilazione e anteprima.
+- Restano i limiti precedentemente documentati sulla verifica visiva del sito nel browser. Aggiornamento locale pronto per commit e pubblicazione manuali.

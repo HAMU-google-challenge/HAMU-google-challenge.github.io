@@ -145,8 +145,8 @@ universities:
     region: Abruzzo
     url: https://www.unich.it/
     logo: /assets/images/universities/unich.png
-    logo_width: 283
-    logo_height: 283
+    logo_width: 1689
+    logo_height: 708
   - name: Gran Sasso Science Institute
     region: Abruzzo
     url: https://www.gssi.it/

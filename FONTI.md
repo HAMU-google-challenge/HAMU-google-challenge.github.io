@@ -67,3 +67,7 @@ Su richiesta dell’utente il sito riprende il sistema grafico della locandina d
 ## Nuovi loghi forniti il 10 ottobre
 
 Gli allegati dell’utente sostituiscono i marchi di Università di Macerata, Università di Camerino e GSSI nel sito IT/EN e nelle locandine IT/EN. I tre file locali del sito sono copie integrali degli allegati; fonti e dimensioni sono aggiornate in `LOGHI.md`. Le locandine incorporano gli stessi marchi completi, adattati alla griglia senza deformazioni o ricolorazioni. Testi, date e collegamenti restano invariati.
+
+## Logo dell’Università d’Annunzio: 12 ottobre
+
+Il nuovo allegato `logo_UdA.png` fornito dall’utente sostituisce il precedente logo nel sito e nelle locandine italiana e inglese. Sono conservati integralmente il marchio e la denominazione estesa, con colori e proporzioni originali. Nessuna modifica alle informazioni dell’evento o ai collegamenti.
