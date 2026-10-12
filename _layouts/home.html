@@ -111,7 +111,7 @@ layout: default
 </div></section>
 <section id="atenei" class="section container" aria-labelledby="universities-title">
   <div class="collaboration">
-    {% if e.branding.google_education_lockup != '' %}<img src="{{ e.branding.google_education_lockup | relative_url }}" alt="{{ t.collaboration }} Google for Education">{% else %}<p>{{ t.collaboration }} <strong>Google for Education</strong></p>{% endif %}
+    <p><span>{{ t.collaboration }}</span>{% if e.branding.google_education_lockup != '' %}<img src="{{ e.branding.google_education_lockup | relative_url }}" width="{{ e.branding.google_education_width }}" height="{{ e.branding.google_education_height }}" alt="Google for Education" loading="lazy" decoding="async">{% else %}<strong>Google for Education</strong>{% endif %}</p>
   </div>
   <div class="section-intro"><p class="eyebrow">{{ t.universities.eyebrow }}</p><h2 id="universities-title">{{ t.universities.title }}</h2><p class="lead">{{ t.universities.intro }}</p></div>
   <div class="universities-grid">

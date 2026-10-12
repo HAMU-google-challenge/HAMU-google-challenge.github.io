@@ -113,3 +113,10 @@ La locandina è stata aggiornata su richiesta dell’utente: «Google» nel tito
 - Compilazione alla radice e con prefisso `/hamu-demo`: tre pagine e 95 riferimenti locali verificati in entrambi i casi. Anteprima portabile: tre pagine e 89 riferimenti.
 - Verificate le sei homepage prodotte (IT/EN nelle due compilazioni e nell’anteprima): otto punti, collegamento iniziale al PDF corrente, scadenza e numeri risolti dai dati condivisi, nessun segnaposto residuo, due link al modulo corretto per lingua e dieci loghi. Controllo delle differenze superato.
 - PDF, locandine e loghi non modificati da questo aggiornamento. La verifica visiva nel browser resta soggetta ai limiti già documentati; il controllo HTML non equivale a un’ispezione su desktop e telefono. Nessun commit o push eseguito.
+
+## Logo Google for Education: 12 ottobre
+
+- Attivato il logo allegato dall’utente nel blocco di collaborazione IT/EN, con dicitura introduttiva visibile e testo alternativo. File web identico all’originale, 3298 × 414 px; dimensioni intrinseche dichiarate e presentazione CSS adattabile alla larghezza disponibile.
+- Rigenerate entrambe le locandine A3 in PDF, SVG, PNG a 300 dpi e anteprima. Pagine complete ispezionate visivamente: logo affiancato alla dicitura, dieci atenei e spaziatura conservati. Pixel RGBA del logo nel PDF identici all’originale; file PNG incorporato integralmente nell’SVG. I testi differiscono solo per il nome tipografico sostituito dall’immagine nella fascia di collaborazione.
+- Compilazione Jekyll: tre pagine e 97 riferimenti locali; anteprima: tre pagine e 91 riferimenti. Verificati logo, dicitura, otto punti del regolamento, dieci atenei e due link di iscrizione nelle quattro homepage IT/EN. PDF e copie scaricabili coincidenti; collegamenti delle locandine al sito conservati.
+- Archivi dei sorgenti, dell’anteprima e delle locandine aggiornati. Restano i limiti documentati sulla verifica visiva del sito nel browser; nessun commit, push o deployment effettuato.

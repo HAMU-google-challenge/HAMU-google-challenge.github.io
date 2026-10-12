@@ -22,7 +22,9 @@ contact_email: ""
 branding:
   # Percorsi locali (es. /assets/images/hamu-approved.svg), solo asset autorizzati.
   hamu_logo: ""
-  google_education_lockup: ""
+  google_education_lockup: /assets/images/google-for-education.png
+  google_education_width: 3298
+  google_education_height: 414
 venues:
   - region: Abruzzo
     location: Università degli Studi “Gabriele d’Annunzio” Chieti-Pescara
