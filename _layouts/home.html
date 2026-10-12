@@ -3,6 +3,7 @@ layout: default
 ---
 {% assign t = site.data.i18n[page.lang] %}
 {% assign e = site.data.event %}
+{% assign regulations = e.documents | where: 'id', 'regulations-pdf' | first %}
 {% assign preliminary_month_index = e.preliminary_date | date: '%m' | minus: 1 %}
 {% assign registration_month_index = e.registration_deadline | date: '%m' | minus: 1 %}
 <section class="hero" aria-labelledby="hero-title">
@@ -12,7 +13,8 @@ layout: default
       <h1 id="hero-title"><span class="hero-title-line"><span class="hero-google">Google</span> <span class="hero-challenge">Challenge</span></span><span class="hero-title-line"><span class="hero-hamu">HAMU</span> <span class="hero-year">{{ e.edition }}</span></span></h1>
       <p class="hero-tagline">{{ t.hero.tagline }}</p>
       <p class="hero-description">{{ t.hero.subtitle }}</p>
-      <div class="hero-actions"><a class="button button-lime" href="{% if e.registration.state == 'open' and e.registration.url != '' %}{{ e.registration.url | escape }}{% else %}#iscrizioni{% endif %}">{% if e.registration.state == 'open' and e.registration.url != '' %}{{ t.participation.open }}{% else %}{{ t.hero.cta }}{% endif %}{% include arrow.html %}</a><a class="text-link" href="#programma">{{ t.hero.secondary }}</a></div>
+      <div class="hero-actions"><a class="button button-lime" href="{% if e.registration.state == 'open' and e.registration.url != '' %}{{ e.registration.url | escape }}{% else %}#iscrizioni{% endif %}">{% if e.registration.state == 'open' and e.registration.url != '' %}{{ t.participation.open }}{% else %}{{ t.hero.cta }}{% endif %}{% include arrow.html %}</a><a class="text-link hero-regulations" href="{{ regulations.path | relative_url }}">{{ t.hero.secondary }}</a></div>
+      <a class="hero-summary-link" href="#regolamento">{{ t.hero.summary }} <span aria-hidden="true">↓</span></a>
     </div>
     <svg class="hero-art" aria-hidden="true" focusable="false" viewBox="0 0 240 270" fill="none">
       <rect x="12" y="12" width="145" height="148" rx="49" stroke="#12616d" stroke-width="7"/>
@@ -46,6 +48,22 @@ layout: default
   <div class="section-intro two-column"><div><p class="eyebrow">{{ t.challenge.eyebrow }}</p><h2 id="challenge-title">{{ t.challenge.title }}<span class="accent-text">{{ t.challenge.title_accent }}</span></h2></div><p class="lead">{{ t.challenge.text }}</p></div>
   <div class="steps-grid">{% for step in t.challenge.steps %}<article class="step"><span class="step-number">0{{ forloop.index }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article>{% endfor %}</div>
 </section>
+<section id="regolamento" class="section rules-section" aria-labelledby="rules-title">
+  <div class="container rules-panel">
+    <div class="section-intro"><p class="eyebrow">{{ t.rules.eyebrow }}</p><h2 id="rules-title">{{ t.rules.title }}</h2><p class="lead">{{ t.rules.intro }}</p></div>
+    {% capture rules_deadline %}{% include date.html value=e.registration_deadline %}{% endcapture %}
+    <ul class="rules-list">
+      {% for item in t.rules.items %}
+      <li><h3>{{ item.title }}</h3><p>{{ item.text | replace: '%deadline%', rules_deadline | replace: '%team_min%', e.figures.team_min | replace: '%team_max%', e.figures.team_max | replace: '%themes%', e.figures.themes | replace: '%work_hours%', e.figures.work_hours | replace: '%pitch_minutes%', e.figures.pitch_minutes | replace: '%max_finalists%', e.figures.max_finalists }}</p></li>
+      {% endfor %}
+    </ul>
+    <div class="rules-footer">
+      {% if e.documents_need_alignment %}<p class="rules-pending">{{ t.rules.team_note }}</p>{% endif %}
+      <p>{{ t.rules.note }}</p>
+      <div class="rules-actions"><a class="button button-dark" href="{{ regulations.path | relative_url }}">{{ t.rules.pdf }}{% include arrow.html %}</a><a class="text-link" href="#documenti">{{ t.rules.documents }}</a></div>
+    </div>
+  </div>
+</section>
 <section id="formazione" class="section training-section" aria-labelledby="training-title">
   <div class="container">
     <div class="section-intro two-column"><div><p class="eyebrow">{{ t.training.eyebrow }}</p><h2 id="training-title">{{ t.training.title }}</h2></div><p class="lead">{{ t.training.intro }}</p></div>
@@ -68,7 +86,7 @@ layout: default
   </div>
 </section>
 <section id="iscrizioni" class="section container participation-grid" aria-labelledby="participation-title">
-  <div><p class="eyebrow">{{ t.participation.eyebrow }}</p><h2 id="participation-title">{{ t.participation.title }}<span class="accent-text">{{ t.participation.accent }}</span></h2><p>{{ t.participation.text }}</p><p>{{ t.participation.gssi }}</p><a class="text-link" href="#documenti">{{ t.participation.full_rules }}{% include arrow.html %}</a></div>
+  <div><p class="eyebrow">{{ t.participation.eyebrow }}</p><h2 id="participation-title">{{ t.participation.title }}<span class="accent-text">{{ t.participation.accent }}</span></h2><p>{{ t.participation.text }}</p><p>{{ t.participation.gssi }}</p><a class="text-link" href="{{ regulations.path | relative_url }}">{{ t.participation.full_rules }}{% include arrow.html %}</a></div>
   <aside class="registration-panel" aria-label="{{ t.participation.deadline }} {% include date.html value=e.registration_deadline %}">
     <p class="eyebrow">{{ t.participation.deadline }}</p><p class="registration-date">{% include date.html value=e.registration_deadline %}</p>
     {% if e.registration.deadline_time != '' %}<p>{{ e.registration.deadline_time }} · Europe/Rome</p>{% endif %}

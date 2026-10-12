@@ -105,3 +105,11 @@ La locandina è stata aggiornata su richiesta dell’utente: «Google» nel tito
 - Rigenerate le locandine italiana e inglese in PDF A3, SVG modificabile e PNG a 300 dpi. Entrambe le anteprime complete ispezionate visivamente. Verificati dieci loghi, conservazione dei pixel dell’allegato nell’SVG e risoluzione originale nel PDF; nessuna modifica ai testi e ai collegamenti rispetto alla versione precedente.
 - Compilazione Jekyll: tre pagine e 89 riferimenti locali; anteprima: tre pagine e 83 riferimenti. Conservati due collegamenti al modulo corretto per lingua. Copie dei PDF allineate fra materiali, sorgenti, compilazione e anteprima.
 - Restano i limiti precedentemente documentati sulla verifica visiva del sito nel browser. Aggiornamento locale pronto per commit e pubblicazione manuali.
+
+## Introduzione e sintesi del regolamento: 12 ottobre
+
+- Apertura IT/EN riscritta per spiegare formazione e sfida collaborativa tra studenti degli atenei HAMU; introduzione e tre passaggi descrivono tema proposto, lavoro in team e presentazione. Conservata la condizione «ove possibile» sulla varietà degli atenei e delle competenze nei team.
+- Link diretto al PDF del regolamento nella testata e nella sezione iscrizioni. Nuova sintesi con otto punti elenco, link al PDF e ai documenti, richiamo al testo completo e nota sui tempi dei team. Accesso dalla testata e dal menu; sezione collocata prima dei dettagli sulla formazione.
+- Compilazione alla radice e con prefisso `/hamu-demo`: tre pagine e 95 riferimenti locali verificati in entrambi i casi. Anteprima portabile: tre pagine e 89 riferimenti.
+- Verificate le sei homepage prodotte (IT/EN nelle due compilazioni e nell’anteprima): otto punti, collegamento iniziale al PDF corrente, scadenza e numeri risolti dai dati condivisi, nessun segnaposto residuo, due link al modulo corretto per lingua e dieci loghi. Controllo delle differenze superato.
+- PDF, locandine e loghi non modificati da questo aggiornamento. La verifica visiva nel browser resta soggetta ai limiti già documentati; il controllo HTML non equivale a un’ispezione su desktop e telefono. Nessun commit o push eseguito.

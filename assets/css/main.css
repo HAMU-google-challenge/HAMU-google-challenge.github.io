@@ -96,6 +96,8 @@ p { margin-bottom: 1.2rem; }
 .hero-actions { display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap; }
 .hero-actions .text-link { color: white; }
 .hero-actions .text-link:hover { color: var(--lime); }
+.hero-summary-link { display: inline-flex; align-items: center; gap: .6rem; margin-top: 1.1rem; color: #c8dce5; font-size: .9rem; }
+.hero-summary-link:hover { color: var(--lime); }
 .button-lime { background: var(--lime); color: var(--navy); }
 .button-lime:hover { background: #e7ff92; }
 .hero-art { display: block; width: 100%; height: auto; align-self: start; margin-top: 1.8rem; pointer-events: none; }
@@ -136,6 +138,19 @@ p { margin-bottom: 1.2rem; }
 .step-number { display: block; color: var(--teal); font-size: .85rem; font-weight: 700; margin-bottom: 2.2rem; }
 .step h3 { margin-bottom: 1rem; }
 .step p { font-size: .95rem; color: var(--ink-soft); margin-bottom: 0; }
+.rules-section { padding-top: 0; }
+.rules-panel { background: var(--wash); border-top: 4px solid var(--teal); border-radius: 22px; padding: 2.5rem; }
+.rules-panel .section-intro { margin-bottom: 2rem; }
+.rules-panel h2 { max-width: 42rem; }
+.rules-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; row-gap: 1.8rem; margin: 0; padding-left: 1.25rem; }
+.rules-list li { min-width: 0; padding-left: .3rem; }
+.rules-list li::marker { color: var(--teal); }
+.rules-list h3 { font-size: 1.1rem; line-height: 1.4; margin-bottom: .5rem; }
+.rules-list p { font-size: .95rem; color: var(--ink-soft); margin: 0; }
+.rules-footer { margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.rules-footer p { font-size: .87rem; color: var(--ink-soft); }
+.rules-footer .rules-pending { color: var(--ink); }
+.rules-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.2rem 1.5rem; }
 .training-section { padding-top: 0; }
 .masterclass-heading { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; border-top: 2px solid var(--teal); padding-block: 1.6rem; }
 .masterclass-heading > h3 { font-size: 1.45rem; margin: 0; max-width: 19rem; }
@@ -280,6 +295,7 @@ p { margin-bottom: 1.2rem; }
   .stats-strip > div { gap: .65rem; }
   .stats-strip strong { font-size: 2.15rem; }
   .section { padding-block: 4.5rem; }
+  .rules-section { padding-top: 0; }
 }
 @media (max-width: 47.99rem) {
   .hero { padding-block: 2.4rem; }
@@ -334,6 +350,10 @@ p { margin-bottom: 1.2rem; }
   .stats-strip strong { font-size: 2.2rem; }
   .stats-strip span { font-size: .76rem; }
   .section { padding-block: 3.7rem; }
+  .rules-section { padding-top: 0; }
+  .rules-panel { padding: 1.5rem; }
+  .rules-list { grid-template-columns: 1fr; gap: 1.5rem; }
+  .rules-actions { align-items: stretch; flex-direction: column; }
   h2 { font-size: 2.2rem; }
   .section-intro { margin-bottom: 2.2rem; }
   .two-column, .participation-grid, .evaluation-grid, .faq-grid { grid-template-columns: 1fr; gap: 2rem; }

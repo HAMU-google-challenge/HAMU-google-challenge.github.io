@@ -71,3 +71,9 @@ Gli allegati dell’utente sostituiscono i marchi di Università di Macerata, Un
 ## Logo dell’Università d’Annunzio: 12 ottobre
 
 Il nuovo allegato `logo_UdA.png` fornito dall’utente sostituisce il precedente logo nel sito e nelle locandine italiana e inglese. Sono conservati integralmente il marchio e la denominazione estesa, con colori e proporzioni originali. Nessuna modifica alle informazioni dell’evento o ai collegamenti.
+
+## Spiegazione della Challenge e sintesi per studenti: 12 ottobre
+
+Su richiesta dell’utente l’apertura e la sezione introduttiva spiegano il percorso: formazione con Google for Education al mattino, sfida collaborativa al pomeriggio, scelta di un tema proposto e sviluppo di una soluzione con l’IA di Google. La composizione dei team favorisce provenienze e competenze diverse «ove possibile», come previsto dall’art. 5, senza garantire una composizione interuniversitaria per ciascun gruppo.
+
+Il regolamento unificato ricevuto il 1 ottobre è collegato direttamente dalla testata, dalla sintesi e dalla sezione iscrizioni. La nuova sezione `#regolamento`, raggiungibile anche dal menu, riassume in otto punti gli articoli 2–7, 9–11 e 13: requisiti, candidatura e costi, team e sede, prova, uso dell’IA, valutazione, finale e diritti sui progetti. La formazione è descritta sulla base delle note già recepite; non è presentata come una nuova disposizione del regolamento. La sintesi IT/EN rinvia al testo completo e conserva la precisazione sui tempi di formazione dei team da confermare. Scadenza e valori numerici operativi sono ricavati dai dati comuni del sito. Il PDF e il suo stato editoriale non sono stati modificati.

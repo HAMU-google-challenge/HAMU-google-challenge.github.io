@@ -16,15 +16,17 @@ it:
     programme: Programma
     universities: Atenei
     documents: Documenti
+    rules: Regolamento
     faq: FAQ
   collaboration: In collaborazione con
   hero:
     eyebrow: 10 ATENEI / 3 REGIONI / UN’UNICA SFIDA
     title: Google Challenge
     tagline: Trasforma le tue idee con l’IA di Google.
-    subtitle: Sperimenta con Gemini e NotebookLM. Mettiti in gioco.
+    subtitle: "Una sfida collaborativa con studenti degli atenei HAMU: impari a usare l’IA di Google e, insieme al tuo team, sviluppi una soluzione a uno dei problemi proposti."
     cta: Scopri come partecipare
-    secondary: Esplora il programma
+    secondary: Leggi il regolamento (PDF)
+    summary: I punti essenziali per partecipare
     free: Partecipazione gratuita
     individual: Candidatura individuale
     date_label: Venerdì · Fase iniziale
@@ -44,17 +46,42 @@ it:
     team: studenti per team
     themes: temi progettuali
   challenge:
-    eyebrow: LA CHALLENGE
-    title: Competenze diverse.
-    title_accent: Un progetto comune.
-    text: Un’esperienza formativa e progettuale per usare l’intelligenza artificiale generativa in modo consapevole, responsabile e creativo. Il punto di partenza è un tema; il risultato, una proposta capace di produrre benefici per il territorio o la comunità.
+    eyebrow: CHE COS’È LA CHALLENGE
+    title: Una sfida collaborativa.
+    title_accent: Atenei diversi, idee condivise.
+    text: La Google Challenge HAMU unisce formazione e lavoro di squadra per affrontare problemi del territorio o della comunità con l’IA di Google. Al mattino partecipi alla Gemini Academy for Student; al pomeriggio, insieme al tuo team, scegli uno dei temi proposti dagli organizzatori e sviluppi una proposta di soluzione. I gruppi favoriscono, dove possibile, l’incontro tra studenti di atenei e percorsi di studio diversi.
     steps:
       - title: Impara e sperimenta
-        text: La formazione introduce un uso critico dell’IA generativa e strumenti come Gemini e NotebookLM. Le istruzioni operative indicheranno gli strumenti consentiti per la prova.
+        text: La mattina segui la masterclass di Google for Education su Gemini, NotebookLM e uso consapevole dell’IA. Le istruzioni operative indicheranno gli strumenti consentiti nella sfida.
       - title: Lavora con il tuo team
-        text: Il Comitato Organizzatore forma i gruppi. Ogni team sceglie uno dei temi proposti; modalità e tempi di formazione dei team saranno confermati dall’organizzazione.
+        text: Ti candidi individualmente; l’organizzazione forma i gruppi, favorendo competenze e provenienze diverse. Nel pomeriggio scegliete un tema e lavorate insieme a una soluzione originale.
       - title: Presenta la vostra idea
         text: Elaborate una proposta originale, spiegate l’uso dell’IA e presentate il progetto alla Commissione. I team selezionati accedono alla finale dell’Aquila.
+  rules:
+    eyebrow: IL REGOLAMENTO IN BREVE
+    title: Cosa sapere prima di partecipare.
+    intro: Otto punti per capire come candidarti e che cosa ti aspetta durante la Challenge.
+    pdf: Leggi il regolamento completo (PDF)
+    documents: Tutti i documenti e la traduzione inglese
+    note: Questa sintesi ti aiuta a prepararti; consulta il regolamento integrale prima di candidarti.
+    team_note: I tempi di formazione dei team e di comunicazione dei temi saranno confermati dall’organizzazione.
+    items:
+      - title: Chi può partecipare
+        text: Devi essere iscritto a laurea, laurea magistrale o a ciclo unico in un ateneo HAMU, in regola con le tasse alla scadenza. Il GSSI può ammettere anche dottorandi del primo e secondo anno. Devi restare iscritto fino alla conclusione della finale.
+      - title: Come candidarti e quali costi prevedere
+        text: La candidatura è individuale e gratuita. Compila il modulo entro il %deadline%; domande incomplete o tardive sono escluse. Non sono previsti rimborsi spese né premi in denaro.
+      - title: Il team e la sede li assegna l’organizzazione
+        text: Non devi avere già un gruppo. I team hanno da %team_min% a %team_max% studenti, con competenze e atenei diversi ove possibile. La sede assegnata può essere diversa dal tuo ateneo.
+      - title: Una proposta da sviluppare e presentare
+        text: Il team sceglie uno dei %themes% temi proposti. Nella fase iniziale avete al massimo %work_hours% ore per elaborare la proposta e %pitch_minutes% minuti per presentarla alla Commissione, che può poi fare domande.
+      - title: IA dichiarata, contenuti verificati
+        text: Usate solo strumenti e fonti consentiti, dichiarate come avete impiegato l’IA e verificate le risposte. La proposta deve essere originale e rispettare i diritti di terzi. Non inserite dati personali, informazioni riservate o contenuti che non potete utilizzare.
+      - title: Che cosa viene valutato
+        text: Contano innovatività, impatto sul territorio o sulla comunità, fattibilità tecnica, qualità dell’uso dell’IA e chiarezza della presentazione. La griglia è comune a tutte le sedi, per un massimo di 100 punti.
+      - title: Il percorso verso la finale
+        text: Fino a %max_finalists% team accedono alla finale all’Università dell’Aquila, secondo le graduatorie e le regole di ammissione. Si mantiene il tema scelto e si può perfezionare il progetto. La finale ha una valutazione autonoma e un team vincitore per tema.
+      - title: Che cosa succede al vostro progetto
+        text: Partecipare non trasferisce i diritti del progetto agli organizzatori o a Google. Agli atenei concedete una licenza gratuita, non esclusiva e non cedibile di cinque anni per gli usi istituzionali previsti dal regolamento, senza sfruttamento commerciale.
   training:
     eyebrow: LA MATTINA · FORMAZIONE
     title: Prima comprendi. Poi progetta.
@@ -189,15 +216,17 @@ en:
     programme: Programme
     universities: Universities
     documents: Documents
+    rules: Regulations
     faq: FAQ
   collaboration: In collaboration with
   hero:
     eyebrow: 10 UNIVERSITIES / 3 REGIONS / ONE CHALLENGE
     title: Google Challenge
     tagline: Turn your ideas into reality with Google AI.
-    subtitle: Explore Gemini and NotebookLM. Make your mark.
+    subtitle: "A collaborative challenge with students from HAMU universities: learn to use Google AI, then work with your team to develop a solution to one of the proposed problems."
     cta: Find out how to take part
-    secondary: Explore the programme
+    secondary: Read the regulations (PDF, Italian)
+    summary: The essentials for taking part
     free: Free participation
     individual: Individual applications
     date_label: Friday · Initial stage
@@ -217,17 +246,42 @@ en:
     team: students per team
     themes: project themes
   challenge:
-    eyebrow: THE CHALLENGE
-    title: Different skills.
-    title_accent: One shared project.
-    text: An educational, project-based experience in the informed, responsible and creative use of generative AI. Start with a theme and develop a proposal that could deliver tangible benefits for the local area or community.
+    eyebrow: WHAT IS THE CHALLENGE?
+    title: A collaborative challenge.
+    title_accent: Different universities, shared ideas.
+    text: The Google Challenge HAMU combines training and teamwork to tackle problems affecting the local area or community using Google AI. In the morning, you attend the Gemini Academy for Student; in the afternoon, your team chooses one of the organisers’ proposed themes and develops a solution. Wherever possible, teams bring together students from different universities and fields of study.
     steps:
       - title: Learn and experiment
-        text: Training introduces a critical approach to generative AI and tools such as Gemini and NotebookLM. The operational instructions will specify which tools may be used during the challenge.
+        text: In the morning, attend a Google for Education masterclass on Gemini, NotebookLM and responsible AI use. The operational instructions will specify which tools may be used in the challenge.
       - title: Work with your team
-        text: The Organising Committee forms the teams. Each team chooses one of the proposed themes; the organisers will confirm how and when teams are formed.
+        text: Apply individually; the organisers form teams to bring together different skills and academic backgrounds. In the afternoon, choose a theme and work together on an original solution.
       - title: Present your idea
         text: Develop an original proposal, explain how you used AI and present your project to the judging panel. Selected teams progress to the final in L’Aquila.
+  rules:
+    eyebrow: THE REGULATIONS AT A GLANCE
+    title: What to know before taking part.
+    intro: Eight essentials to help you apply and understand what to expect during the Challenge.
+    pdf: Read the full regulations (PDF, Italian)
+    documents: All documents and the English translation
+    note: This summary helps you prepare; read the full regulations before applying.
+    team_note: The organisers will confirm when teams are formed and themes are announced.
+    items:
+      - title: Who can take part
+        text: You must be enrolled in a bachelor’s, master’s or single-cycle master’s degree at a HAMU university, with tuition fees up to date at the deadline. GSSI may also admit first- and second-year PhD students. You must remain enrolled until the final stage ends.
+      - title: How to apply and what costs to expect
+        text: Applications are individual and participation is free. Complete the form by %deadline%; incomplete or late applications are excluded. There are no expense reimbursements or cash prizes.
+      - title: The organisers assign your team and venue
+        text: You do not need an existing team. Teams have %team_min%–%team_max% students, bringing together different skills and universities wherever possible. Your assigned venue may be outside your own university.
+      - title: Develop and present a proposal
+        text: Your team chooses one of %themes% proposed themes. In the initial stage, you have up to %work_hours% hours to develop your proposal and %pitch_minutes% minutes to present it to the judging panel, which may then ask questions.
+      - title: Declare AI use and check the content
+        text: Use only permitted tools and sources, explain how you used AI and check its outputs. Your proposal must be original and respect third-party rights. Do not enter personal data, confidential information or content you are not allowed to use.
+      - title: How your work is assessed
+        text: Assessment covers innovation, impact on the local area or community, technical feasibility, quality of AI use and presentation clarity. All venues use the same grid, with a maximum of 100 points.
+      - title: The route to the final
+        text: Up to %max_finalists% teams progress to the final at the University of L’Aquila, according to the rankings and admission rules. You keep the same theme and may refine your project. The final is assessed independently, with one winning team per theme.
+      - title: What happens to your project
+        text: Taking part does not transfer project rights to the organisers or Google. You grant the universities a free, non-exclusive, non-transferable five-year licence for the institutional uses set out in the regulations, excluding commercial exploitation.
   training:
     eyebrow: MORNING · TRAINING
     title: Understand first. Then create.
