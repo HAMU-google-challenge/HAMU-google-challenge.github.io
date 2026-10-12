@@ -38,7 +38,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="{{ home_url | relative_url }}" aria-label="Google Challenge HAMU 2026 — Home">
-        {% if e.branding.hamu_logo != '' %}<img class="brand-logo" src="{{ e.branding.hamu_logo | relative_url }}" alt="HAMU">{% else %}<span class="brand-name">HAMU<span class="brand-slash">/</span><span class="brand-year">{{ e.edition }}</span></span>{% endif %}
+        {% if e.branding.hamu_logo_on_dark != '' %}<img class="brand-logo" src="{{ e.branding.hamu_logo_on_dark | relative_url }}" width="{{ e.branding.hamu_logo_on_dark_width }}" height="{{ e.branding.hamu_logo_on_dark_height }}" alt="HAMU — Hub Abruzzo Marche Umbria">{% else %}<span class="brand-name">HAMU<span class="brand-slash">/</span><span class="brand-year">{{ e.edition }}</span></span>{% endif %}
         <span class="brand-caption">Google Challenge</span>
       </a>
       <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-menu-toggle data-open-label="{{ t.menu }}" data-close-label="{{ t.close_menu }}" hidden><span>{{ t.menu }}</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
@@ -61,6 +61,7 @@
     <div class="container footer-main">
       <div><a class="footer-brand" href="{{ home_url | relative_url }}">HAMU <span>/ {{ e.edition }}</span></a><p>{{ t.footer.description }}</p></div>
       <div class="footer-contact">
+        <a href="{{ e.branding.hamu_url | escape }}">{{ t.hamu_official }}{% include arrow.html %}</a>
         {% if e.contact_email != '' %}<a href="mailto:{{ e.contact_email | escape }}">{{ t.footer.contact }} {% include arrow.html %}</a>{% else %}<p>{{ t.footer.contact_pending }}</p>{% endif %}
         <a href="#top">{{ t.footer.top }} <span aria-hidden="true">↑</span></a>
       </div>

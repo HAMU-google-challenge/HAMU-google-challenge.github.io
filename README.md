@@ -62,7 +62,7 @@ Le disponibilità di Politecnica delle Marche, Perugia, Camerino e Chieti-Pescar
 
 Le date inserite sono il 3 novembre 2026 per le candidature, il 6 novembre per la comunicazione della sede assegnata e il 13 novembre per la preliminare. Per la finale è indicata L’Aquila nella settimana del 23 novembre come finestra prevista, con giorno da confermare; il nuovo regolamento consente lo svolgimento entro fine 2026. La masterclass è indicata con durata di circa 2,5–3 ore e orario indicativo 09:30–12:30; attestato previsto per tutti, CFU non automatici e lingua da comunicare. I testi relativi al programma e alle FAQ vanno aggiornati in entrambe le lingue quando cambiano le decisioni organizzative.
 
-I campi `branding.hamu_logo` e `branding.google_education_lockup` accettano percorsi locali. Il logo Google for Education fornito dall’utente il 12 ottobre è già incluso, con dimensioni in `branding.google_education_width` e `branding.google_education_height`. Il marchio HAMU resta tipografico finché il relativo campo è vuoto. Non sono inclusi loghi Google ricostruiti.
+I campi `branding.hamu_logo`, `branding.hamu_logo_on_dark` e `branding.google_education_lockup` contengono i percorsi locali dei loghi, con le rispettive dimensioni intrinseche. Le due versioni HAMU provengono dal sito ufficiale: quella bianca è usata nella testata e nel titolo, quella a colori nella sezione degli atenei. `branding.hamu_url` collega il sito istituzionale `https://h-amu.it/` dalla sezione degli atenei e dal piè di pagina. Il logo Google for Education è quello fornito dall’utente il 12 ottobre. I marchi sono conservati senza ricostruzioni o ricolorazioni.
 
 ## Aggiornamenti dalle riunioni
 

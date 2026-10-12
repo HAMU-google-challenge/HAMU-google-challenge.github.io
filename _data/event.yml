@@ -21,7 +21,13 @@ registration:
 contact_email: ""
 branding:
   # Percorsi locali (es. /assets/images/hamu-approved.svg), solo asset autorizzati.
-  hamu_logo: ""
+  hamu_logo: /assets/images/hamu-logo.png
+  hamu_logo_width: 708
+  hamu_logo_height: 144
+  hamu_logo_on_dark: /assets/images/hamu-logo-white.png
+  hamu_logo_on_dark_width: 1754
+  hamu_logo_on_dark_height: 346
+  hamu_url: https://h-amu.it/
   google_education_lockup: /assets/images/google-for-education.png
   google_education_width: 3298
   google_education_height: 414

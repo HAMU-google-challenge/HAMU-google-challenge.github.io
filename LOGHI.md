@@ -26,3 +26,12 @@ Il 12 ottobre il logo dell’Università d’Annunzio è stato sostituito con l�
 ## Google for Education
 
 Il 12 ottobre l’utente ha fornito `Google for Education logo lockup (full-color)_CMYK_Horizontal@2x.png`, 3298 × 414 px. Il sito usa una copia integrale in `assets/images/google-for-education.png`, configurata in `branding.google_education_lockup`, con le dimensioni originali e il testo alternativo «Google for Education». Il logo sostituisce il nome tipografico nella fascia di collaborazione del sito e delle locandine IT/EN; la dicitura «In collaborazione con» / «In collaboration with» resta separata. Colori, proporzioni e trasparenza dell’allegato sono conservati. Le occorrenze del nome all’interno dei testi informativi restano testuali.
+
+## HAMU — Hub Abruzzo Marche Umbria
+
+Il 12 ottobre, su richiesta dell’utente, sono state recuperate le immagini effettivamente richiamate nella [homepage ufficiale HAMU](https://h-amu.it/), che ha risposto HTTP 200:
+
+- [Logo a colori](https://h-amu.it/wp-content/uploads/2021/03/logo-HAMU-1.png), 708 × 144 px, salvato come `assets/images/hamu-logo.png`.
+- [Versione bianca per sfondi scuri](https://h-amu.it/wp-content/uploads/2021/06/HAMU_logo_bianco.png), 1754 × 346 px, salvata come `assets/images/hamu-logo-white.png`; l’originale è indicato nel `srcset` del logo nel footer istituzionale.
+
+I file sono copie integrali degli originali, con proporzioni e trasparenza conservate. La versione bianca sostituisce la scritta HAMU nella testata e nel titolo del sito e nel titolo delle locandine IT/EN. Quella a colori compare nella sezione degli atenei, collegata a `https://h-amu.it/`; il medesimo collegamento è presente nel footer. I link di iscrizione e l’indirizzo della Challenge sulle locandine restano invariati.

@@ -81,3 +81,7 @@ Il regolamento unificato ricevuto il 1 ottobre è collegato direttamente dalla t
 ## Logo Google for Education: 12 ottobre
 
 L’allegato dell’utente sostituisce il nome tipografico nella fascia di collaborazione del sito e delle locandine italiana e inglese. Restano le diciture introduttive nelle due lingue; le menzioni di Google for Education all’interno dei contenuti formativi non sono modificate. La copia web e il file incorporato nell’SVG coincidono con l’allegato. Questo aggiornamento supera le precedenti note sulla mancanza del logo, senza ricostruirlo né modificarne colori o proporzioni.
+
+## Identità HAMU e collegamento istituzionale: 12 ottobre
+
+L’utente ha indicato `https://h-amu.it/` come pagina ufficiale HAMU. Dalla homepage sono state ricavate le versioni a colori e bianca del logo, documentate in `LOGHI.md`. Il sito della Challenge usa la versione bianca sulle aree scure e quella a colori nella sezione degli atenei, con link esplicito al sito istituzionale anche nel footer. La versione bianca compare nel titolo di entrambe le locandine. Le immagini originali non sono state modificate; l’elemento decorativo lime è stato spostato per lasciare spazio all’anno. Non sono stati importati altri contenuti o istruzioni dal sito istituzionale.

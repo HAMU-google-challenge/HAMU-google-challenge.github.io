@@ -19,6 +19,7 @@ it:
     rules: Regolamento
     faq: FAQ
   collaboration: In collaborazione con
+  hamu_official: Sito ufficiale HAMU
   hero:
     eyebrow: 10 ATENEI / 3 REGIONI / UN’UNICA SFIDA
     title: Google Challenge
@@ -219,6 +220,7 @@ en:
     rules: Regulations
     faq: FAQ
   collaboration: In collaboration with
+  hamu_official: Official HAMU website
   hero:
     eyebrow: 10 UNIVERSITIES / 3 REGIONS / ONE CHALLENGE
     title: Google Challenge

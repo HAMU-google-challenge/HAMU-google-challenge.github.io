@@ -10,7 +10,7 @@ layout: default
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="eyebrow">{{ t.hero.eyebrow }}</p>
-      <h1 id="hero-title"><span class="hero-title-line"><span class="hero-google">Google</span> <span class="hero-challenge">Challenge</span></span><span class="hero-title-line"><span class="hero-hamu">HAMU</span> <span class="hero-year">{{ e.edition }}</span></span></h1>
+      <h1 id="hero-title"><span class="hero-title-line"><span class="hero-google">Google</span> <span class="hero-challenge">Challenge</span></span><span class="hero-title-line hero-title-identity">{% if e.branding.hamu_logo_on_dark != '' %}<img class="hero-hamu-logo" src="{{ e.branding.hamu_logo_on_dark | relative_url }}" width="{{ e.branding.hamu_logo_on_dark_width }}" height="{{ e.branding.hamu_logo_on_dark_height }}" alt="HAMU — Hub Abruzzo Marche Umbria">{% else %}<span class="hero-hamu">HAMU</span>{% endif %} <span class="hero-year">{{ e.edition }}</span></span></h1>
       <p class="hero-tagline">{{ t.hero.tagline }}</p>
       <p class="hero-description">{{ t.hero.subtitle }}</p>
       <div class="hero-actions"><a class="button button-lime" href="{% if e.registration.state == 'open' and e.registration.url != '' %}{{ e.registration.url | escape }}{% else %}#iscrizioni{% endif %}">{% if e.registration.state == 'open' and e.registration.url != '' %}{{ t.participation.open }}{% else %}{{ t.hero.cta }}{% endif %}{% include arrow.html %}</a><a class="text-link hero-regulations" href="{{ regulations.path | relative_url }}">{{ t.hero.secondary }}</a></div>
@@ -20,7 +20,7 @@ layout: default
       <rect x="12" y="12" width="145" height="148" rx="49" stroke="#12616d" stroke-width="7"/>
       <rect x="78" y="72" width="145" height="148" rx="49" stroke="#168d85" stroke-width="7"/>
       <rect x="8" y="130" width="145" height="98" rx="41" stroke="#5ca79a" stroke-width="2"/>
-      <circle cx="11" cy="153" r="7" fill="#dcf765"/><circle cx="189" cy="30" r="4" fill="#5ca79a"/>
+      <circle cx="189" cy="214" r="7" fill="#dcf765"/><circle cx="189" cy="30" r="4" fill="#5ca79a"/>
     </svg>
     <div class="hero-event">
       <div class="event-date-block">
@@ -113,6 +113,7 @@ layout: default
   <div class="collaboration">
     <p><span>{{ t.collaboration }}</span>{% if e.branding.google_education_lockup != '' %}<img src="{{ e.branding.google_education_lockup | relative_url }}" width="{{ e.branding.google_education_width }}" height="{{ e.branding.google_education_height }}" alt="Google for Education" loading="lazy" decoding="async">{% else %}<strong>Google for Education</strong>{% endif %}</p>
   </div>
+  <a class="hamu-network-link" href="{{ e.branding.hamu_url | escape }}"><img src="{{ e.branding.hamu_logo | relative_url }}" width="{{ e.branding.hamu_logo_width }}" height="{{ e.branding.hamu_logo_height }}" alt="HAMU — Hub Abruzzo Marche Umbria" loading="lazy" decoding="async"><span>{{ t.hamu_official }} · h-amu.it{% include arrow.html %}</span></a>
   <div class="section-intro"><p class="eyebrow">{{ t.universities.eyebrow }}</p><h2 id="universities-title">{{ t.universities.title }}</h2><p class="lead">{{ t.universities.intro }}</p></div>
   <div class="universities-grid">
     {% for venue in e.venues %}
