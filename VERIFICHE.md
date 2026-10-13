@@ -137,3 +137,10 @@ La locandina è stata aggiornata su richiesta dell’utente: «Google» nel tito
 - Confermati nelle sei homepage compilate: due pulsanti verso il modulo corretto, tre link alla nuova informativa, otto punti di sintesi del regolamento, dieci loghi universitari, tre download e soltanto la sede effettivamente confermata. Non sono stati attribuiti nuovi orari, nuove sedi o approvazioni.
 - Verificata l’identità dei byte con la versione precedentemente registrata per tutti i sette documenti: quattro archiviati nei sorgenti, due PDF delle locandine rinominati e il regolamento unificato corrente. Nessuna modifica ai contenuti dei PDF e dei DOCX.
 - Controllo delle differenze superato; pacchetti dei sorgenti e dell’anteprima aggiornati. La verifica del sito è strutturale, senza nuova ispezione visiva nel browser per i limiti già documentati. Il documento esterno UniAQ non è stato verificabile tramite web (403); il suo URL è conservato come fornito. Nessun commit, push, deployment o modifica al modulo Google eseguiti.
+
+## Note finali su iscrizione, finale e sedi — 13 ottobre
+
+- Entrambi i pulsanti di iscrizione nelle homepage IT/EN aprono il modulo corretto in una nuova scheda (`target="_blank"`, `rel="noopener noreferrer"`), con indicazione accessibile. Lo stesso comportamento è previsto per il link al modulo nello stato di preapertura; i rimandi interni mantengono il comportamento normale.
+- Finale indicata entro fine novembre nel calendario iniziale, nel programma e nel testo sulla permanenza dell’iscrizione. Rimossa l’attribuzione della sede preliminare a Chieti-Pescara dal blocco atenei e dalla FAQ; conservati tutti i dieci loghi e i collegamenti agli atenei.
+- Compilazione: quattro pagine e 125 riferimenti locali verificati. Anteprima aggiornata: quattro pagine e 117 riferimenti. Ispezionate le quattro homepage generate per verificare destinazione e attributi dei pulsanti, nuova indicazione della finale, assenza del blocco sede, dieci atenei e tre link all’informativa per lingua.
+- Controllo delle differenze superato e archivi dei sorgenti e dell’anteprima aggiornati. Nessun commit, push o deployment eseguito.

@@ -43,11 +43,11 @@ Il sito include anche la pagina 404, `robots.txt` e una sitemap con homepage IT/
 
 ### Iscrizioni e informazioni operative
 
-`registration.state` può essere `planned`, `open` o `closed`. Con `open` e un `registration.url` valorizzato, i pulsanti di iscrizione sono visibili in entrambe le lingue. `privacy_url` punta alla pagina locale dell’informativa, collegata dalle iscrizioni, dai documenti e dal footer. La chiusura è editoriale: alla scadenza imposta `state: closed` e chiudi il modulo presso il servizio che lo ospita.
+`registration.state` può essere `planned`, `open` o `closed`. Con `open` e un `registration.url` valorizzato, i pulsanti di iscrizione sono visibili in entrambe le lingue e aprono il modulo in una nuova scheda, lasciando il sito aperto. `privacy_url` punta alla pagina locale dell’informativa, collegata dalle iscrizioni, dai documenti e dal footer. La chiusura è editoriale: alla scadenza imposta `state: closed` e chiudi il modulo presso il servizio che lo ospita.
 
-Le date pubblicate sono il 3 novembre 2026 per le candidature, il 6 novembre per la comunicazione della sede e il 13 novembre per formazione e fase iniziale. La finale è all’Aquila entro fine 2026, con data da comunicare. Non vengono mostrati un orario di scadenza o una data precisa della finale non confermati. La formazione si svolge al mattino, la Challenge al pomeriggio.
+Le date pubblicate sono il 3 novembre 2026 per le candidature, il 6 novembre per la comunicazione della sede e il 13 novembre per formazione e fase iniziale. La finale è all’Aquila entro fine novembre 2026, con data da comunicare. Non vengono mostrati un orario di scadenza o una data precisa della finale non confermati. La formazione si svolge al mattino, la Challenge al pomeriggio.
 
-La sezione atenei espone come sedi soltanto quelle con `status: confirmed`. Le sedi preferite e candidate restano nei dati di lavoro. La disponibilità di un ateneo non conferma una specifica aula. Aggiorna sedi, orari, contatti e testi nelle due lingue quando arrivano decisioni dell’organizzazione; non inventare valori per riempire campi vuoti.
+La sezione atenei presenta i dieci membri della rete, senza indicare un ateneo come sede della prova. L’indicazione di Chieti-Pescara come sede è stata rimossa su richiesta del 13 ottobre, anche dalla FAQ; il suo logo e la scheda come ateneo aderente restano presenti. Le informazioni organizzative sulle sedi restano nei dati di lavoro. La disponibilità di un ateneo non conferma una specifica aula. Aggiorna sedi, orari, contatti e testi nelle due lingue quando arrivano decisioni dell’organizzazione; non inventare valori per riempire campi vuoti.
 
 Alla verifica del modulo del 10 ottobre era presente un segnaposto per il collegamento al regolamento. Il modulo non viene modificato da questo progetto: l’organizzazione deve completarne i collegamenti, inclusa la nuova informativa dopo la pubblicazione.
 

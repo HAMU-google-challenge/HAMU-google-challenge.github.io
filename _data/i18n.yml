@@ -8,6 +8,7 @@ it:
   menu: Menu
   close_menu: Chiudi menu
   language_label: Scegli la lingua
+  new_tab: Si apre in una nuova scheda
   preview: Anteprima informativa
   preview_note: Programma e documenti in corso di definizione.
   nav:
@@ -40,7 +41,7 @@ it:
     initial: Fase iniziale
     training: Formazione e Challenge
     final: Fase finale
-    final_tbc: Entro fine 2026
+    final_tbc: Entro fine novembre
   stats:
     universities: Atenei coinvolti
     regions: regioni
@@ -113,7 +114,7 @@ it:
     challenge: Formazione e Challenge
     challenge_note: Masterclass Gemini Academy al mattino e fase preliminare nel pomeriggio, nelle tre sedi. Gli orari saranno comunicati ai partecipanti.
     final: Finale all’Aquila
-    final_date: Entro fine 2026
+    final_date: Entro fine novembre
     final_note: La finale si svolge all’Università degli Studi dell’Aquila. Data, aula e orari saranno comunicati ai partecipanti.
     hours: ore massime di lavoro
     minutes: minuti massimi di presentazione
@@ -123,7 +124,7 @@ it:
     title: Porta le tue competenze.
     accent: Il team lo formiamo noi.
     text: La candidatura è individuale ed è rivolta agli studenti regolarmente iscritti a laurea, laurea magistrale o laurea magistrale a ciclo unico presso un Ateneo aderente, in regola con il pagamento delle tasse alla scadenza.
-    gssi: Per il Gran Sasso Science Institute è possibile l’ammissione dei dottorandi del primo e secondo anno. L’iscrizione deve permanere fino alla conclusione della finale, da svolgersi entro la fine del 2026. Il Comitato Organizzatore può escludere, anche a posteriori, chi non rispetta i requisiti.
+    gssi: Per il Gran Sasso Science Institute è possibile l’ammissione dei dottorandi del primo e secondo anno. L’iscrizione deve permanere fino alla conclusione della finale, da svolgersi entro fine novembre. Il Comitato Organizzatore può escludere, anche a posteriori, chi non rispetta i requisiti.
     full_rules: Consulta i requisiti completi nel regolamento
     deadline: Candidature entro il
     planned: Iscrizioni in preparazione
@@ -167,7 +168,7 @@ it:
       - q: Devo avere già un team?
         a: No. La candidatura è individuale e i team, da 5 a 7 partecipanti, sono formati dall’organizzazione, favorendo dove possibile l’incontro tra studenti di atenei e percorsi di studio diversi.
       - q: La Challenge si svolge nella mia università?
-        a: Non necessariamente. Il Comitato assegna la sede, che può essere diversa dal tuo Ateneo, almeno sette giorni prima della prova. L’Ateneo di Chieti-Pescara ospita una delle tre sedi. Aule e indirizzi saranno comunicati dall’organizzazione.
+        a: Non necessariamente. Il Comitato assegna la sede, che può essere diversa dal tuo Ateneo, almeno sette giorni prima della prova. Aule e indirizzi saranno comunicati dall’organizzazione.
       - q: Quali strumenti di intelligenza artificiale posso usare?
         a: Solo quelli indicati dall’organizzazione. Altre applicazioni, fonti o strumenti sono consentiti esclusivamente se previsti nelle istruzioni operative. Devi dichiarare come usi l’IA, verificare i contenuti generati e rispettare i diritti di terzi e le indicazioni sui dati personali.
       - q: Sono previsti rimborsi o premi in denaro?
@@ -196,6 +197,7 @@ en:
   menu: Menu
   close_menu: Close menu
   language_label: Choose language
+  new_tab: Opens in a new tab
   preview: Information preview
   preview_note: Programme and documents are being finalised.
   nav:
@@ -228,7 +230,7 @@ en:
     initial: Initial stage
     training: Training and Challenge
     final: Final stage
-    final_tbc: By the end of 2026
+    final_tbc: By the end of November
   stats:
     universities: universities
     regions: regions
@@ -301,7 +303,7 @@ en:
     challenge: Training and Challenge
     challenge_note: Gemini Academy masterclass in the morning and preliminary stage in the afternoon, at three venues. The timetable will be sent to participants.
     final: Final in L’Aquila
-    final_date: By the end of 2026
+    final_date: By the end of November
     final_note: The final takes place at the University of L’Aquila. The date, room and timetable will be sent to participants.
     hours: hours maximum to develop your proposal
     minutes: minutes maximum to present
@@ -311,7 +313,7 @@ en:
     title: Bring your skills.
     accent: We’ll put the team together.
     text: Apply individually. The Challenge is open to students duly enrolled in a bachelor’s, master’s or single-cycle master’s degree at a participating university, with tuition fees up to date at the application deadline.
-    gssi: The Gran Sasso Science Institute may also admit first- and second-year PhD students. You must remain enrolled until the end of the final stage, to be held by the end of 2026. The Organising Committee may exclude anyone who does not meet the requirements, including retrospectively.
+    gssi: The Gran Sasso Science Institute may also admit first- and second-year PhD students. You must remain enrolled until the end of the final stage, to be held by the end of November. The Organising Committee may exclude anyone who does not meet the requirements, including retrospectively.
     full_rules: Read the full eligibility requirements
     deadline: Apply by
     planned: Applications opening soon
@@ -355,7 +357,7 @@ en:
       - q: Do I need to have a team already?
         a: No. Applications are individual and the organisers form teams of 5 to 7 participants, bringing together students from different universities and fields of study wherever possible.
       - q: Will I take part at my own university?
-        a: Not necessarily. The Committee assigns your venue, which may differ from your home university, at least seven days before the challenge. The University of Chieti-Pescara hosts one of the three venues. Rooms and addresses will be announced by the organisers.
+        a: Not necessarily. The Committee assigns your venue, which may differ from your home university, at least seven days before the challenge. Rooms and addresses will be announced by the organisers.
       - q: Which artificial intelligence tools can I use?
         a: Only those specified by the organisers. Additional applications, sources or tools are permitted only if expressly allowed by the operational instructions. You must declare your use of AI, verify generated content and respect third-party rights and personal data instructions.
       - q: Are expenses reimbursed or cash prizes offered?

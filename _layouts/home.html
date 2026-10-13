@@ -13,7 +13,7 @@ layout: default
       <h1 id="hero-title"><span class="hero-title-line"><span class="hero-google">Google</span> <span class="hero-challenge">Challenge</span></span><span class="hero-title-line hero-title-identity">{% if e.branding.hamu_logo_on_dark != '' %}<img class="hero-hamu-logo" src="{{ e.branding.hamu_logo_on_dark | relative_url }}" width="{{ e.branding.hamu_logo_on_dark_width }}" height="{{ e.branding.hamu_logo_on_dark_height }}" alt="HAMU — Hub Abruzzo Marche Umbria">{% else %}<span class="hero-hamu">HAMU</span>{% endif %} <span class="hero-year">{{ e.edition }}</span></span></h1>
       <p class="hero-tagline">{{ t.hero.tagline }}</p>
       <p class="hero-description">{{ t.hero.subtitle }}</p>
-      <div class="hero-actions"><a class="button button-lime" href="{% if e.registration.state == 'open' and e.registration.url != '' %}{{ e.registration.url | escape }}{% else %}#iscrizioni{% endif %}">{% if e.registration.state == 'open' and e.registration.url != '' %}{{ t.participation.open }}{% else %}{{ t.hero.cta }}{% endif %}{% include arrow.html %}</a><a class="text-link hero-regulations" href="{{ regulations.path | relative_url }}">{{ t.hero.secondary }}</a></div>
+      <div class="hero-actions"><a class="button button-lime" href="{% if e.registration.state == 'open' and e.registration.url != '' %}{{ e.registration.url | escape }}{% else %}#iscrizioni{% endif %}"{% if e.registration.state == 'open' and e.registration.url != '' %} target="_blank" rel="noopener noreferrer" aria-label="{{ t.participation.open }} — {{ t.new_tab }}"{% endif %}>{% if e.registration.state == 'open' and e.registration.url != '' %}{{ t.participation.open }}{% else %}{{ t.hero.cta }}{% endif %}{% include arrow.html %}</a><a class="text-link hero-regulations" href="{{ regulations.path | relative_url }}">{{ t.hero.secondary }}</a></div>
       <a class="hero-summary-link" href="#regolamento">{{ t.hero.summary }} <span aria-hidden="true">↓</span></a>
     </div>
     <svg class="hero-art" aria-hidden="true" focusable="false" viewBox="0 0 240 270" fill="none">
@@ -90,13 +90,13 @@ layout: default
     <p class="eyebrow">{{ t.participation.deadline }}</p><p class="registration-date">{% include date.html value=e.registration_deadline %}</p>
     {% if e.registration.deadline_time != '' %}<p>{{ e.registration.deadline_time }} · Europe/Rome</p>{% endif %}
     {% if e.registration.state == 'open' and e.registration.url != '' %}
-      <h3>{{ t.participation.open_heading }}</h3><p>{{ t.participation.open_note }}</p><a class="button button-dark registration-link" href="{{ e.registration.url | escape }}">{{ t.participation.open }}{% include arrow.html %}</a>
+      <h3>{{ t.participation.open_heading }}</h3><p>{{ t.participation.open_note }}</p><a class="button button-dark registration-link" href="{{ e.registration.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ t.participation.open }} — {{ t.new_tab }}">{{ t.participation.open }}{% include arrow.html %}</a>
     {% elsif e.registration.state == 'closed' %}
       <h3>{{ t.participation.closed }}</h3><p>{{ t.participation.closed_note }}</p><a class="button button-outline" href="#programma">{{ t.nav.programme }}{% include arrow.html %}</a>
     {% else %}
       <h3>{{ t.participation.planned }}</h3>
       {% if e.registration.state == 'planned' and e.registration.url != '' %}
-        <p>{{ t.participation.form_pending_note }}</p><a class="button button-outline form-preview-link" href="{{ e.registration.url | escape }}">{{ t.participation.form_preview }}{% include arrow.html %}</a>
+        <p>{{ t.participation.form_pending_note }}</p><a class="button button-outline form-preview-link" href="{{ e.registration.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ t.participation.form_preview }} — {{ t.new_tab }}">{{ t.participation.form_preview }}{% include arrow.html %}</a>
       {% else %}
         <p>{{ t.participation.planned_note }}</p><a class="button button-outline" href="#documenti">{{ t.participation.documents }}{% include arrow.html %}</a>
       {% endif %}
@@ -118,11 +118,6 @@ layout: default
     {% for venue in e.venues %}
     <article class="university-region" aria-labelledby="region-{{ venue.region | slugify }}">
       <div class="region-heading"><h3 id="region-{{ venue.region | slugify }}">{{ venue.region }}</h3>
-        {% if venue.status == 'confirmed' %}<div class="venue-note">
-          <span class="venue-status">{{ t.universities.venue }}</span>
-          <strong>{{ venue.location }}</strong>
-          {% if venue.note[page.lang] %}<p>{{ venue.note[page.lang] }}</p>{% endif %}
-        </div>{% endif %}
       </div>
       <ul class="university-cards">
         {% assign universities = e.universities | where: 'region', venue.region %}
