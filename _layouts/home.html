@@ -58,7 +58,6 @@ layout: default
       {% endfor %}
     </ul>
     <div class="rules-footer">
-      {% if e.documents_need_alignment %}<p class="rules-pending">{{ t.rules.team_note }}</p>{% endif %}
       <p>{{ t.rules.note }}</p>
       <div class="rules-actions"><a class="button button-dark" href="{{ regulations.path | relative_url }}">{{ t.rules.pdf }}{% include arrow.html %}</a><a class="text-link" href="#documenti">{{ t.rules.documents }}</a></div>
     </div>
@@ -77,7 +76,7 @@ layout: default
 <section id="programma" class="section programme-section" aria-labelledby="programme-title">
   <div class="container"><div class="section-intro"><p class="eyebrow">{{ t.programme.eyebrow }}</p><h2 id="programme-title">{{ t.programme.title }}</h2><p class="lead">{{ t.programme.intro }}</p></div>
     <ol class="timeline">
-      <li><div class="timeline-date"><time datetime="{{ e.registration_deadline }}">{% include date.html value=e.registration_deadline %}</time><span class="timeline-number" aria-hidden="true">01</span></div><div class="timeline-copy"><h3>{{ t.programme.deadline }}</h3><p>{% if e.registration.deadline_time != '' %}{{ e.registration.deadline_time }} · Europe/Rome{% else %}{{ t.programme.deadline_note }}{% endif %}</p></div></li>
+      <li><div class="timeline-date"><time datetime="{{ e.registration_deadline }}">{% include date.html value=e.registration_deadline %}</time><span class="timeline-number" aria-hidden="true">01</span></div><div class="timeline-copy"><h3>{{ t.programme.deadline }}</h3>{% if e.registration.deadline_time != '' %}<p>{{ e.registration.deadline_time }} · Europe/Rome</p>{% endif %}</div></li>
       <li><div class="timeline-date"><time datetime="{{ e.venue_announcement }}">{% include date.html value=e.venue_announcement %}</time><span class="timeline-number" aria-hidden="true">02</span></div><div class="timeline-copy"><h3>{{ t.programme.venue }}</h3><p>{{ t.programme.venue_note }}</p></div></li>
       <li class="timeline-featured"><div class="timeline-date"><time datetime="{{ e.preliminary_date }}">{% include date.html value=e.preliminary_date %}</time><span class="timeline-number" aria-hidden="true">03</span></div><div class="timeline-copy"><h3>{{ t.programme.challenge }}</h3><p>{{ t.programme.challenge_note }}</p></div></li>
       <li><div class="timeline-date"><span>{% if e.final_date != '' %}{% include date.html value=e.final_date %}{% else %}{{ t.programme.final_date }}{% endif %}</span><span class="timeline-number" aria-hidden="true">04</span></div><div class="timeline-copy"><h3>{{ t.programme.final }}</h3><p>{{ t.programme.final_note }}</p></div></li>
@@ -119,11 +118,11 @@ layout: default
     {% for venue in e.venues %}
     <article class="university-region" aria-labelledby="region-{{ venue.region | slugify }}">
       <div class="region-heading"><h3 id="region-{{ venue.region | slugify }}">{{ venue.region }}</h3>
-        <div class="venue-note">
-          <span class="venue-status">{% if venue.status == 'confirmed' %}{{ t.universities.venue_confirmed }}{% elsif venue.status == 'preferred' %}{{ t.universities.venue_preferred }}{% else %}{{ t.universities.venue }}{% endif %}</span>
-          <strong>{% if venue.location != '' %}{{ venue.location }}{% else %}{{ t.universities.venue_tbc }}{% endif %}</strong>
+        {% if venue.status == 'confirmed' %}<div class="venue-note">
+          <span class="venue-status">{{ t.universities.venue }}</span>
+          <strong>{{ venue.location }}</strong>
           {% if venue.note[page.lang] %}<p>{{ venue.note[page.lang] }}</p>{% endif %}
-        </div>
+        </div>{% endif %}
       </div>
       <ul class="university-cards">
         {% assign universities = e.universities | where: 'region', venue.region %}
@@ -137,9 +136,8 @@ layout: default
   <p class="section-footnote">{{ t.universities.venue_note }}</p>
 </section>
 <section id="documenti" class="section documents-section" aria-labelledby="documents-title"><div class="container">
-  {% if e.documents_need_alignment %}<p class="document-update-note">{{ t.documents.alignment_note }}</p>{% endif %}
-  <div class="section-intro two-column"><div><p class="eyebrow">{{ t.documents.eyebrow }}</p><h2 id="documents-title">{{ t.documents.title }}</h2></div><div><p class="lead">{{ t.documents.intro }}</p>{% assign review_documents = e.documents | where: 'status', 'review' %}{% if review_documents.size > 0 %}<p class="draft-note">{{ t.documents.review_note }}</p>{% endif %}{% assign draft_documents = e.documents | where: 'status', 'draft' %}{% if draft_documents.size > 0 %}<p class="draft-note">{{ t.documents.draft_note }}</p>{% endif %}</div></div>
-  <div class="document-list">{% for document in e.documents %}<a class="document-link" href="{{ document.path | relative_url }}" download><span class="file-type">{{ document.format }}</span><span class="document-title">{{ document.title[page.lang] }}<span class="document-meta">{{ document.language }} <span aria-hidden="true">·</span> {% if document.status == 'approved' %}{{ t.documents.approved }}{% elsif document.status == 'review' %}{{ t.documents.review }}{% else %}{{ t.documents.draft }}{% endif %}</span></span><span class="document-download">{{ t.documents.download }}<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>{% endfor %}</div>
-  {% if e.registration.privacy_url == '' %}<p class="section-footnote">{{ t.documents.privacy_pending }}</p>{% else %}<p><a class="text-link" href="{% if e.registration.privacy_url contains '://' %}{{ e.registration.privacy_url | escape }}{% else %}{{ e.registration.privacy_url | relative_url }}{% endif %}">{{ t.participation.privacy }}{% include arrow.html %}</a></p>{% endif %}
+  <div class="section-intro two-column"><div><p class="eyebrow">{{ t.documents.eyebrow }}</p><h2 id="documents-title">{{ t.documents.title }}</h2></div><p class="lead">{{ t.documents.intro }}</p></div>
+  <div class="document-list">{% for document in e.documents %}<a class="document-link" href="{{ document.path | relative_url }}" download><span class="file-type">{{ document.format }}</span><span class="document-title">{{ document.title[page.lang] }}<span class="document-meta">{{ document.language }}</span></span><span class="document-download">{{ t.documents.download }}<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>{% endfor %}</div>
+  {% if e.registration.privacy_url != '' %}<p><a class="text-link" href="{% if e.registration.privacy_url contains '://' %}{{ e.registration.privacy_url | escape }}{% else %}{{ e.registration.privacy_url | relative_url }}{% endif %}">{{ t.participation.privacy }}{% include arrow.html %}</a></p>{% endif %}
 </div></section>
 <section id="faq" class="section container faq-grid" aria-labelledby="faq-title"><div><p class="eyebrow">{{ t.faq.eyebrow }}</p><h2 id="faq-title">{{ t.faq.title }}</h2></div><div class="faq-list">{% for item in t.faq.items %}<details><summary>{{ item.q }}<span class="faq-icon" aria-hidden="true">+</span></summary><div><p>{{ item.a }}</p></div></details>{% endfor %}</div></section>

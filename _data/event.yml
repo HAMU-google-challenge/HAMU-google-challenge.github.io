@@ -1,9 +1,8 @@
 # Tutte le informazioni operative comuni alle due lingue.
-# Lasciare preview: true fino al consolidamento dei contenuti ufficiali.
-preview: true
+# Modalità pubblica: nessun avviso di anteprima e indicizzazione abilitata.
+preview: false
 edition: 2026
-updated: "2026-10-12"
-documents_need_alignment: true # Tempi di formazione team: divergenza fra note del 24/09 e PDF ricevuto il 01/10.
+updated: "2026-10-13"
 preliminary_date: "2026-11-13"
 registration_deadline: "2026-11-03"
 venue_announcement: "2026-11-06"
@@ -17,7 +16,7 @@ registration:
   url: "https://forms.gle/m8npVRMSNzRwhz2x6"
   # Link e apertura confermati dall’utente il 10/10; verificato il modulo pubblico con pulsante Invia.
   deadline_time: "" # HH:MM, Europe/Rome; inserire l'ora deliberata.
-  privacy_url: ""
+  privacy_url: /informativa-privacy/
 contact_email: ""
 branding:
   # Percorsi locali (es. /assets/images/hamu-approved.svg), solo asset autorizzati.
@@ -83,48 +82,21 @@ documents:
       en: Italian regulations in PDF
     format: PDF
     language: IT
-    status: review
     path: /assets/documents/regolamento-unificato-it-ricevuto-01-10-2026.pdf
-  - id: regulations-it
-    title:
-      it: Regolamento italiano modificabile
-      en: Editable Italian regulations
-    format: DOCX
-    language: IT
-    status: draft
-    path: /assets/documents/regolamento-it-bozza.docx
-  - id: regulations-en
-    title:
-      it: Traduzione inglese del regolamento
-      en: English translation of the regulations
-    format: DOCX
-    language: EN
-    status: draft
-    path: /assets/documents/regolamento-en-bozza.docx
-  - id: call
-    title:
-      it: Avviso di selezione
-      en: Call for applications
-    format: DOCX
-    language: IT
-    status: draft
-    path: /assets/documents/avviso-selezione-bozza.docx
   - id: poster
     title:
       it: Locandina della Challenge in italiano
       en: Challenge poster in Italian
     format: PDF
     language: IT
-    status: draft
-    path: /assets/documents/locandina-hamu-bozza.pdf
+    path: /assets/documents/locandina-hamu-it.pdf
   - id: poster-en
     title:
       it: Locandina della Challenge in inglese
       en: Challenge poster in English
     format: PDF
     language: EN
-    status: draft
-    path: /assets/documents/locandina-hamu-en-bozza.pdf
+    path: /assets/documents/locandina-hamu-en.pdf
 criteria:
   - name: {it: Innovatività, en: Innovation}
     points: 30

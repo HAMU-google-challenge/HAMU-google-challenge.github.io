@@ -1,119 +1,88 @@
 # Google Challenge HAMU 2026
 
-Sito Jekyll bilingue, in italiano e inglese, predisposto per GitHub Pages. Tema originale per un evento universitario: blu profondo, verde petrolio, accenti lime, calendario in evidenza, masterclass Gemini Academy, loghi dei dieci Atenei, documenti scaricabili e FAQ. Nessun tema remoto, font esterno, servizio di analytics o plugin Jekyll aggiuntivo.
+Sito Jekyll in italiano e inglese per GitHub Pages, con grafica coordinata alle locandine. Usa Rubik Regular e Bold locali, i dieci loghi degli atenei, il logo ufficiale HAMU e il logo Google for Education fornito dall’organizzazione. Non usa font esterni, analytics o plugin Jekyll aggiuntivi.
 
-Aggiornamento del 1 ottobre 2026: i contenuti incorporano le decisioni del 24 settembre contenute nel nuovo «Agenda e Note.pdf». I tempi di formazione dei team sono ora da confermare per la divergenza tra il nuovo PDF e le note; Chieti-Pescara è confermata come Ateneo ospitante; la Politecnica delle Marche resta la sede preferita da confermare in base alle iscrizioni. È collegato il nuovo modulo, con stato in preparazione. Le provenienze e le scelte editoriali sono in `FONTI.md`; l’inventario dei loghi è in `LOGHI.md`.
+## Stato al 13 ottobre 2026
 
-Il riferimento regolamentare è il PDF «HAMU - Regolamento Unificato.docx.pdf» ricevuto il 1 ottobre 2026 (14 pagine). Il download punta alla nuova copia, conservata senza modifiche. L’articolo 3.3 porta il termine massimo della finale alla fine dell’anno e l’articolo 3.6 esplicita l’esclusione anche a posteriori per mancanza dei requisiti; il titolo dell’articolo 12 nel sommario è corretto. Le copie Word IT/EN e l’avviso recepiscono le due modifiche dell’articolo 3. Gli articoli 5.1 e 7.2 prevedono ancora team comunicati in anticipo, mentre l’articolo 6.3 collega a quel momento la comunicazione dei temi: devono essere coordinati con la decisione del 24 settembre. Un avviso visibile accanto ai download esplicita la differenza (`documents_need_alignment: true`). Il sito non assegna una nuova scadenza ai temi. Il PDF italiano, incluso senza modifiche, è indicato come «In approvazione» in attesa della conferma delle approvazioni e delle informative: il nuovo invio non contiene un aggiornamento sullo stato già segnalato dalla mail precedente. Copie modificabili, traduzione inglese, avviso e locandina restano bozze. La realizzazione tecnica del sito non costituisce approvazione del regolamento o del branding.
+Il sito è in modalità pubblica (`preview: false`), con indicizzazione abilitata. Sono stati rimossi gli avvisi di anteprima, le etichette di revisione e i commenti di coordinamento interno. Le informazioni operative ancora da comunicare non vengono presentate come confermate.
+
+Le iscrizioni sono aperte con il modulo indicato dall’utente il 10 ottobre: <https://forms.gle/m8npVRMSNzRwhz2x6>. L’informativa fornita il 13 ottobre è in `informativa-privacy.md` e sarà raggiungibile dopo la pubblicazione a **<https://hamu.univaq.it/informativa-privacy/>**. Questo è l’indirizzo da inserire nel modulo Google. Il testo è in italiano anche quando raggiunto dalla homepage inglese; il collegamento lo specifica. Il sito non raccoglie candidature: i dati vengono inviati tramite il modulo esterno.
+
+Il regolamento scaricabile resta il PDF unificato ricevuto il 1 ottobre (14 pagine), conservato senza modifiche. Le locandine sono disponibili nei file `assets/documents/locandina-hamu-it.pdf` e `assets/documents/locandina-hamu-en.pdf`. I contenuti dei PDF non sono stati modificati in questo aggiornamento.
+
+Le copie Word di lavoro, la traduzione inglese, l’avviso con un campo da compilare e il precedente regolamento PDF sono conservati in `_internal/documents/`, esclusi dal sito compilato. La cartella rimane consultabile nel repository se pubblico: non è un archivio riservato. Fonti, decisioni e questioni ancora da coordinare sono in `FONTI.md`; loghi in `LOGHI.md`; controlli in `VERIFICHE.md`. La rimozione delle etichette editoriali non attesta un’approvazione dei documenti né risolve le divergenze organizzative annotate nelle fonti.
 
 ## Pubblicazione su GitHub Pages
 
-Il repository già configurato nella cartella di lavoro è `HAMU-google-challenge/HAMU-google-challenge.github.io`. Il progetto funziona anche in un diverso repository, compresi i project site pubblicati in una sottocartella.
+Il repository è `HAMU-google-challenge/HAMU-google-challenge.github.io`, con dominio `hamu.univaq.it` nel file `CNAME`.
 
-1. Mantieni i contenuti di questa cartella nella radice del repository, inclusa `.github/workflows/pages.yml`. Se parti dallo ZIP, estrailo: non caricare lo ZIP stesso come sito.
-2. In GitHub apri **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-3. Registra le modifiche e inviale al ramo predefinito `main` o `master`. Il workflow compila, controlla i collegamenti e pubblica il sito. È possibile avviarlo anche da **Actions → Build and deploy Jekyll to GitHub Pages → Run workflow**. Su pull request esegue i controlli senza pubblicare.
-4. Attendi il completamento del workflow e apri l’indirizzo mostrato nel deployment `github-pages`.
+1. Mantieni i contenuti della cartella nella radice del repository, inclusa `.github/workflows/pages.yml`. Se usi lo ZIP, estrailo: non caricare lo ZIP come sito.
+2. In **Settings → Pages → Build and deployment → Source** seleziona **GitHub Actions**.
+3. Esegui commit e push sul ramo predefinito `main` o `master`, includendo aggiunte, modifiche e rimozioni. Il workflow compila, controlla i collegamenti e pubblica. Puoi anche avviarlo manualmente dalla scheda **Actions**; sulle pull request esegue solo i controlli.
+4. Dopo il completamento del deployment, verifica la homepage e `/informativa-privacy/`, quindi inserisci l’URL dell’informativa nel modulo Google.
 
-Non serve configurare manualmente `url` e `baseurl` per GitHub Actions: vengono ricavati da GitHub Pages durante la compilazione, anche quando si usa un dominio personalizzato. Per rami con nomi diversi da `main` e `master`, aggiorna i due elenchi `branches` nel workflow.
+`_config.yml` usa il dominio pubblico come valore predefinito. Il workflow ricava `url` e `baseurl` dalla configurazione GitHub Pages, supportando anche una pubblicazione in sottocartella. Non sono stati eseguiti commit, push o deployment durante questo aggiornamento.
 
-La cartella è predisposta per la pubblicazione; non è stato eseguito un push o un deployment durante questo lavoro. Riferimento: [workflow personalizzati di GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
-
-## Modificare i contenuti
+## Manutenzione
 
 | File | Contenuto |
 |---|---|
-| `_data/event.yml` | Date, iscrizioni, sedi, contatti, Atenei, punteggi e documenti comuni alle due lingue; anche le sedi candidate non esposte nella pagina |
+| `_data/event.yml` | Date, iscrizioni, sedi, contatti, atenei, punteggi, documenti e loghi |
 | `_data/i18n.yml` | Testi italiani e inglesi, FAQ, etichette e mesi |
-| `_layouts/home.html` | Struttura delle due homepage |
+| `informativa-privacy.md` | Testo dell’informativa e indirizzo permanente `/informativa-privacy/` |
+| `_layouts/home.html` | Struttura delle homepage `/` e `/en/` |
 | `_layouts/default.html` | Navigazione, metadati e footer |
-| `assets/css/main.css` | Colori, tipografia e adattamento a schermi piccoli |
-| `assets/js/main.js` | Menu mobile; il contenuto rimane accessibile anche senza JavaScript |
-| `assets/documents/` | File scaricabili |
-| `assets/images/` | Favicon e dieci loghi degli Atenei in `universities/` |
+| `_layouts/document.html` | Impaginazione delle pagine di documento |
+| `assets/css/main.css` | Colori, tipografia e adattamento agli schermi |
+| `assets/js/main.js` | Menu mobile; contenuti accessibili anche senza JavaScript |
+| `assets/documents/` | PDF pubblici scaricabili |
+| `assets/images/` | Loghi ufficiali e immagini locali |
+| `_internal/` | Materiali di lavoro esclusi dal sito compilato |
 
-Le homepage sono `/` e `/en/`. Il sito include anche una pagina 404, `robots.txt` e una sitemap. Per cambiare colori, modifica le variabili all’inizio del CSS.
+Il sito include anche la pagina 404, `robots.txt` e una sitemap con homepage IT/EN e informativa. La pagina 404 mantiene `noindex`; le pagine pubbliche sono indicizzabili.
 
-### Stato dell’anteprima
+### Iscrizioni e informazioni operative
 
-In `_data/event.yml`, `preview: true` mostra il messaggio di anteprima e richiede ai motori di ricerca di non indicizzare il sito. **Non è un controllo di accesso:** se pubblicato, il sito è comunque consultabile e i documenti sono scaricabili.
+`registration.state` può essere `planned`, `open` o `closed`. Con `open` e un `registration.url` valorizzato, i pulsanti di iscrizione sono visibili in entrambe le lingue. `privacy_url` punta alla pagina locale dell’informativa, collegata dalle iscrizioni, dai documenti e dal footer. La chiusura è editoriale: alla scadenza imposta `state: closed` e chiudi il modulo presso il servizio che lo ospita.
 
-I documenti usano `status: review` per il PDF in approvazione, `draft` per le bozze e `approved` per i definitivi. Quando i materiali sono consolidati, sostituisci i documenti, aggiorna i relativi percorsi e imposta `status: approved` per ciascun documento definitivo; poi imposta `preview: false`. Questo rimuove la fascia di anteprima, abilita l’indicizzazione e popola la sitemap. Aggiorna anche `updated` alla data dell’aggiornamento editoriale. Adegua anche i testi delle FAQ sulla privacy all’esito della verifica del DPO.
+Le date pubblicate sono il 3 novembre 2026 per le candidature, il 6 novembre per la comunicazione della sede e il 13 novembre per formazione e fase iniziale. La finale è all’Aquila entro fine 2026, con data da comunicare. Non vengono mostrati un orario di scadenza o una data precisa della finale non confermati. La formazione si svolge al mattino, la Challenge al pomeriggio.
 
-### Iscrizioni
+La sezione atenei espone come sedi soltanto quelle con `status: confirmed`. Le sedi preferite e candidate restano nei dati di lavoro. La disponibilità di un ateneo non conferma una specifica aula. Aggiorna sedi, orari, contatti e testi nelle due lingue quando arrivano decisioni dell’organizzazione; non inventare valori per riempire campi vuoti.
 
-`registration.state` ammette tre valori:
+Alla verifica del modulo del 10 ottobre era presente un segnaposto per il collegamento al regolamento. Il modulo non viene modificato da questo progetto: l’organizzazione deve completarne i collegamenti, inclusa la nuova informativa dopo la pubblicazione.
 
-- `planned`: candidature in preparazione. Con un URL mostra il modulo come consultabile, con i completamenti ancora necessari; senza URL rimanda ai documenti.
-- `open`: mostra il pulsante di candidatura nella testata e nella sezione iscrizioni quando è presente `registration.url`. Impostare questo stato quando l’organizzazione conferma l’apertura del modulo. Il collegamento all’informativa resta indipendente e viene mostrato appena fornito.
-- `closed`: mostra la chiusura delle candidature e un rimando al programma.
+### Aggiornamenti dalle riunioni
 
-`registration.url` contiene l’URL completo HTTPS del modulo indicato dall’organizzazione; lo stato distingue la consultazione dalla candidatura aperta. `privacy_url` può essere un URL HTTPS o un percorso locale, per esempio `/assets/documents/informativa-privacy.pdf`. La chiusura è editoriale: allo scadere del termine imposta `state: closed` e chiudi anche il modulo presso il servizio che lo ospita.
+Registra fonti e date in `FONTI.md`, distinguendo decisioni e proposte. Aggiorna dati comuni, calendario e FAQ nelle due lingue. Conserva nell’archivio editoriale le divergenze ancora da risolvere: i testi pubblici devono essere chiari per i partecipanti e non presentare ipotesi come decisioni. Aggiorna `event.updated`, compila, verifica i collegamenti e rigenera l’anteprima. Non è configurata alcuna importazione automatica delle note.
 
-Il [modulo corrente](https://forms.gle/m8npVRMSNzRwhz2x6) è stato indicato dall’utente il 10 ottobre, insieme alla conferma che è aperto. La verifica in sola lettura ha restituito il modulo pubblico con campi compilabili e pulsante «Invia». Il sito usa `state: open` e mostra i pulsanti di iscrizione nelle pagine IT/EN. Nessun modulo è stato compilato o inviato. Nel modulo è ancora presente il segnaposto `@@@@@` per l’URL del regolamento; è segnalato all’organizzazione. `privacy_url` resta vuoto finché non viene fornito un collegamento specifico, senza nascondere l’apertura confermata dall’organizzazione.
+### Verifica locale
 
-Il sito non raccoglie candidature e non contiene un backend. Il modulo esterno gestisce l’invio dei dati.
-
-### Dati ancora da completare
-
-Restano da consolidare, secondo i materiali disponibili: regolamento e avviso aggiornati e definitivi, tempi di comunicazione dei temi, ora della scadenza, collegamento al regolamento nel modulo e informativa privacy, altre sedi e indirizzi delle aule, giorno della finale, recapito organizzativo e toolkit Google for Education. Questi campi sono già predisposti; il sito presenta messaggi espliciti dove manca un dato.
-
-Le disponibilità di Politecnica delle Marche, Perugia, Camerino e Chieti-Pescara sono registrate sotto `venues[].candidates`, con capienze e dotazioni comunicate dall’utente. Le pagine mostrano `location`, `status` e le note bilingui: `confirmed` per Chieti-Pescara, `preferred` per la Politecnica, `pending` per l’Umbria. L’Ateneo confermato non implica che aula, campus o indirizzo siano già stati comunicati. Aggiorna stato e note solo in base alle decisioni successive; i dati candidate non compaiono nelle pagine. Se il repository è pubblico, anche questi dati nei sorgenti sono consultabili, pur non comparendo nelle pagine compilate.
-
-Le date inserite sono il 3 novembre 2026 per le candidature, il 6 novembre per la comunicazione della sede assegnata e il 13 novembre per la preliminare. Per la finale è indicata L’Aquila nella settimana del 23 novembre come finestra prevista, con giorno da confermare; il nuovo regolamento consente lo svolgimento entro fine 2026. La masterclass è indicata con durata di circa 2,5–3 ore e orario indicativo 09:30–12:30; attestato previsto per tutti, CFU non automatici e lingua da comunicare. I testi relativi al programma e alle FAQ vanno aggiornati in entrambe le lingue quando cambiano le decisioni organizzative.
-
-I campi `branding.hamu_logo`, `branding.hamu_logo_on_dark` e `branding.google_education_lockup` contengono i percorsi locali dei loghi, con le rispettive dimensioni intrinseche. Le due versioni HAMU provengono dal sito ufficiale: quella bianca è usata nella testata e nel titolo, quella a colori nella sezione degli atenei. `branding.hamu_url` collega il sito istituzionale `https://h-amu.it/` dalla sezione degli atenei e dal piè di pagina. Il logo Google for Education è quello fornito dall’utente il 12 ottobre. I marchi sono conservati senza ricostruzioni o ricolorazioni.
-
-## Aggiornamenti dalle riunioni
-
-A ogni nuova versione delle note, aggiungi la fonte e la data della decisione in `FONTI.md`, distinguendo le decisioni dagli argomenti in agenda. Aggiorna i dati comuni e i testi in entrambe le lingue, incluse FAQ e calendario. Se una decisione contraddice un documento scaricabile, rendi visibile la differenza e registra il punto da allineare; rimuovi `documents_need_alignment` solo dopo avere sostituito tutti i materiali interessati. Aggiorna la data editoriale, compila, controlla i collegamenti e rigenera l’anteprima. Non è configurato alcun aggiornamento automatico del sito dal PDF.
-
-## Avvio locale
-
-Servono Ruby 3.1 o successivo, Bundler compatibile con il lockfile e gli strumenti di compilazione delle gem native. La compilazione locale è stata verificata con Ruby 3.1.3 e Jekyll 3.10.0; GitHub Actions usa l’ambiente Jekyll fornito dall’azione ufficiale di GitHub Pages.
+Servono Ruby 3.1 o successivo e Bundler compatibile con il lockfile. La compilazione locale usa Jekyll 3.10.0.
 
 ```sh
 bundle install
 bundle exec jekyll serve --host 127.0.0.1
 ```
 
-Apri `http://127.0.0.1:4000`. Per la sola compilazione e il controllo dei collegamenti:
+Apri `http://127.0.0.1:4000`. Per compilare e verificare i collegamenti:
 
 ```sh
 bundle exec jekyll build
 python3 scripts/check_site.py _site
 ```
 
-Python 3.9 o successivo è sufficiente; gli script non richiedono pacchetti aggiuntivi. Il controllo verifica risorse e ancore locali, una sola intestazione principale per pagina, lingua, ID duplicati, Liquid non elaborato e assenza di file di sviluppo nell’output pubblico.
-
-Per verificare una pubblicazione in sottocartella:
+Per una pubblicazione in sottocartella:
 
 ```sh
 bundle exec jekyll build --baseurl /test-repository
 python3 scripts/check_site.py _site --baseurl /test-repository
 ```
 
-Per generare un’anteprima da aprire direttamente dal filesystem, senza Ruby in esecuzione:
+Per un’anteprima portabile, usa una cartella di destinazione vuota in modo da non conservare vecchi download rimossi:
 
 ```sh
 bundle exec jekyll build --baseurl ""
 python3 scripts/export_preview.py _site ../hamu-anteprima
 ```
 
-Apri `../hamu-anteprima/index.html`. L’esportazione rende relativi i collegamenti locali; conserva tutta la cartella per usare il selettore di lingua, gli stili e i download. Serve alla revisione offline: per GitHub Pages usa i sorgenti Jekyll.
-
-## Verifiche della consegna
-
-I controlli eseguiti e i loro limiti sono riportati in `VERIFICHE.md`, distinti per aggiornamento.
-
-
-## Locandine aggiornate al 10 ottobre
-
-Sono disponibili PDF in italiano e in inglese, collegati nella sezione Documenti. Entrambe le locandine indicano tre sedi, le tre tappe del calendario e il sito universitario in HTTPS. Conservano i dieci loghi e il credit «AI tools». Le versioni per stampa, le anteprime e gli SVG modificabili sono inclusi nella consegna separata della locandina.
-
-
-## Stile coordinato con la locandina
-
-Il sito usa gli stessi file Rubik Regular e Bold della locandina, serviti localmente da `assets/fonts/` (licenza SIL OFL 1.1 inclusa). Non dipende da Google Fonts o altri servizi esterni per il carattere. I font vengono precaricati sul sito. L’esportazione dell’anteprima li incorpora nel CSS per permettere la consultazione offline.
-
-La testata riprende sfondo blu scuro, «Google» e anno in lime, HAMU bianco, le tre forme intrecciate e il messaggio delle locandine IT/EN. Le tre tappe principali compaiono subito dopo, in un riquadro verde con date lime; il programma completo mantiene anche la comunicazione delle sedi. Pulsanti, schede e blocco iscrizioni usano forme e pesi tipografici coerenti. Su schermi stretti le tappe si dispongono verticalmente.
+Apri `../hamu-anteprima/index.html` oppure `../hamu-anteprima/informativa-privacy/index.html`. L’esportazione converte i collegamenti locali e incorpora i font nel CSS; conserva tutta la cartella. Per la pubblicazione usa i sorgenti Jekyll, non l’anteprima offline.

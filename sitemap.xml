@@ -6,5 +6,6 @@ layout: null
 {% unless site.data.event.preview %}{% if site.url != '' %}
   <url><loc>{{ '/' | absolute_url | xml_escape }}</loc><lastmod>{{ site.data.event.updated }}</lastmod></url>
   <url><loc>{{ '/en/' | absolute_url | xml_escape }}</loc><lastmod>{{ site.data.event.updated }}</lastmod></url>
+  <url><loc>{{ '/informativa-privacy/' | absolute_url | xml_escape }}</loc><lastmod>{{ site.data.event.updated }}</lastmod></url>
 {% endif %}{% endunless %}
 </urlset>

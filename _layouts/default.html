@@ -9,19 +9,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
-  <meta name="description" content="{{ t.description | escape }}">
+  <meta name="description" content="{{ page.description | default: t.description | escape }}">
   <meta name="theme-color" content="#092f47">
   {% if e.preview or page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   {% if site.url != '' %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% if page.alternate %}
   <link rel="alternate" hreflang="it" href="{{ '/' | absolute_url }}">
   <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+  {% endif %}
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   {% endif %}
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ site.title | escape }}">
-  <meta property="og:description" content="{{ t.description | escape }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}">
+  <meta property="og:description" content="{{ page.description | default: t.description | escape }}">
   <meta property="og:locale" content="{{ t.locale }}">
   <meta property="og:site_name" content="{{ site.title | escape }}">
   <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
@@ -51,8 +53,8 @@
         <a href="{{ home_url | relative_url }}#faq">{{ t.nav.faq }}</a>
       </nav>
       <nav class="language-switch" aria-label="{{ t.language_label }}">
-        <a href="{{ '/' | relative_url }}" lang="it" hreflang="it" {% if language == 'it' %}aria-current="page"{% endif %}>IT</a>
-        <a href="{{ '/en/' | relative_url }}" lang="en" hreflang="en" {% if language == 'en' %}aria-current="page"{% endif %}>EN</a>
+        <a href="{{ '/' | relative_url }}" lang="it" hreflang="it" {% if page.url == '/' %}aria-current="page"{% endif %}>IT</a>
+        <a href="{{ '/en/' | relative_url }}" lang="en" hreflang="en" {% if page.url == '/en/' %}aria-current="page"{% endif %}>EN</a>
       </nav>
     </div>
   </header>
@@ -62,7 +64,8 @@
       <div><a class="footer-brand" href="{{ home_url | relative_url }}">HAMU <span>/ {{ e.edition }}</span></a><p>{{ t.footer.description }}</p></div>
       <div class="footer-contact">
         <a href="{{ e.branding.hamu_url | escape }}">{{ t.hamu_official }}{% include arrow.html %}</a>
-        {% if e.contact_email != '' %}<a href="mailto:{{ e.contact_email | escape }}">{{ t.footer.contact }} {% include arrow.html %}</a>{% else %}<p>{{ t.footer.contact_pending }}</p>{% endif %}
+        {% if e.contact_email != '' %}<a href="mailto:{{ e.contact_email | escape }}">{{ t.footer.contact }} {% include arrow.html %}</a>{% endif %}
+        <a href="{{ e.registration.privacy_url | relative_url }}">{{ t.participation.privacy }}</a>
         <a href="#top">{{ t.footer.top }} <span aria-hidden="true">↑</span></a>
       </div>
     </div>
