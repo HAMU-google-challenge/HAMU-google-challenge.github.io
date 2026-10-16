@@ -54,7 +54,7 @@ it:
     text: La Google Challenge HAMU unisce formazione e lavoro di squadra per affrontare problemi del territorio o della comunità con l’IA di Google. Al mattino partecipi alla Gemini Academy for Student; al pomeriggio, insieme al tuo team, scegli uno dei temi proposti dagli organizzatori e sviluppi una proposta di soluzione. I gruppi favoriscono, dove possibile, l’incontro tra studenti di atenei e percorsi di studio diversi.
     steps:
       - title: Impara e sperimenta
-        text: La mattina segui la masterclass di Google for Education su Gemini, NotebookLM e uso consapevole dell’IA. Le istruzioni operative indicheranno gli strumenti consentiti nella sfida.
+        text: La mattina segui la masterclass di Google for Education su Gemini, Gemini Notebook e uso consapevole dell’IA. Le istruzioni operative indicheranno gli strumenti consentiti nella sfida.
       - title: Lavora con il tuo team
         text: Ti candidi individualmente; l’organizzazione forma i gruppi, favorendo competenze e provenienze diverse. Nel pomeriggio scegliete un tema e lavorate insieme a una soluzione originale.
       - title: Presenta la vostra idea
@@ -98,7 +98,7 @@ it:
       - title: Fare le domande giuste
         text: Tecniche di prompting, valutazione critica delle risposte e integrazione dell’IA nei processi di studio e ricerca.
       - title: Lavorare con le fonti
-        text: Gemini e NotebookLM per analizzare le fonti, sintetizzare i concetti e strutturare le idee da sviluppare nella sfida.
+        text: Gemini e Gemini Notebook per analizzare le fonti, sintetizzare i concetti e strutturare le idee da sviluppare nella sfida.
     certificate_label: IL TUO PERCORSO
     certificate_title: Un attestato di partecipazione.
     certificate_text: È previsto un Certificate of Attendance Google for Education per tutte le studentesse e tutti gli studenti partecipanti, da inserire nel curriculum.
@@ -243,7 +243,7 @@ en:
     text: The Google Challenge HAMU combines training and teamwork to tackle problems affecting the local area or community using Google AI. In the morning, you attend the Gemini Academy for Student; in the afternoon, your team chooses one of the organisers’ proposed themes and develops a solution. Wherever possible, teams bring together students from different universities and fields of study.
     steps:
       - title: Learn and experiment
-        text: In the morning, attend a Google for Education masterclass on Gemini, NotebookLM and responsible AI use. The operational instructions will specify which tools may be used in the challenge.
+        text: In the morning, attend a Google for Education masterclass on Gemini, Gemini Notebook and responsible AI use. The operational instructions will specify which tools may be used in the challenge.
       - title: Work with your team
         text: Apply individually; the organisers form teams to bring together different skills and academic backgrounds. In the afternoon, choose a theme and work together on an original solution.
       - title: Present your idea
@@ -287,7 +287,7 @@ en:
       - title: Ask better questions
         text: Prompting techniques, critical evaluation of responses and integrating AI into study and research processes.
       - title: Work with sources
-        text: Gemini and NotebookLM for analysing sources, synthesising concepts and structuring the ideas you will develop in the challenge.
+        text: Gemini and Gemini Notebook for analysing sources, synthesising concepts and structuring the ideas you will develop in the challenge.
     certificate_label: YOUR LEARNING JOURNEY
     certificate_title: A certificate of attendance.
     certificate_text: A Google for Education Certificate of Attendance is planned for all participating students, to include in their CV.

@@ -2,13 +2,13 @@
 
 Sito Jekyll in italiano e inglese per GitHub Pages, con grafica coordinata alle locandine. Usa Rubik Regular e Bold locali, i dieci loghi degli atenei, il logo ufficiale HAMU e il logo Google for Education fornito dall’organizzazione. Non usa font esterni, analytics o plugin Jekyll aggiuntivi.
 
-## Stato al 13 ottobre 2026
+## Stato al 16 ottobre 2026
 
 Il sito è in modalità pubblica (`preview: false`), con indicizzazione abilitata. Sono stati rimossi gli avvisi di anteprima, le etichette di revisione e i commenti di coordinamento interno. Le informazioni operative ancora da comunicare non vengono presentate come confermate.
 
 Le iscrizioni sono aperte con il modulo indicato dall’utente il 10 ottobre: <https://forms.gle/m8npVRMSNzRwhz2x6>. L’informativa fornita il 13 ottobre è in `informativa-privacy.md` e sarà raggiungibile dopo la pubblicazione a **<https://hamu.univaq.it/informativa-privacy/>**. Questo è l’indirizzo da inserire nel modulo Google. Il testo è in italiano anche quando raggiunto dalla homepage inglese; il collegamento lo specifica. Il sito non raccoglie candidature: i dati vengono inviati tramite il modulo esterno.
 
-Il regolamento scaricabile resta il PDF unificato ricevuto il 1 ottobre (14 pagine), conservato senza modifiche. Le locandine sono disponibili nei file `assets/documents/locandina-hamu-it.pdf` e `assets/documents/locandina-hamu-en.pdf`. I contenuti dei PDF non sono stati modificati in questo aggiornamento.
+Il regolamento scaricabile resta il PDF unificato ricevuto il 1 ottobre (14 pagine), conservato senza modifiche. Le locandine sono disponibili nei file `assets/documents/locandina-hamu-it.pdf` e `assets/documents/locandina-hamu-en.pdf`. Il 16 ottobre i testi promozionali e le locandine IT/EN sono stati aggiornati con la dicitura «Gemini Notebook»; sulle locandine la finale è indicata entro fine novembre, come nel sito e nel video. Il regolamento originale è conservato senza modifiche.
 
 Le copie Word di lavoro, la traduzione inglese, l’avviso con un campo da compilare e il precedente regolamento PDF sono conservati in `_internal/documents/`, esclusi dal sito compilato. La cartella rimane consultabile nel repository se pubblico: non è un archivio riservato. Fonti, decisioni e questioni ancora da coordinare sono in `FONTI.md`; loghi in `LOGHI.md`; controlli in `VERIFICHE.md`. La rimozione delle etichette editoriali non attesta un’approvazione dei documenti né risolve le divergenze organizzative annotate nelle fonti.
 
