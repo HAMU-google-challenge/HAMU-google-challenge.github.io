@@ -13,6 +13,7 @@ layout: default
       <h1 id="hero-title"><span class="hero-title-line"><span class="hero-google">Google</span> <span class="hero-challenge">Challenge</span></span><span class="hero-title-line hero-title-identity">{% if e.branding.hamu_logo_on_dark != '' %}<img class="hero-hamu-logo" src="{{ e.branding.hamu_logo_on_dark | relative_url }}" width="{{ e.branding.hamu_logo_on_dark_width }}" height="{{ e.branding.hamu_logo_on_dark_height }}" alt="HAMU — Hub Abruzzo Marche Umbria">{% else %}<span class="hero-hamu">HAMU</span>{% endif %} <span class="hero-year">{{ e.edition }}</span></span></h1>
       <p class="hero-tagline">{{ t.hero.tagline }}</p>
       <p class="hero-description">{{ t.hero.subtitle }}</p>
+      <p class="hero-accessible">{{ t.hero.accessible }}</p>
       <div class="hero-actions"><a class="button button-lime" href="{% if e.registration.state == 'open' and e.registration.url != '' %}{{ e.registration.url | escape }}{% else %}#iscrizioni{% endif %}"{% if e.registration.state == 'open' and e.registration.url != '' %} target="_blank" rel="noopener noreferrer" aria-label="{{ t.participation.open }} — {{ t.new_tab }}"{% endif %}>{% if e.registration.state == 'open' and e.registration.url != '' %}{{ t.participation.open }}{% else %}{{ t.hero.cta }}{% endif %}{% include arrow.html %}</a><a class="text-link hero-regulations" href="{{ regulations.path | relative_url }}">{{ t.hero.secondary }}</a></div>
       <a class="hero-summary-link" href="#regolamento">{{ t.hero.summary }} <span aria-hidden="true">↓</span></a>
     </div>
@@ -29,8 +30,15 @@ layout: default
       </div>
       <div class="hero-benefits"><strong>{{ t.hero.free }}</strong><span>{{ t.hero.individual }}</span></div>
     </div>
+    <p class="univaq-venue-note">{{ t.hero.univaq_venue }}</p>
   </div>
 </section>
+<section class="reward-section" aria-labelledby="reward-title"><div class="container">
+  <p class="eyebrow">{{ t.reward.eyebrow }}</p>
+  <h2 id="reward-title">{{ t.reward.title }}</h2>
+  <p class="reward-description">{{ t.reward.text }}</p>
+  <p class="reward-funding">{{ t.reward.funding }}</p>
+</div></section>
 <div class="milestones-section">
   <ol class="container milestones" aria-label="{{ t.programme.title }}">
     <li><p class="milestone-label"><span>01</span> · {{ t.milestones.registration }}</p><time datetime="{{ e.registration_deadline }}">{{ e.registration_deadline | date: '%-d' }} {{ t.months[registration_month_index] }}<span class="milestone-year">{{ e.registration_deadline | date: '%Y' }}</span></time><p class="milestone-note">{{ t.milestones.deadline }}</p></li>

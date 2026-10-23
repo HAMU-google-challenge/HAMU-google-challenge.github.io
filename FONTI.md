@@ -102,3 +102,12 @@ L’utente ha indicato `https://h-amu.it/` come pagina ufficiale HAMU. Dalla hom
 - Fonte: indicazioni dirette dell’utente in chat. I pulsanti di iscrizione devono aprire una nuova pagina, la finale è prevista entro fine novembre e va rimosso il blocco che identifica Chieti-Pescara come sede della fase preliminare.
 - Applicato l’aggiornamento alle homepage IT/EN: modulo aperto in una nuova scheda con indicazione accessibile e `noopener noreferrer`; calendario e requisito di permanenza dell’iscrizione allineati alla finale entro fine novembre 2026. Non è stata inventata una data esatta e il PDF regolamentare resta invariato.
 - Rimossa l’indicazione della sede da sezione atenei e FAQ. Conservati il logo e la scheda dell’Università d’Annunzio quale ateneo HAMU; la richiesta riguarda la presentazione pubblica della sede, non la partecipazione dell’ateneo alla rete.
+
+
+## Aggiornamento comunicazione del 21 ottobre 2026
+
+- Fonte: ultimo testo promozionale fornito direttamente dall’organizzazione nella conversazione.
+- Comunicazione pubblica del premio: una sede Google in Europa, senza anticipare la città; viaggio interamente sponsorizzato da Google, per un rappresentante per ciascun team vincitore. Il nuovo testo usa il singolare generico; non si introduce una modifica al numero dei team vincitori o ai temi previsti dal regolamento.
+- Partecipazione aperta a tutti i corsi di studio ammessi dal regolamento, senza prerequisiti di programmazione. Formazione su Gemini e Gemini Notebook e valore dell’esperienza per il CV.
+- La sede iniziale in Abruzzo, fuori L’Aquila, è comunicata specificamente agli studenti UnivAQ; il programma generale continua a prevedere tre sedi.
+- Aggiornate le FAQ pubbliche per distinguere le spese di partecipazione a carico degli studenti dal viaggio premio sponsorizzato da Google. Il PDF del regolamento ricevuto non viene riscritto.

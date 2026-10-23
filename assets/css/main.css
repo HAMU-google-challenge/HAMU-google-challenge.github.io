@@ -102,6 +102,13 @@ p { margin-bottom: 1.2rem; }
 .hero-year { color: var(--lime); font-size: clamp(2.8rem, 5vw, 4rem); margin-left: .4rem; }
 .hero-tagline { font-weight: 700; font-size: clamp(1.45rem, 2.35vw, 1.9rem); letter-spacing: -.015em; line-height: 1.25; max-width: 42rem; margin-bottom: .75rem; }
 .hero-description { font-size: 1.1rem; line-height: 1.6; color: #c8dce5; margin-bottom: 1.65rem; max-width: 42rem; }
+.hero-accessible { color: var(--lime); font-weight: 700; max-width: 42rem; margin: -.5rem 0 1.65rem; }
+.univaq-venue-note { grid-column: 1 / -1; color: #c8dce5; font-size: .95rem; margin: -.5rem 0 0; max-width: 52rem; }
+.reward-section { background: var(--lime); color: var(--navy); padding-block: clamp(1.8rem, 4vw, 3rem); }
+.reward-section .eyebrow { color: var(--teal); margin-bottom: .65rem; }
+.reward-section h2 { margin-bottom: 1rem; }
+.reward-description { font-size: clamp(1.05rem, 2vw, 1.25rem); max-width: 52rem; margin-bottom: .65rem; }
+.reward-funding { color: var(--teal); font-weight: 700; font-size: 1.15rem; margin: 0; }
 .hero-actions { display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap; }
 .hero-actions .text-link { color: white; }
 .hero-actions .text-link:hover { color: var(--lime); }
