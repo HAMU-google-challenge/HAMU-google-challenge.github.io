@@ -111,3 +111,10 @@ L’utente ha indicato `https://h-amu.it/` come pagina ufficiale HAMU. Dalla hom
 - Partecipazione aperta a tutti i corsi di studio ammessi dal regolamento, senza prerequisiti di programmazione. Formazione su Gemini e Gemini Notebook e valore dell’esperienza per il CV.
 - La sede iniziale in Abruzzo, fuori L’Aquila, è comunicata specificamente agli studenti UnivAQ; il programma generale continua a prevedere tre sedi.
 - Aggiornate le FAQ pubbliche per distinguere le spese di partecipazione a carico degli studenti dal viaggio premio sponsorizzato da Google. Il PDF del regolamento ricevuto non viene riscritto.
+
+
+## Aggiornamento del 27 ottobre 2026
+
+- Fonte: messaggio dell’organizzazione riportato dall’utente nella conversazione.
+- Finale fissata al 28 novembre 2026 all’Università degli Studi dell’Aquila; data aggiornata nelle due lingue sul sito e nelle locandine. Restano da comunicare aula e orari. Il PDF originale del regolamento resta invariato.
+- Calendario delle locandine spostato nel secondo blocco, al posto dell’evidenza isolata del 13 novembre; scadenza delle iscrizioni del 3 novembre maggiormente evidenziata. Eliminata la ripetizione del calendario in basso.
