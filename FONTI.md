@@ -118,3 +118,10 @@ L’utente ha indicato `https://h-amu.it/` come pagina ufficiale HAMU. Dalla hom
 - Fonte: messaggio dell’organizzazione riportato dall’utente nella conversazione.
 - Finale fissata al 28 novembre 2026 all’Università degli Studi dell’Aquila; data aggiornata nelle due lingue sul sito e nelle locandine. Restano da comunicare aula e orari. Il PDF originale del regolamento resta invariato.
 - Calendario delle locandine spostato nel secondo blocco, al posto dell’evidenza isolata del 13 novembre; scadenza delle iscrizioni del 3 novembre maggiormente evidenziata. Eliminata la ripetizione del calendario in basso.
+
+
+## Aggiornamento del 29 ottobre 2026
+
+- Fonte: richiesta diretta dell’utente di spostare la data di iscrizione avanti di due giorni, sostituendola su flyer e sito.
+- Scadenza aggiornata dal 3 al 5 novembre 2026 in tutte le occorrenze pubbliche delle homepage IT/EN e nelle locandine PDF e SVG. Gli URL dei PDF vengono mantenuti e i file sostituiti.
+- Restano il 13 novembre per la fase iniziale e il 28 novembre per la finale all’Aquila. Nessun orario di chiusura delle iscrizioni è stato aggiunto. Il PDF originale del regolamento non viene riscritto.
