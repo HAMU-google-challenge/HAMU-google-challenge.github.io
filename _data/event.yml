@@ -2,11 +2,14 @@
 # Modalità pubblica: nessun avviso di anteprima e indicizzazione abilitata.
 preview: false
 edition: 2026
-updated: 2026-10-29
-preliminary_date: "2026-11-13"
+updated: 2026-11-07
+preliminary_stages:
+  - date: "2026-11-13"
+    cities: {it: Chieti e Ancona, en: Chieti and Ancona}
+  - date: "2026-11-20"
+    cities: {it: Perugia, en: Perugia}
 registration_deadline: "2026-11-05"
-venue_announcement: "2026-11-06"
-final_date: "2026-11-28"
+final_date: ""
 final_venue:
   it: Università degli Studi dell’Aquila
   en: University of L’Aquila

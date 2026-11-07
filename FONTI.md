@@ -125,3 +125,11 @@ L’utente ha indicato `https://h-amu.it/` come pagina ufficiale HAMU. Dalla hom
 - Fonte: richiesta diretta dell’utente di spostare la data di iscrizione avanti di due giorni, sostituendola su flyer e sito.
 - Scadenza aggiornata dal 3 al 5 novembre 2026 in tutte le occorrenze pubbliche delle homepage IT/EN e nelle locandine PDF e SVG. Gli URL dei PDF vengono mantenuti e i file sostituiti.
 - Restano il 13 novembre per la fase iniziale e il 28 novembre per la finale all’Aquila. Nessun orario di chiusura delle iscrizioni è stato aggiunto. Il PDF originale del regolamento non viene riscritto.
+
+## Due tappe preliminari — 7 novembre 2026
+
+- Fonte: aggiornamento diretto di Juri in chat: prima tappa il 13 novembre a Chieti e Ancona, seconda tappa il 20 novembre a Perugia; finale all’Aquila con data da definire. Questo aggiornamento sostituisce la data del 28 novembre annunciata in precedenza.
+- Applicazione: date comuni organizzate in `preliminary_stages`; testata, calendario iniziale, programma, FAQ, requisiti di permanenza dell’iscrizione e metadati aggiornati in italiano e inglese. Il calendario non attribuisce a tutti una comunicazione di sede il 6 novembre: conserva la regola dei sette giorni prima della tappa di riferimento.
+- Su conferma dell’utente, rigenerate anche le due locandine A3 pubbliche agli stessi indirizzi di download, con scadenza iscrizioni, due tappe preliminari e finale con data da definire. Rimangono i loghi ufficiali, il collegamento al sito e il credit AI tools.
+- La scadenza delle iscrizioni e lo stato del modulo non sono stati cambiati: non è stata comunicata una nuova scadenza. Nessun nuovo orario, aula o indirizzo è stato inventato. Il regolamento originale resta invariato.
+- Preparazione locale per pubblicazione manuale: nessun commit o push, coerentemente con l’ultima preferenza espressa dall’utente per il sito pubblico.

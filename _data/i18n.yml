@@ -1,7 +1,7 @@
 it:
   code: it
   locale: it_IT
-  description: La Challenge degli Atenei HAMU di Abruzzo, Marche e Umbria. Formazione, IA generativa e progetti in team. Fase preliminare il 13 novembre 2026.
+  description: "Google Challenge HAMU 2026: 13 novembre a Chieti e Ancona, 20 novembre a Perugia. Due tappe preliminari e finale all’Aquila con data da definire."
   months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]
   skip: Vai al contenuto
   nav_label: Navigazione principale
@@ -22,7 +22,7 @@ it:
   collaboration: In collaborazione con
   hamu_official: Sito ufficiale HAMU
   hero:
-    univaq_venue: "Per gli studenti UnivAQ: fase iniziale in una sede universitaria in Abruzzo, fuori L’Aquila."
+    preliminary_label: Due tappe preliminari
     accessible: "Qualunque sia il tuo corso di studi, puoi partecipare: non servono competenze di programmazione."
     eyebrow: 10 ATENEI / 3 REGIONI / UN’UNICA SFIDA
     title: Google Challenge
@@ -33,10 +33,8 @@ it:
     summary: I punti essenziali per partecipare
     free: Partecipazione gratuita
     individual: Candidatura individuale
-    date_label: Venerdì · Fase iniziale
-    venue_label: In tre sedi
     final_label: Finale
-    final_tbc: Data da comunicare
+    final_tbc: Data da definire
   reward:
     eyebrow: "IL PREMIO PER I TEAM VINCITORI"
     title: "Vola in una sede Google."
@@ -45,10 +43,10 @@ it:
   milestones:
     registration: Iscrizioni
     deadline: Scadenza candidature
-    initial: Fase iniziale
+    preliminary: [Prima tappa preliminare, Seconda tappa preliminare]
     training: Formazione e Challenge
     final: Fase finale
-    final_tbc: 28 novembre 2026
+    final_tbc: Data da definire
   stats:
     universities: Atenei coinvolti
     regions: regioni
@@ -114,15 +112,15 @@ it:
   programme:
     eyebrow: IL PERCORSO
     title: Segna le date.
-    intro: Dalla candidatura alla finale, ecco le tappe della Challenge.
+    intro: "Due tappe preliminari e una finale: il 13 novembre a Chieti e Ancona, il 20 novembre a Perugia, poi all’Aquila con data da definire."
     deadline: Chiusura candidature
     venue: Comunicazione della sede
-    venue_note: Entro questa data riceverai la sede assegnata per la formazione e la Challenge.
+    venue_note: Il Comitato Organizzatore comunica la sede assegnata almeno sette giorni prima della tappa preliminare di riferimento. Aule e orari saranno comunicati ai partecipanti.
     challenge: Formazione e Challenge
-    challenge_note: "Gemini Academy for Student al mattino e Challenge in team nel pomeriggio, in tre sedi. Per gli studenti UnivAQ, l’attività si svolge in una sede universitaria in Abruzzo, fuori L’Aquila. Sede precisa, aule e orari saranno comunicati ai partecipanti."
+    challenge_note: "Gemini Academy for Student al mattino e Challenge in team nel pomeriggio. Aule e orari saranno comunicati ai partecipanti."
     final: Finale all’Aquila
-    final_date: 28 novembre 2026
-    final_note: La finale si svolge all’Università degli Studi dell’Aquila. Aula e orari saranno comunicati ai partecipanti.
+    final_date: Data da definire
+    final_note: La finale si svolgerà all’Università degli Studi dell’Aquila. La data è da definire; data, aula e orari saranno comunicati ai partecipanti.
     hours: ore massime di lavoro
     minutes: minuti massimi di presentazione
     questions: La presentazione può essere seguita da domande della Commissione.
@@ -131,7 +129,7 @@ it:
     title: Porta le tue competenze.
     accent: Il team lo formiamo noi.
     text: "La candidatura è individuale e gratuita, aperta a tutti i corsi di studio degli atenei HAMU: dalle discipline umanistiche a quelle scientifiche, economiche e mediche. Non servono competenze di programmazione: la formazione ti fornisce le basi per partecipare. Devi essere regolarmente iscritto a laurea, laurea magistrale o laurea magistrale a ciclo unico e in regola con le tasse alla scadenza."
-    gssi: Per il Gran Sasso Science Institute è possibile l’ammissione dei dottorandi del primo e secondo anno. L’iscrizione deve permanere fino alla conclusione della finale, che si svolgerà il 28 novembre 2026. Il Comitato Organizzatore può escludere, anche a posteriori, chi non rispetta i requisiti.
+    gssi: Per il Gran Sasso Science Institute è possibile l’ammissione dei dottorandi del primo e secondo anno. L’iscrizione deve permanere fino alla conclusione della finale, che si svolgerà all’Aquila con data da definire. Il Comitato Organizzatore può escludere, anche a posteriori, chi non rispetta i requisiti.
     full_rules: Consulta i requisiti completi nel regolamento
     deadline: Candidature entro il
     planned: Iscrizioni in preparazione
@@ -155,7 +153,7 @@ it:
   universities:
     eyebrow: GLI ATENEI HAMU
     title: Tre regioni, dieci Atenei.
-    intro: Una rete universitaria tra Abruzzo, Marche e Umbria. Le prove si svolgono in tre sedi assegnate dal Comitato Organizzatore.
+    intro: "Una rete universitaria tra Abruzzo, Marche e Umbria. Due tappe preliminari in tre città: Chieti e Ancona il 13 novembre, Perugia il 20 novembre. La finale sarà all’Aquila, con data da definire."
     venue: Sede della fase preliminare
     venue_note: La sede assegnata può essere diversa dal tuo Ateneo e sarà comunicata nei termini previsti.
     website: Sito dell’Ateneo
@@ -177,7 +175,7 @@ it:
       - q: Devo avere già un team?
         a: No. La candidatura è individuale e i team, da 5 a 7 partecipanti, sono formati dall’organizzazione, favorendo dove possibile l’incontro tra studenti di atenei e percorsi di studio diversi.
       - q: La Challenge si svolge nella mia università?
-        a: Non necessariamente. Il Comitato assegna la sede, che può essere diversa dal tuo Ateneo, almeno sette giorni prima della prova. Per gli studenti UnivAQ, la fase iniziale del 13 novembre si svolge in una sede universitaria in Abruzzo, fuori L’Aquila. La finale è invece all’Aquila, il 28 novembre 2026. Aule e indirizzi saranno comunicati dall’organizzazione.
+        a: "Non necessariamente. Il Comitato assegna la sede, che può essere diversa dal tuo Ateneo, almeno sette giorni prima della tappa preliminare di riferimento. La prima tappa si svolge il 13 novembre 2026 a Chieti e Ancona; la seconda il 20 novembre 2026 a Perugia. La finale è all’Aquila, con data da definire. Aule, indirizzi e orari saranno comunicati dall’organizzazione."
       - q: Quali strumenti di intelligenza artificiale posso usare?
         a: Solo quelli indicati dall’organizzazione. Altre applicazioni, fonti o strumenti sono consentiti esclusivamente se previsti nelle istruzioni operative. Devi dichiarare come usi l’IA, verificare i contenuti generati e rispettare i diritti di terzi e le indicazioni sui dati personali.
       - q: Sono previsti rimborsi o premi in denaro?
@@ -199,7 +197,7 @@ it:
 en:
   code: en
   locale: en_GB
-  description: The HAMU universities’ generative AI challenge across Abruzzo, Marche and Umbria. Learn, collaborate and develop a project. Preliminary stage on 13 November 2026.
+  description: "Google Challenge HAMU 2026: 13 November in Chieti and Ancona, 20 November in Perugia. Two preliminary rounds and a final in L’Aquila, date to be confirmed."
   months: [January, February, March, April, May, June, July, August, September, October, November, December]
   skip: Skip to content
   nav_label: Main navigation
@@ -220,7 +218,7 @@ en:
   collaboration: In collaboration with
   hamu_official: Official HAMU website
   hero:
-    univaq_venue: "For UnivAQ students: the initial stage takes place at a university venue in Abruzzo, outside L’Aquila."
+    preliminary_label: Two preliminary rounds
     accessible: "Students from every field of study are welcome: no programming skills are required."
     eyebrow: 10 UNIVERSITIES / 3 REGIONS / ONE CHALLENGE
     title: Google Challenge
@@ -231,10 +229,8 @@ en:
     summary: The essentials for taking part
     free: Free participation
     individual: Individual applications
-    date_label: Friday · Initial stage
-    venue_label: At three venues
     final_label: Final stage
-    final_tbc: Date to be announced
+    final_tbc: Date to be confirmed
   reward:
     eyebrow: "THE REWARD FOR THE WINNING TEAMS"
     title: "Fly to a Google location."
@@ -243,10 +239,10 @@ en:
   milestones:
     registration: Registration
     deadline: Application deadline
-    initial: Initial stage
+    preliminary: [First preliminary round, Second preliminary round]
     training: Training and Challenge
     final: Final stage
-    final_tbc: 28 November 2026
+    final_tbc: Date to be confirmed
   stats:
     universities: universities
     regions: regions
@@ -312,15 +308,15 @@ en:
   programme:
     eyebrow: THE JOURNEY
     title: Save the dates.
-    intro: From your application to the final, here are the stages of the Challenge.
+    intro: "Two preliminary rounds and a final: 13 November in Chieti and Ancona, 20 November in Perugia, then L’Aquila on a date to be confirmed."
     deadline: Application deadline
     venue: Venue announcement
-    venue_note: By this date, you will receive your assigned venue for the training and the Challenge.
+    venue_note: The Organising Committee announces each participant’s assigned venue at least seven days before the relevant preliminary round. Rooms and times will be sent to participants.
     challenge: Training and Challenge
-    challenge_note: "Gemini Academy for Student in the morning and the team Challenge in the afternoon, across three venues. For UnivAQ students, activities take place at a university venue in Abruzzo, outside L’Aquila. The exact venue, rooms and times will be communicated to participants."
+    challenge_note: "Gemini Academy for Student in the morning and the team Challenge in the afternoon. Rooms and times will be sent to participants."
     final: Final in L’Aquila
-    final_date: 28 November 2026
-    final_note: The final takes place at the University of L’Aquila. The room and timetable will be sent to participants.
+    final_date: Date to be confirmed
+    final_note: The final will take place at the University of L’Aquila. The date is to be confirmed; the date, room and timetable will be sent to participants.
     hours: hours maximum to develop your proposal
     minutes: minutes maximum to present
     questions: The judging panel may ask questions after the presentation.
@@ -329,7 +325,7 @@ en:
     title: Bring your skills.
     accent: We’ll put the team together.
     text: "Applications are individual and participation is free, open to all fields of study at HAMU universities: humanities, sciences, economics, medicine and more. No programming skills are required; the training gives you the foundations to take part. You must be enrolled in a bachelor’s, master’s or single-cycle master’s degree programme, with tuition fees up to date at the deadline."
-    gssi: The Gran Sasso Science Institute may also admit first- and second-year PhD students. You must remain enrolled until the end of the final stage, to be held on 28 November 2026. The Organising Committee may exclude anyone who does not meet the requirements, including retrospectively.
+    gssi: The Gran Sasso Science Institute may also admit first- and second-year PhD students. You must remain enrolled until the end of the final stage, to be held in L’Aquila on a date to be confirmed. The Organising Committee may exclude anyone who does not meet the requirements, including retrospectively.
     full_rules: Read the full eligibility requirements
     deadline: Apply by
     planned: Applications opening soon
@@ -353,7 +349,7 @@ en:
   universities:
     eyebrow: HAMU UNIVERSITIES
     title: Three regions, ten universities.
-    intro: A university network across Abruzzo, Marche and Umbria. The preliminary stage takes place at three venues assigned by the Organising Committee.
+    intro: "A university network across Abruzzo, Marche and Umbria. Two preliminary rounds across three cities: Chieti and Ancona on 13 November, Perugia on 20 November. The final will take place in L’Aquila, on a date to be confirmed."
     venue: Preliminary-stage venue
     venue_note: Your assigned venue may differ from your home university and will be announced within the stated timeframe.
     website: University website
@@ -375,7 +371,7 @@ en:
       - q: Do I need to have a team already?
         a: No. Applications are individual and the organisers form teams of 5 to 7 participants, bringing together students from different universities and fields of study wherever possible.
       - q: Will I take part at my own university?
-        a: Not necessarily. The Committee assigns your venue, which may differ from your home university, at least seven days before the challenge. For UnivAQ students, the initial stage on 13 November takes place at a university venue in Abruzzo, outside L’Aquila. The final takes place in L’Aquila on 28 November 2026. Rooms and addresses will be announced by the organisers.
+        a: "Not necessarily. The Committee assigns your venue, which may differ from your home university, at least seven days before the relevant preliminary round. The first round takes place on 13 November 2026 in Chieti and Ancona; the second on 20 November 2026 in Perugia. The final is in L’Aquila, on a date to be confirmed. Rooms, addresses and times will be announced by the organisers."
       - q: Which artificial intelligence tools can I use?
         a: Only those specified by the organisers. Additional applications, sources or tools are permitted only if expressly allowed by the operational instructions. You must declare your use of AI, verify generated content and respect third-party rights and personal data instructions.
       - q: Are expenses reimbursed or cash prizes offered?

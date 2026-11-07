@@ -144,3 +144,12 @@ La locandina è stata aggiornata su richiesta dell’utente: «Google» nel tito
 - Finale indicata entro fine novembre nel calendario iniziale, nel programma e nel testo sulla permanenza dell’iscrizione. Rimossa l’attribuzione della sede preliminare a Chieti-Pescara dal blocco atenei e dalla FAQ; conservati tutti i dieci loghi e i collegamenti agli atenei.
 - Compilazione: quattro pagine e 125 riferimenti locali verificati. Anteprima aggiornata: quattro pagine e 117 riferimenti. Ispezionate le quattro homepage generate per verificare destinazione e attributi dei pulsanti, nuova indicazione della finale, assenza del blocco sede, dieci atenei e tre link all’informativa per lingua.
 - Controllo delle differenze superato e archivi dei sorgenti e dell’anteprima aggiornati. Nessun commit, push o deployment eseguito.
+
+## Due tappe preliminari e finale da definire — 7 novembre 2026
+
+- Homepage IT/EN: testata con due date, quattro riquadri nel calendario (iscrizioni, prima tappa, seconda tappa, finale), programma, FAQ, metadati e requisiti aggiornati. Prima tappa: 13 novembre 2026 a Chieti e Ancona. Seconda: 20 novembre 2026 a Perugia. Finale all’Aquila, data da definire; assente la data del 28 novembre nel contenuto pubblico delle pagine.
+- Compilazione Jekyll 3.10.0 riuscita con parser Kramdown esplicito; 4 pagine e 125 riferimenti locali verificati sia alla radice sia in sottocartella. Anteprima portabile: 4 pagine e 117 riferimenti.
+- Verificate le sei homepage generate (IT/EN nelle tre varianti): corrispondenza date/città, finale senza data, due link al modulo corretto aperti in nuova scheda e dieci loghi universitari.
+- PDF IT/EN: una pagina A3, abbondanza 3 mm, font Rubik incorporati, dieci loghi universitari più HAMU e Google for Education, collegamenti al sito e credit AI tools. Testi estratti e anteprime renderizzate controllati; copie pubbliche identiche ai PDF da stampa. Forniti anche gli SVG modificabili.
+- Controllo browser: desktop IT/EN e mobile a 390 px, nessuno scorrimento orizzontale; impaginazione del programma verificata visivamente.
+- Regolamento originale invariato, verificato byte per byte rispetto a Git. Nessun commit, push o pubblicazione eseguiti.

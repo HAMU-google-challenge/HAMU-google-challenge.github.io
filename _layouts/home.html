@@ -4,7 +4,6 @@ layout: default
 {% assign t = site.data.i18n[page.lang] %}
 {% assign e = site.data.event %}
 {% assign regulations = e.documents | where: 'id', 'regulations-pdf' | first %}
-{% assign preliminary_month_index = e.preliminary_date | date: '%m' | minus: 1 %}
 {% assign registration_month_index = e.registration_deadline | date: '%m' | minus: 1 %}
 <section class="hero" aria-labelledby="hero-title">
   <div class="container hero-grid">
@@ -24,13 +23,17 @@ layout: default
       <circle cx="189" cy="214" r="7" fill="#dcf765"/><circle cx="189" cy="30" r="4" fill="#5ca79a"/>
     </svg>
     <div class="hero-event">
+      <p class="hero-preliminary-title">{{ t.hero.preliminary_label }}</p>
+      {% for stage in e.preliminary_stages %}
+      {% assign preliminary_month_index = stage.date | date: '%m' | minus: 1 %}
       <div class="event-date-block">
-        <time class="event-date" datetime="{{ e.preliminary_date }}"><span class="event-day">{{ e.preliminary_date | date: '%-d' }}</span><span class="event-month">{{ t.months[preliminary_month_index] }} {{ e.edition }}</span></time>
-        <p class="event-phase">{{ t.hero.date_label }}</p><p class="event-venue">{{ t.hero.venue_label }}</p>
+        <time class="event-date" datetime="{{ stage.date }}"><span class="event-day">{{ stage.date | date: '%-d' }}</span><span class="event-month">{{ t.months[preliminary_month_index] }} {{ e.edition }}</span></time>
+        <p class="event-phase">{{ t.milestones.preliminary[forloop.index0] }}</p><p class="event-venue">{{ stage.cities[page.lang] }}</p>
       </div>
+      {% endfor %}
       <div class="hero-benefits"><strong>{{ t.hero.free }}</strong><span>{{ t.hero.individual }}</span></div>
     </div>
-    <p class="univaq-venue-note">{{ t.hero.univaq_venue }}</p>
+    <p class="hero-final-note"><strong>{{ t.programme.final }}</strong> · {% if e.final_date != '' %}{% include date.html value=e.final_date %}{% else %}{{ t.hero.final_tbc }}{% endif %}</p>
   </div>
 </section>
 <section class="reward-section" aria-labelledby="reward-title"><div class="container">
@@ -42,8 +45,11 @@ layout: default
 <div class="milestones-section">
   <ol class="container milestones" aria-label="{{ t.programme.title }}">
     <li><p class="milestone-label"><span>01</span> · {{ t.milestones.registration }}</p><time datetime="{{ e.registration_deadline }}">{{ e.registration_deadline | date: '%-d' }} {{ t.months[registration_month_index] }}<span class="milestone-year">{{ e.registration_deadline | date: '%Y' }}</span></time><p class="milestone-note">{{ t.milestones.deadline }}</p></li>
-    <li><p class="milestone-label"><span>02</span> · {{ t.milestones.initial }}</p><time datetime="{{ e.preliminary_date }}">{{ e.preliminary_date | date: '%-d' }} {{ t.months[preliminary_month_index] }}<span class="milestone-year">{{ e.preliminary_date | date: '%Y' }}</span></time><p class="milestone-note">{{ t.milestones.training }}</p></li>
-    <li><p class="milestone-label"><span>03</span> · {{ t.milestones.final }}</p><div class="milestone-final">{% if e.final_date != '' %}<time datetime="{{ e.final_date }}">{% include date.html value=e.final_date %}</time>{% else %}{{ t.milestones.final_tbc }}{% endif %}</div><p class="milestone-note">{{ e.final_venue[page.lang] }}</p></li>
+    {% for stage in e.preliminary_stages %}
+    {% assign preliminary_month_index = stage.date | date: '%m' | minus: 1 %}
+    <li><p class="milestone-label"><span>0{{ forloop.index | plus: 1 }}</span> · {{ t.milestones.preliminary[forloop.index0] }}</p><time datetime="{{ stage.date }}">{{ stage.date | date: '%-d' }} {{ t.months[preliminary_month_index] }}<span class="milestone-year">{{ stage.date | date: '%Y' }}</span></time><p class="milestone-note"><strong>{{ stage.cities[page.lang] }}</strong><br>{{ t.milestones.training }}</p></li>
+    {% endfor %}
+    <li><p class="milestone-label"><span>04</span> · {{ t.milestones.final }}</p><div class="milestone-final">{% if e.final_date != '' %}<time datetime="{{ e.final_date }}">{% include date.html value=e.final_date %}</time>{% else %}{{ t.milestones.final_tbc }}{% endif %}</div><p class="milestone-note">{{ e.final_venue[page.lang] }}</p></li>
   </ol>
 </div>
 <div class="container stats-strip" aria-label="{{ t.nav.challenge }}">
@@ -85,10 +91,12 @@ layout: default
   <div class="container"><div class="section-intro"><p class="eyebrow">{{ t.programme.eyebrow }}</p><h2 id="programme-title">{{ t.programme.title }}</h2><p class="lead">{{ t.programme.intro }}</p></div>
     <ol class="timeline">
       <li><div class="timeline-date"><time datetime="{{ e.registration_deadline }}">{% include date.html value=e.registration_deadline %}</time><span class="timeline-number" aria-hidden="true">01</span></div><div class="timeline-copy"><h3>{{ t.programme.deadline }}</h3>{% if e.registration.deadline_time != '' %}<p>{{ e.registration.deadline_time }} · Europe/Rome</p>{% endif %}</div></li>
-      <li><div class="timeline-date"><time datetime="{{ e.venue_announcement }}">{% include date.html value=e.venue_announcement %}</time><span class="timeline-number" aria-hidden="true">02</span></div><div class="timeline-copy"><h3>{{ t.programme.venue }}</h3><p>{{ t.programme.venue_note }}</p></div></li>
-      <li class="timeline-featured"><div class="timeline-date"><time datetime="{{ e.preliminary_date }}">{% include date.html value=e.preliminary_date %}</time><span class="timeline-number" aria-hidden="true">03</span></div><div class="timeline-copy"><h3>{{ t.programme.challenge }}</h3><p>{{ t.programme.challenge_note }}</p></div></li>
+      {% for stage in e.preliminary_stages %}
+      <li class="timeline-featured"><div class="timeline-date"><time datetime="{{ stage.date }}">{% include date.html value=stage.date %}</time><span class="timeline-number" aria-hidden="true">0{{ forloop.index | plus: 1 }}</span></div><div class="timeline-copy"><h3>{{ t.milestones.preliminary[forloop.index0] }} · {{ stage.cities[page.lang] }}</h3><p>{{ t.programme.challenge_note }}</p></div></li>
+      {% endfor %}
       <li><div class="timeline-date"><span>{% if e.final_date != '' %}{% include date.html value=e.final_date %}{% else %}{{ t.programme.final_date }}{% endif %}</span><span class="timeline-number" aria-hidden="true">04</span></div><div class="timeline-copy"><h3>{{ t.programme.final }}</h3><p>{{ t.programme.final_note }}</p></div></li>
     </ol>
+    <p class="section-footnote">{{ t.programme.venue_note }}</p>
     <div class="format-strip"><div><strong>{{ e.figures.work_hours }}</strong><span>{{ t.programme.hours }}</span></div><div><strong>{{ e.figures.pitch_minutes }}</strong><span>{{ t.programme.minutes }}</span></div><p>{{ t.programme.questions }}</p></div>
   </div>
 </section>

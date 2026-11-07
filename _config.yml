@@ -6,6 +6,8 @@ lang: it
 timezone: Europe/Rome
 encoding: utf-8
 markdown: kramdown
+kramdown:
+  input: Kramdown
 permalink: pretty
 strict_front_matter: true
 liquid:
